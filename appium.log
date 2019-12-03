@@ -11,7 +11,7 @@
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m3 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
 [35m[HTTP][39m [90m{"desiredCapabilities":{"app":"C:\\Users\\Marvin\\Documents\\GitHub\\ACC-Seamless\\acc.one (1).apk","noReset":true,"deviceName":"samsung SM-A505F (Android 9)","fullReset":false,"platform":"ANDROID","newCommandTimeout":1800,"platformVersion":"9","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"RR8M30NJEFN","systemPort":61316},"capabilities":{"firstMatch":[{"appium:app":"C:\\Users\\Marvin\\Documents\\GitHub\\ACC-Seamless\\acc.one (1).apk","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceName":"samsung SM-A505F (Android 9)","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platform":"ANDROID","platformName":"android","appium:platformVersion":"9","appium:systemPort":61316,"appium:udid":"RR8M30NJEFN"}]}}[39m

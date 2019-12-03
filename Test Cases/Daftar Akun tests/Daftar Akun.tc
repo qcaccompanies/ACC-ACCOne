@@ -8,13 +8,6 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>804a55c6-3b5c-4e22-946d-fb560e4d83ce</id>
-      <masked>false</masked>
-      <name>name</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>ff6b0795-6c87-4487-8c33-c13f765343ec</id>
       <masked>false</masked>
       <name>email</name>
@@ -32,6 +25,13 @@
       <id>4aadec5c-a2a0-4ea9-943f-22492817e037</id>
       <masked>false</masked>
       <name>phoneNo</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>804a55c6-3b5c-4e22-946d-fb560e4d83ce</id>
+      <masked>false</masked>
+      <name>name</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
