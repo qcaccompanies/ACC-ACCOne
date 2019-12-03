@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Tambah Akun Bank</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d8b476d4-266e-4495-9aa6-497981a1225b</testCaseGuid>
+   <variable>
+      <defaultValue>'BANK CENTRAL ASIA'</defaultValue>
+      <description></description>
+      <id>491e1304-c88b-4556-835d-f6f55e3a9620</id>
+      <masked>false</masked>
+      <name>NamaBank</name>
+   </variable>
+</TestCaseEntity>
