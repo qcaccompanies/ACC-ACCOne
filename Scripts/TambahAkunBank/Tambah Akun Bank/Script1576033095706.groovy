@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:/Users/Marvin/Documents/GitHub/ACC-Seamless/acc.one (1).apk', false)
 
-Mobile.tap(findTestObject('TambahAkunBank/Btn_Akun'), 0)
+Mobile.tap(findTestObject('TambahAkunBank/BTN_Akun'), 0)
 
 Mobile.tap(findTestObject('TambahAkunBank/ListAkunBank'), 0)
 
@@ -27,35 +27,33 @@ Mobile.tap(findTestObject('TambahAkunBank/DDOWNNAMABANK'), 0)
 
 Mobile.tap(findTestObject('TambahAkunBank/NAMABANK', [('text') : NamaBank]), 0)
 
-Mobile.setText(findTestObject('TambahAkunBank/TextCabang'), 'FATMAWATI', 0)
+Mobile.setText(findTestObject('TambahAkunBank/TextCabang'), Cabang, 0)
 
-Mobile.setText(findTestObject('TambahAkunBank/NamaPemilikText'), 'Marvin', 0)
+Mobile.setText(findTestObject('TambahAkunBank/NamaPemilikText'), PemilikRek, 0)
 
-Mobile.setText(findTestObject('TambahAkunBank/NomorRekeningText'), '033763533', 0)
+Mobile.setText(findTestObject('TambahAkunBank/NomorRekeningText'), NoRek, 0)
 
-Mobile.setText(findTestObject('TambahAkunBank/InputKataSandi'), 'Johannes!12', 0)
+Mobile.setText(findTestObject('TambahAkunBank/InputKataSandi'), Katasandi, 0)
+
+Mobile.tap(findTestObject('TambahAkunBank/InputKataSandi'), 0)
 
 if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/AlertFieldNoRekening8char'), 0, FailureHandling.OPTIONAL)) {
     Mobile.verifyElementVisible(findTestObject('TambahAkunBank/TambahAkunBankBTN'), 0, FailureHandling.STOP_ON_FAILURE)
-}
-
-if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/AlertTextHarusDiisi'), 0, FailureHandling.OPTIONAL)) {
+} else if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/AlertTextHarusDiisi'), 0, FailureHandling.OPTIONAL)) {
     Mobile.verifyElementVisible(findTestObject('TambahAkunBank/TambahAkunBankBTN'), 0, FailureHandling.STOP_ON_FAILURE)
-}
-
-if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/FieldCabang3CharAlert'), 0, FailureHandling.OPTIONAL)) {
+} else if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/FieldCabang3CharAlert'), 0, FailureHandling.OPTIONAL)) {
+    Mobile.verifyElementVisible(findTestObject('TambahAkunBank/TambahAkunBankBTN'), 0, FailureHandling.STOP_ON_FAILURE)
+} else if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/AlertKataSandiHarusDiisi'), 0, FailureHandling.OPTIONAL)) {
     Mobile.verifyElementVisible(findTestObject('TambahAkunBank/TambahAkunBankBTN'), 0, FailureHandling.STOP_ON_FAILURE)
 } else {
     Mobile.tap(findTestObject('TambahAkunBank/TambahAkunBankBTN'), 0)
 
-    if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/RekeningSudahTerdaftar'), 0, FailureHandling.STOP_ON_FAILURE)) {
+    if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/RekeningSudahTerdaftar'), 0, FailureHandling.OPTIONAL)) {
         Mobile.verifyElementVisible(findTestObject('TambahAkunBank/TambahAkunBankBTN'), 0, FailureHandling.STOP_ON_FAILURE)
-    }
-    
-    if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/PasswordTidakSesuai'), 0, FailureHandling.STOP_ON_FAILURE)) {
+    } else if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/PasswordTidakSesuai'), 0, FailureHandling.OPTIONAL)) {
         Mobile.verifyElementVisible(findTestObject('TambahAkunBank/TambahAkunBankBTN'), 0, FailureHandling.STOP_ON_FAILURE)
     } else {
-        Mobile.setText(findTestObject('TambahAkunBank/InsertOTP'), '261294', 0)
+        Mobile.setText(findTestObject('TambahAkunBank/InsertOTP'), OTP, 0)
 
         Mobile.tap(findTestObject('TambahAkunBank/VerifikasiBTN'), 0)
     }
