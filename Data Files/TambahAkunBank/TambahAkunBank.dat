@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>ddc7e096-c8fb-4963-8d72-8ca5faec1b44</dataFileGUID>
-   <dataSourceUrl>C:\Users\Marvin\Documents\GitHub\ACC-Seamless\TambahAkunBank.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Marvin\Documents\GitHub\ACC-Seamless-ACCOne\TambahAkunBank.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

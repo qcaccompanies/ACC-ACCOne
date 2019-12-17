@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:/Users/Marvin/Documents/GitHub/ACC-Seamless/acc.one (1).apk', false)
+Mobile.startApplication('C:/Users/Marvin/Documents/GitHub/ACC-Seamless-ACCOne/acc.one (1).apk', false)
 
 Mobile.tap(findTestObject('TambahAkunBank/BTN_Akun'), 0)
 
@@ -57,5 +57,54 @@ if (Mobile.verifyElementVisible(findTestObject('TambahAkunBank/AlertFieldNoReken
 
         Mobile.tap(findTestObject('TambahAkunBank/VerifikasiBTN'), 0)
     }
+}
+
+switch ('Result') {
+    case 'Pass':
+        break
+    case 'Fail':
+        if (Keterangan.toString() == 'No Reg Sudah Ada ') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/Penarikan/BTN_Lanjut'), 0)
+
+            break
+        }
+        
+        if (Keterangan.toString() == 'Cabang Harus Diisi') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/Penarikan/BTN_Lanjut'), 0)
+
+            break
+        }
+        
+        if (Keterangan.toString() == 'Pemilik Harus Diisi') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/Penarikan/BTN_Lanjut'), 0)
+
+            break
+        }
+        
+        if (Keterangan.toString() == 'No Reg Harus Diisi') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/Penarikan/BTN_Lanjut'), 0)
+
+            break
+        }
+        
+        if (Keterangan.toString() == 'Password Harus Diisi') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/Penarikan/BTN_Lanjut'), 0)
+
+            break
+        }
+        
+        if (Keterangan.toString() == 'Password Salah') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/Penarikan/BTN_Lanjut'), 0)
+
+            break
+        }
+        
+        if (Keterangan.toString() == 'OTP Salah') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/Penarikan/BTN_Lanjut'), 0)
+
+            break
+        }
+        
+        break
 }
 
