@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Delete Akun Bank</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7aa52b25-70e7-4199-bda0-48af4199d009</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2d31fd83-aa37-4014-831b-7b2602a87c81</id>
+      <masked>false</masked>
+      <name>NoRek</name>
+   </variable>
+</TestCaseEntity>
