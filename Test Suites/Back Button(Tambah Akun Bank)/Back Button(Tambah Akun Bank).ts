@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Back Button(Tambah Akun Bank)</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>923ca638-5894-4e6a-827e-dd35b0b337df</testSuiteGuid>
+   <testCaseLink>
+      <guid>91cc3f47-d49b-442c-900f-0c71b0d30c3d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Back Button(Tambah Akun Bank)/Back Button(Tambah Akun Bank)</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>e9872f96-4b93-47be-b74d-81047336a459</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Back Button(Tambah Akun Bank)/Back Button(Tambah Akun Bank)</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>e9872f96-4b93-47be-b74d-81047336a459</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>IsiData</value>
+         <variableId>ba3f944a-62bb-4d83-abec-02b4b94c9356</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9872f96-4b93-47be-b74d-81047336a459</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NamaBank</value>
+         <variableId>491e1304-c88b-4556-835d-f6f55e3a9620</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9872f96-4b93-47be-b74d-81047336a459</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Cabang</value>
+         <variableId>0872c804-0938-4dfe-bb4b-0a74ff573189</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9872f96-4b93-47be-b74d-81047336a459</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PemilikRek</value>
+         <variableId>5a40939f-d877-457e-9000-c70a2920fe2b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>e9872f96-4b93-47be-b74d-81047336a459</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NoRek</value>
+         <variableId>6509c748-e3b9-4d90-adae-600915acc833</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

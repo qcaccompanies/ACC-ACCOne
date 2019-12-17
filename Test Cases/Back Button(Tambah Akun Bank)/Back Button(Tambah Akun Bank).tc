@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Back Button(Tambah Akun Bank)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>76587629-3fd2-4023-9a47-979d15d921a4</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ba3f944a-62bb-4d83-abec-02b4b94c9356</id>
+      <masked>false</masked>
+      <name>IsiData</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>491e1304-c88b-4556-835d-f6f55e3a9620</id>
+      <masked>false</masked>
+      <name>NamaBank</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0872c804-0938-4dfe-bb4b-0a74ff573189</id>
+      <masked>false</masked>
+      <name>Cabang</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5a40939f-d877-457e-9000-c70a2920fe2b</id>
+      <masked>false</masked>
+      <name>PemilikRek</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6509c748-e3b9-4d90-adae-600915acc833</id>
+      <masked>false</masked>
+      <name>NoRek</name>
+   </variable>
+</TestCaseEntity>
