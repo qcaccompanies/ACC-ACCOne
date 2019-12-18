@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Daftar Akun - Main flow</name>
+   <name>Daftar Akun - Main flow - ATS-14</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>83495774-cd2c-4753-9057-b7104af5f31e</testCaseGuid>
