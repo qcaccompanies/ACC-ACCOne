@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Ubah Email - ATS-13</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5c8e30b-f99f-4e06-b9af-e3d36717780d</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2113abc5-79c8-4553-95f1-051896c42102</id>
+      <masked>false</masked>
+      <name>oldEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dc444b67-548a-4eff-9890-1178ebbb1a78</id>
+      <masked>false</masked>
+      <name>newEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>48a62c6c-2f1e-4277-8fc0-7bbff86d721a</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fdf97105-456a-4c95-b147-3405e37858ab</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>

@@ -14,7 +14,7 @@
       <guid>80d42ebe-3bbb-4964-b250-c3dcd9bb13f9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Daftar Akun tests/Daftar Akun - Main flow</testCaseId>
+      <testCaseId>Test Cases/Daftar Akun tests/Daftar Akun - Main flow - ATS-14</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>9f345007-2035-443f-9b53-3b7e4c4931c7</id>
@@ -22,7 +22,7 @@
             <iterationType>ALL</iterationType>
             <value>8,10</value>
          </iterationEntity>
-         <testDataId>Data Files/Daftar Akun</testDataId>
+         <testDataId>Data Files/Daftar Akun - ATS-14</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>9f345007-2035-443f-9b53-3b7e4c4931c7</testDataLinkId>

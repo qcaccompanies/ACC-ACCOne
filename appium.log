@@ -7,7 +7,7 @@
 [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:63869
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m9 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m15 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
@@ -23,7 +23,7 @@
 [35m[Appium][39m   app: C:\Users\Marvin\Documents\GitHub\ACC-Seamless-ACCOne\acc.one (1).apk
 [35m[Appium][39m   autoGrantPermissions: true
 [35m[Appium][39m   automationName: uiautomator2
-[35m[Appium][39m   deviceName: samsung SM-A505F (Android 9)
+[35m[Appium][39m   deviceName: samsung SM-A750GN (Android 9)
 [35m[Appium][39m   fullReset: false
 [35m[Appium][39m   newCommandTimeout: 1800
 [35m[Appium][39m   noReset: true
@@ -34,26 +34,32 @@
 [35m[BaseDriver][39m Session created with session id: f5f86649-31f4-4fb0-9734-6b55ed1cc3ee
 [35m[BaseDriver][39m Using local app 'C:\Users\Marvin\Documents\GitHub\ACC-Seamless-ACCOne\acc.one (1).apk'
 [35m[ADB][39m Checking whether adb is present
-[35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\Marvin\.katalon\tools\android_sdk' (newest first):
-[35m[ADB][39m     C:/Users/Marvin/.katalon/tools/android_sdk/build-tools/29.0.0
-[35m[ADB][39m Using adb.exe from C:\Users\Marvin\.katalon\tools\android_sdk\platform-tools\adb.exe
+[35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\lieto\.katalon\tools\android_sdk' (newest first):
+[35m[ADB][39m     C:/Users/lieto/.katalon/tools/android_sdk/build-tools/29.0.2
+[35m[ADB][39m Using adb.exe from C:\Users\lieto\.katalon\tools\android_sdk\platform-tools\adb.exe
 [35m[AndroidDriver][39m Retrieving device list
-[35m[AndroidDriver][39m Using device: RR8M30NJEFN
+[35m[AndroidDriver][39m Using device: 32008eeec002a5eb
 [35m[UiAutomator2][39m Relaxing hidden api policy
-[35m[ADB][39m Using the alternative activity name detection method because of: Could not find apkanalyzer.bat in C:\Users\Marvin\.katalon\tools\android_sdk\platform-tools\apkanalyzer.bat,C:\Users\Marvin\.katalon\tools\android_sdk\emulator\apkanalyzer.bat,C:\Users\Marvin\.katalon\tools\android_sdk\tools\apkanalyzer.bat,C:\Users\Marvin\.katalon\tools\android_sdk\tools\bin\apkanalyzer.bat,C:\Users\Marvin\.katalon\tools\android_sdk\build-tools\29.0.0\apkanalyzer.bat. Do you have the Android SDK installed at 'C:\Users\Marvin\.katalon\tools\android_sdk'?
+[35m[ADB][39m Using the alternative activity name detection method because of: Could not find apkanalyzer.bat in C:\Users\lieto\.katalon\tools\android_sdk\platform-tools\apkanalyzer.bat,C:\Users\lieto\.katalon\tools\android_sdk\emulator\apkanalyzer.bat,C:\Users\lieto\.katalon\tools\android_sdk\tools\apkanalyzer.bat,C:\Users\lieto\.katalon\tools\android_sdk\tools\bin\apkanalyzer.bat,C:\Users\lieto\.katalon\tools\android_sdk\build-tools\29.0.2\apkanalyzer.bat. Do you have the Android SDK installed at 'C:\Users\lieto\.katalon\tools\android_sdk'?
 [35m[ADB][39m Checking whether aapt is present
-[35m[ADB][39m Using aapt.exe from C:\Users\Marvin\.katalon\tools\android_sdk\build-tools\29.0.0\aapt.exe
+[35m[ADB][39m Using aapt.exe from C:\Users\lieto\.katalon\tools\android_sdk\build-tools\29.0.2\aapt.exe
 [35m[ADB][39m Extracting package and launch activity from manifest
 [35m[ADB][39m Package name: 'com.outsystemsenterprise.acctst1.AccWorld'
 [35m[ADB][39m Main activity name: 'com.outsystemsenterprise.acctst1.AccWorld.MainActivity'
-[35m[ADB][39m Using apksigner.bat from C:\Users\Marvin\.katalon\tools\android_sdk\build-tools\29.0.0\apksigner.bat
+[35m[ADB][39m Using apksigner.bat from C:\Users\lieto\.katalon\tools\android_sdk\build-tools\29.0.2\apksigner.bat
 [35m[UiAutomator2][39m Server packages are not going to be (re)installed
+[35m[ADB][39m The application at 'C:\Users\lieto\git\ACC-Seamless-ACCOne\acc.one (1).apk' is already cached to '/data/local/tmp/appium_cache/93bbc767c38940baf237688dcc724e2015ac5af4.apk'
+[35m[ADB][39m The installation of 'acc.one (1).apk' took 12.767s
 [35m[UiAutomator2][39m Starting UIAutomator2 server 3.4.0
-[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Marvin\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v3.4.0.apk' and test from 'C:\Users\Marvin\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\lieto\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v3.4.0.apk' and test from 'C:\Users\lieto\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
 [35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
 [35m[WD Proxy][39m Got an unexpected response: {"code":"ECONNRESET"}
 [35m[WD Proxy][39m Got an unexpected response: {"code":"ECONNRESET"}
-[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[WD Proxy][39m Got an unexpected response: {"code":"ECONNRESET"}
+[35m[WD Proxy][39m Got an unexpected response: {"code":"ECONNRESET"}
+[35m[AndroidDriver][39m Using app unlock, this is going to be deprecated!
+[35m[AndroidDriver][39m Unlocking screen
+[35m[AndroidDriver][39m Launching .Unlock
 [35m[UiAutomator2][39m UiAutomator2 did not start the activity we were waiting for, 'com.outsystemsenterprise.acctst1.AccWorld/com.outsystemsenterprise.acctst1.AccWorld.MainActivity'. Starting it ourselves
 [35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session f5f86649-31f4-4fb0-9734-6b55ed1cc3ee added to master session list
 [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m25711 ms - 1272[39m
@@ -68,7 +74,7 @@
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m3 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/f5f86649-31f4-4fb0-9734-6b55ed1cc3ee/timeouts[39m
 [35m[HTTP][39m [90m{"implicit":60000}[39m

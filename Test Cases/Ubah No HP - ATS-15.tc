@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Ubah No HP - ATS-15</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4641d292-6127-45d2-adba-1703357aeebb</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3e83a317-3c31-4645-824a-46d27c8bf129</id>
+      <masked>false</masked>
+      <name>oldNoTelp</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fe86f6a1-1542-45b0-b0a4-da33797ad02f</id>
+      <masked>false</masked>
+      <name>neNoTelp</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1d7e0045-8a52-4ff5-8eb1-05aadb7f3371</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2f3859de-3fbc-48ab-91d3-901ed3a4f8a3</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Ubah Email - ATS-13</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>d3d1bf65-0eed-44a5-88a5-1e1d972fe1d5</testSuiteGuid>
+   <testCaseLink>
+      <guid>2e6913d8-c83f-4672-a93f-f6c961ffdbf8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Ubah Email - ATS-13</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>8539608f-d93e-45b7-a485-e18253c5dc61</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Ubah Email - ATS-13</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>8539608f-d93e-45b7-a485-e18253c5dc61</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>oldEmail</value>
+         <variableId>2113abc5-79c8-4553-95f1-051896c42102</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8539608f-d93e-45b7-a485-e18253c5dc61</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newEmail</value>
+         <variableId>dc444b67-548a-4eff-9890-1178ebbb1a78</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8539608f-d93e-45b7-a485-e18253c5dc61</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>48a62c6c-2f1e-4277-8fc0-7bbff86d721a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8539608f-d93e-45b7-a485-e18253c5dc61</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
+         <variableId>fdf97105-456a-4c95-b147-3405e37858ab</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
