@@ -24,6 +24,8 @@ Mobile.tap(findTestObject('Buat Pengajuan/Mobil_Baru_BTN'), 0)
 if (Paket == 'Yes') {
     Mobile.tap(findTestObject('Buat Pengajuan/Paket_Mobil_Baru (1)'), 0)
 
+    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
     Mobile.scrollToText(JenisMobil, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Buat Pengajuan/Select_Car', [('text') : JenisMobil]), 0)
@@ -34,6 +36,8 @@ if (Paket == 'Yes') {
 } else if (Brand == 'Toyota') {
     Mobile.tap(findTestObject('Buat Pengajuan/Toyota_Button'), 0)
 
+    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
     Mobile.scrollToText(MobileUtama, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Buat Pengajuan/Select_Car', [('text') : MobileUtama]), 0)
@@ -43,6 +47,8 @@ if (Paket == 'Yes') {
             , ('DPPersen') : DPPersen, ('DPNominal') : DPNominal], FailureHandling.STOP_ON_FAILURE)
 } else if (Brand == 'Daihatsu') {
     Mobile.tap(findTestObject('Buat Pengajuan/Daihatsu_Button'), 0)
+
+    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.scrollToText(MobileUtama, FailureHandling.STOP_ON_FAILURE)
 
@@ -60,10 +66,33 @@ if (Paket == 'Yes') {
 } else {
     Mobile.scrollToText(MobileUtama, FailureHandling.STOP_ON_FAILURE)
 
+    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
     Mobile.tap(findTestObject('Buat Pengajuan/Select_Car', [('text') : MobileUtama]), 0)
 
     WebUI.callTestCase(findTestCase('Buat Pengajuan/HitungSimulasi'), [('NamaArea') : NamaArea, ('NamaCabang') : NamaCabang
             , ('DP') : DP, ('Periode') : Periode, ('PembayaranAsuransi') : PembayaranAsuransi, ('CreditProtection') : CreditProtection
             , ('DPPersen') : DPPersen, ('DPNominal') : DPNominal], FailureHandling.STOP_ON_FAILURE)
+}
+
+switch ('Status') {
+    case 'Pass':
+        Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
+
+        break
+    case 'Fail':
+        break
+        
+        if (Detail.toString() == 'Nominal Tidak Boleh Kosong') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
+        }
+        
+        if (Detail.toString() == 'Bank Tidak Boleh Kosong') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
+        }
+        
+        if (Detail.toString() == 'Tanggal Tidak Boleh Kosong') {
+            Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
+        }
 }
 

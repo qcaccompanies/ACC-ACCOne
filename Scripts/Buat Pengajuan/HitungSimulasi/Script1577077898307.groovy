@@ -68,7 +68,7 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_Cabang_Harus_Diisi'), 0, FailureHandling.OPTIONAL)) {
     Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
 } else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_DP_Harus_Diisi'), 0, FailureHandling.OPTIONAL)) {
-    Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
+    not_run: Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
 } else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_DP_Min20'), 0, FailureHandling.OPTIONAL)) {
     Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
 } else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_Uang_Muka_20dariOTR'), 0, FailureHandling.OPTIONAL)) {

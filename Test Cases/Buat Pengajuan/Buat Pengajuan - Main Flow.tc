@@ -27,56 +27,56 @@
       <name>PromoTerbaik</name>
    </variable>
    <variable>
-      <defaultValue>'DAIHATSU SIGRA'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>0e16355c-2632-4656-9d9f-306c2d013c8e</id>
       <masked>false</masked>
       <name>JenisMobil</name>
    </variable>
    <variable>
-      <defaultValue>'DKI Jakarta, Banten, Jawa Barat'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>d9201ea5-f000-4540-90e5-681936ebaf1f</id>
       <masked>false</masked>
       <name>NamaArea</name>
    </variable>
    <variable>
-      <defaultValue>'Fatmawati'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>4890371e-9a45-4153-a813-4412bd668b02</id>
       <masked>false</masked>
       <name>NamaCabang</name>
    </variable>
    <variable>
-      <defaultValue>'Persen'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>40d7bf94-4f7a-4dea-909a-4da1a7b0e7bf</id>
       <masked>false</masked>
       <name>DP</name>
    </variable>
    <variable>
-      <defaultValue>'48'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>a5267c4c-3f4a-4d6e-9795-d3415fd166c0</id>
       <masked>false</masked>
       <name>Periode</name>
    </variable>
    <variable>
-      <defaultValue>'Cash'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>ecdc5b5f-9499-4aab-8ebe-b6e5d48df114</id>
       <masked>false</masked>
       <name>PembayaranAsuransi</name>
    </variable>
    <variable>
-      <defaultValue>'No'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>a9ef961a-c939-4983-98e4-a8b0d380d369</id>
       <masked>false</masked>
       <name>CreditProtection</name>
    </variable>
    <variable>
-      <defaultValue>'TOYOTA AGYA 1.0 G M/T NEW 2019 BENSIN'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>80beaa8b-538b-4c79-9344-97723e281db8</id>
       <masked>false</masked>
@@ -95,5 +95,19 @@
       <id>aa332dbe-43cf-4d99-b76b-c69cfb98b71d</id>
       <masked>false</masked>
       <name>DPNominal</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ed95c1e0-00b8-4545-97ed-c38e281cd116</id>
+      <masked>false</masked>
+      <name>Status</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>75b44558-d4be-4847-85e2-e61731111ae2</id>
+      <masked>false</masked>
+      <name>Keterangan</name>
    </variable>
 </TestCaseEntity>

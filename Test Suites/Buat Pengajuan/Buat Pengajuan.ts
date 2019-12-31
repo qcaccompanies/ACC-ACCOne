@@ -17,90 +17,102 @@
       <testCaseId>Test Cases/Buat Pengajuan/Buat Pengajuan - Main Flow</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>bb08911f-94f6-4ee7-a5bc-10cf164d826b</id>
+         <id>70c3dfd0-0180-42bb-b042-b766c0db9d86</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>5</value>
+            <iterationType>RANGE</iterationType>
+            <value>6-8</value>
          </iterationEntity>
          <testDataId>Data Files/Buat Pengajuan/Buat Pengajuan</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Paket</value>
          <variableId>e9119bb9-44e3-4746-9b6a-22dd7a2647b8</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Brand</value>
          <variableId>31e82890-4016-4894-ab36-bf39da1445bb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PromoTerbaik</value>
          <variableId>39eea768-0c3a-4d5e-b661-ad8629c50111</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>JenisMobil</value>
          <variableId>0e16355c-2632-4656-9d9f-306c2d013c8e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>NamaArea</value>
          <variableId>d9201ea5-f000-4540-90e5-681936ebaf1f</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>NamaCabang</value>
          <variableId>4890371e-9a45-4153-a813-4412bd668b02</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DP</value>
          <variableId>40d7bf94-4f7a-4dea-909a-4da1a7b0e7bf</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Periode</value>
          <variableId>a5267c4c-3f4a-4d6e-9795-d3415fd166c0</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>PembayaranAsuransi</value>
          <variableId>ecdc5b5f-9499-4aab-8ebe-b6e5d48df114</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>CreditProtection</value>
          <variableId>a9ef961a-c939-4983-98e4-a8b0d380d369</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>MobileUtama</value>
          <variableId>80beaa8b-538b-4c79-9344-97723e281db8</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DPPersen</value>
          <variableId>574b5c50-9184-4110-bcba-9c83399a0572</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>bb08911f-94f6-4ee7-a5bc-10cf164d826b</testDataLinkId>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DPNominal</value>
          <variableId>aa332dbe-43cf-4d99-b76b-c69cfb98b71d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Status</value>
+         <variableId>ed95c1e0-00b8-4545-97ed-c38e281cd116</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>70c3dfd0-0180-42bb-b042-b766c0db9d86</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Keterangan</value>
+         <variableId>75b44558-d4be-4847-85e2-e61731111ae2</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
