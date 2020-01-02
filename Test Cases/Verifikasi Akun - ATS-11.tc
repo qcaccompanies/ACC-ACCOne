@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verifikasi Akun - ATS-11</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7074cdd5-26ec-49e3-be95-b0478757df0d</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>674cff18-33eb-4542-809d-5977a3070942</id>
+      <masked>false</masked>
+      <name>nik</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8f2b5bd6-4d7a-442c-a6d9-74e766e49988</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7cf39f3a-d34a-4ccf-b683-e063f1421423</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>92ab0333-7b48-4f16-a558-c6ea93609979</id>
+      <masked>false</masked>
+      <name>condition2</name>
+   </variable>
+</TestCaseEntity>

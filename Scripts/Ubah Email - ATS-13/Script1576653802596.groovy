@@ -21,7 +21,7 @@ Mobile.tap(findTestObject('Home/Icon Akun'), 0)
 
 Mobile.tap(findTestObject('Akun/Label Lihat Profil'), 0)
 
-Mobile.tap(findTestObject('Ubah Email - ATS-13/Icon Edit Email'), 0)
+Mobile.tap(findTestObject('Ubah Email - ATS-13/Icon Ubah Email'), 0)
 
 Mobile.setText(findTestObject('Ubah Email - ATS-13/Field Old Email'), oldEmail, 0)
 

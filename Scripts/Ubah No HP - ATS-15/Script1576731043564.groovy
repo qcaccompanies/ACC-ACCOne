@@ -21,23 +21,29 @@ Mobile.tap(findTestObject('Home/Icon Akun'), 0)
 
 Mobile.tap(findTestObject('Akun/Label Lihat Profil'), 0)
 
-Mobile.tap(findTestObject('Ubah No HP - ATS-15/Icon Edit No Telp'), 0)
+Mobile.tap(findTestObject('Ubah No HP - ATS-15/Icon Ubah No HP'), 0)
 
 Mobile.setText(findTestObject('Ubah No HP - ATS-15/Field No Telp Lama'), oldNoTelp, 0)
 
 Mobile.setText(findTestObject('Ubah No HP - ATS-15/Field No Telp Baru'), newNoTelp, 0)
 
-switch(status.toString()) {
-	case 'failed':
-		if(condition.toString() == 'oldNoTelpEmpty') {
-			
-		} else if (condition.toString() == 'newNoTelpEmpty') {
-		
-		}
-		break
-		
-	case 'success':
-		break
+switch (status.toString()) {
+    case 'failed':
+        if (condition.toString() == 'oldNoTelpEmpty') {
+            Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Empty Old Phone Number'), 0)
+        } else if (condition.toString() == 'newNoTelpEmpty') {
+            Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Empty New Phone Number'), 0)
+        } else if (condition.toString() == 'oldPhoneNoWrong') {
+            Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Old Phone Number Wrong'), 0)
+        } else if (condition.toString() == 'newPhoneNoShort') {
+            Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/New Phone Short'), 0)
+        }
+        
+        break
+    case 'success':
+        Mobile.tap(findTestObject('Ubah No HP - ATS-15/Btn Konfirmasi'), 0)
+
+        break
 }
 
 Mobile.closeApplication()
