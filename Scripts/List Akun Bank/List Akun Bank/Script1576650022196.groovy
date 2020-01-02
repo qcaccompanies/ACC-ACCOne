@@ -21,7 +21,7 @@ Mobile.tap(findTestObject('List Akun Bank ATS-5/Akun_BTN'), 0)
 
 Mobile.tap(findTestObject('List Akun Bank ATS-5/Lihat_Akun_BTN'), 0)
 
-Mobile.setText(findTestObject('List Akun Bank ATS-5/Search_Akun_Bank'), '33356', 0)
+Mobile.setText(findTestObject('List Akun Bank ATS-5/Search_Akun_Bank'), SearchAkunBank, 0)
 
 if (Mobile.verifyElementVisible(findTestObject('List Akun Bank ATS-5/Akun_Tidak_Ditemukan'), 0, FailureHandling.OPTIONAL)) {
     Mobile.verifyElementVisible(findTestObject('List Akun Bank ATS-5/Tambah_Akun_Bank_BTN'), 0)

@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0fb43eea-107b-4827-b876-10e114c11a41</testCaseGuid>
+   <variable>
+      <defaultValue>'33356'</defaultValue>
+      <description></description>
+      <id>a908d7ec-49c7-4b90-a55a-750a4b2c29fd</id>
+      <masked>false</masked>
+      <name>SearchAkunBank</name>
+   </variable>
 </TestCaseEntity>
