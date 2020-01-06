@@ -17,11 +17,17 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
 
+Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Akun/Label Lihat Profil'), 0)
 
-Mobile.tap(findTestObject('Ubah No HP - ATS-15/Icon Ubah No HP'), 0)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Ubah No HP - ATS-15/Icon Edit Phone Number'), 0)
 
 Mobile.setText(findTestObject('Ubah No HP - ATS-15/Field No Telp Lama'), oldNoTelp, 0)
 
@@ -30,19 +36,51 @@ Mobile.setText(findTestObject('Ubah No HP - ATS-15/Field No Telp Baru'), newNoTe
 switch (status.toString()) {
     case 'failed':
         if (condition.toString() == 'oldNoTelpEmpty') {
+            Mobile.tap(findTestObject('Ubah No HP - ATS-15/Field No Telp Lama'), 0)
+
+            Mobile.tap(findTestObject('Ubah No HP - ATS-15/Field No Telp Baru'), 0)
+
             Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Empty Old Phone Number'), 0)
         } else if (condition.toString() == 'newNoTelpEmpty') {
+            Mobile.tap(findTestObject('Ubah No HP - ATS-15/Field No Telp Baru'), 0)
+
+            Mobile.tapAtPosition(545, 830)
+
             Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Empty New Phone Number'), 0)
         } else if (condition.toString() == 'oldPhoneNoWrong') {
+            Mobile.tap(findTestObject('Ubah No HP - ATS-15/Field No Telp Lama'), 0)
+
+            Mobile.tapAtPosition(545, 830)
+
             Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Old Phone Number Wrong'), 0)
         } else if (condition.toString() == 'newPhoneNoShort') {
+            Mobile.tap(findTestObject('Ubah No HP - ATS-15/Field No Telp Baru'), 0)
+
+            Mobile.tapAtPosition(545, 830)
+
             Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/New Phone Short'), 0)
+        } else if (condition.toString() == 'oldPhoneMixed') {
+            temp = Mobile.getText(findTestObject('Ubah No HP - ATS-15/Field No Telp Lama'), 0)
+
+            Mobile.verifyMatch(temp, '12345', false)
+        } else if (condition.toString() == 'newPhoneMixed') {
+            temp1 = Mobile.getText(findTestObject('Ubah No HP - ATS-15/Field No Telp Baru'), 0)
+
+            Mobile.verifyMatch(temp1, '12345', false)
         }
         
         break
     case 'success':
         Mobile.tap(findTestObject('Ubah No HP - ATS-15/Btn Konfirmasi'), 0)
 
+        Mobile.setText(findTestObject('Ubah No HP - ATS-15/Field OTP'), '261294', 0)
+
+        Mobile.tap(findTestObject('Ubah No HP - ATS-15/Btn Verifikasi'), 0)
+
+        if (condition.toString() == 'otpWrong') {
+            Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Warn OTP Wrong'), 0)
+        }
+        
         break
 }
 

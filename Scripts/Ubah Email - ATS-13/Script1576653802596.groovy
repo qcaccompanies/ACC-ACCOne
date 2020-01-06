@@ -17,11 +17,19 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
 
+Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Akun/Label Lihat Profil'), 0)
 
-Mobile.tap(findTestObject('Ubah Email - ATS-13/Icon Ubah Email'), 0)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Ubah Email - ATS-13/Icon Edit Email'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('Ubah Email - ATS-13/Field Old Email'), oldEmail, 0)
 

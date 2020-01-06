@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Ubah No Telp - ATAM-15</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>e2dc07c0-f7c8-476d-bf02-1ed6e100ca3f</testSuiteGuid>
+   <testCaseLink>
+      <guid>875d4778-dea6-4a37-8763-2d8512c259bd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Ubah No HP - ATS-15</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>a3a97c90-19d8-44b6-8d50-9298bb7520ab</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>4-6</value>
+         </iterationEntity>
+         <testDataId>Data Files/Ubah No Telp - ATAM-15</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>a3a97c90-19d8-44b6-8d50-9298bb7520ab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>oldNoTelp</value>
+         <variableId>3e83a317-3c31-4645-824a-46d27c8bf129</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a3a97c90-19d8-44b6-8d50-9298bb7520ab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newNoTelp</value>
+         <variableId>fe86f6a1-1542-45b0-b0a4-da33797ad02f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a3a97c90-19d8-44b6-8d50-9298bb7520ab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>1d7e0045-8a52-4ff5-8eb1-05aadb7f3371</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a3a97c90-19d8-44b6-8d50-9298bb7520ab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
+         <variableId>2f3859de-3fbc-48ab-91d3-901ed3a4f8a3</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

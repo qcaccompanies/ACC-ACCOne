@@ -19,11 +19,11 @@ Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1)
 
 Mobile.tap(findTestObject('Home/Icon Akun'), 0)
 
+Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Label Verifikasi Akun'), 0)
+
 switch (status.toString()) {
     case 'unverified':
-        Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Label Belum Verifikasi'), 0)
-
-        Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Label Verifikasi Akun'), 0)
+        WebUI.callTestCase(findTestCase('Verifikasi AKun - ATS-11 Test/Verification Status'), [:], FailureHandling.STOP_ON_FAILURE)
 
         if (condition.toString() == 'success') {
             Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload KTP'), 0)
@@ -78,16 +78,11 @@ switch (status.toString()) {
         }
         
         break
-    case 'verified':
-        break
     case 'back':
         Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Back Icon'), 0)
 
         Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Label Akun Saya'), 0)
 
-        break
-    case 'pending':
-		
         break
 }
 

@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>8539608f-d93e-45b7-a485-e18253c5dc61</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>4</value>
          </iterationEntity>
          <testDataId>Data Files/Ubah Email - ATS-13</testDataId>
       </testDataLink>
