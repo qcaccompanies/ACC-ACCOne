@@ -17,13 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless\\acc.one (1).apk', false)
 
-Mobile.tap(findTestObject('Login/android.view.View0'), 0)
+Mobile.tap(findTestObject('Home/Icon Akun'), 0)
 
-Mobile.setText(findTestObject('Login/android.widget.EditText0'), '082297476950', 0)
-
-Mobile.setText(findTestObject('Login/android.widget.EditText0 (1)'), 'Application1!', 0)
-
-Mobile.tap(findTestObject('Login/android.widget.Button0 - Masuk'), 0)
-
-Mobile.closeApplication()
+Mobile.tap(findTestObject('Akun/Label Lihat Profil'), 0)
 

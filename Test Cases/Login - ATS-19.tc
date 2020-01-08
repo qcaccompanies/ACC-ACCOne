@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - ATS-19</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6ebc5ac6-8e28-41b4-80a2-fdee509d2d52</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aab0e5df-b7d4-466b-9da7-959cedfabbbd</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8b6184b0-b2c1-43cf-b8a9-b811da4a0d71</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3373235a-0b16-4b2a-bf70-fde0006aeb65</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f422484b-f08b-4125-b855-ba5816cf8032</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>
