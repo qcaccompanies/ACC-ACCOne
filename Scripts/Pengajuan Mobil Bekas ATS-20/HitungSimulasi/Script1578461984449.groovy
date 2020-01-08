@@ -36,15 +36,15 @@ if (DP == 'Persen') {
 }
 
 if (Periode == '12') {
-    Mobile.tapAtPosition(84, 1454)
+    Mobile.tapAtPosition(84, 1393)
 } else if (Periode == '24') {
-    Mobile.tapAtPosition(312, 1454)
+    Mobile.tapAtPosition(312, 1393)
 } else if (Periode == '36') {
-    Mobile.tapAtPosition(540, 1454)
+    Mobile.tapAtPosition(540, 1393)
 } else if (Periode == '48') {
-    Mobile.tapAtPosition(766, 1454)
+    Mobile.tapAtPosition(766, 1393)
 } else if (Periode == '60') {
-    Mobile.tapAtPosition(994, 1454)
+    Mobile.tapAtPosition(994, 1393)
 }
 
 if (PembayaranAsuransi == 'Credit') {
@@ -72,7 +72,7 @@ if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_Cabang_Haru
 } else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_DP_Min20'), 0, FailureHandling.OPTIONAL)) {
     Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
 } else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_Uang_Muka_20dariOTR'), 0, FailureHandling.OPTIONAL)) {
-    Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
+    Mobile.verifyElementVisible(null, 0, FailureHandling.STOP_ON_FAILURE)
 } else {
     Mobile.tap(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0)
 }

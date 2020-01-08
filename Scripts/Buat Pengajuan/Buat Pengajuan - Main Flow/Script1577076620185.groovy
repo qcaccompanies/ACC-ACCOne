@@ -83,15 +83,15 @@ switch ('Status') {
     case 'Fail':
         break
         
-        if (Detail.toString() == 'Nominal Tidak Boleh Kosong') {
+        if (Detail.toString() == 'Cabang Harus Diisi') {
             Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
         }
         
-        if (Detail.toString() == 'Bank Tidak Boleh Kosong') {
+        if (Detail.toString() == 'DP Harus Diisi') {
             Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
         }
         
-        if (Detail.toString() == 'Tanggal Tidak Boleh Kosong') {
+        if (Detail.toString() == 'Uang Harus 20% Dari OTR') {
             Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
         }
 }
