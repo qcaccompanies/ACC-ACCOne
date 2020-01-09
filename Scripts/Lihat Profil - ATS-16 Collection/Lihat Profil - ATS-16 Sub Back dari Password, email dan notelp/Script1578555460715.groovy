@@ -17,7 +17,5 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless\\acc.one (1).apk', false)
 
-Mobile.tap(findTestObject('Home/Icon Akun'), 0)
-
-Mobile.tap(findTestObject('Akun/Label Lihat Profil'), 0)
+Mobile.tap(findTestObject(null), 0)
 
