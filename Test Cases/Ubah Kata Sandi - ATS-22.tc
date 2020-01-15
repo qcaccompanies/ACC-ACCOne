@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Ubah Kata Sandi - ATS-22</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5d78fde-1ae6-4157-beca-320e57768477</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cf9004d6-19fb-49bd-b7e1-266e0004233b</id>
+      <masked>false</masked>
+      <name>oldPassword</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e55f237f-37b0-44dc-b824-0166ecb50721</id>
+      <masked>false</masked>
+      <name>newPassword</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>debba6d4-c87d-45a2-9033-aa3e6701bc08</id>
+      <masked>false</masked>
+      <name>confNewPassword</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b280ea2a-598c-4aa1-b0e6-c519a7b0999a</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>

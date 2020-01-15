@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Ubah Kata Sandi - ATS-22</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>ee4137cf-3c34-4788-a3db-94efe41688c8</testSuiteGuid>
+   <testCaseLink>
+      <guid>9bb4617b-96d8-4af4-8a89-a3e8437c933b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Ubah Kata Sandi - ATS-22</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>df2cf480-ff81-4e7a-8806-b1510b3f79e7</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>8</value>
+         </iterationEntity>
+         <testDataId>Data Files/Ubah Kata Sandi - ATS-22</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>df2cf480-ff81-4e7a-8806-b1510b3f79e7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>oldPassword</value>
+         <variableId>cf9004d6-19fb-49bd-b7e1-266e0004233b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>df2cf480-ff81-4e7a-8806-b1510b3f79e7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newPassword</value>
+         <variableId>e55f237f-37b0-44dc-b824-0166ecb50721</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>df2cf480-ff81-4e7a-8806-b1510b3f79e7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>confNewPassword</value>
+         <variableId>debba6d4-c87d-45a2-9033-aa3e6701bc08</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>df2cf480-ff81-4e7a-8806-b1510b3f79e7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>b280ea2a-598c-4aa1-b0e6-c519a7b0999a</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
