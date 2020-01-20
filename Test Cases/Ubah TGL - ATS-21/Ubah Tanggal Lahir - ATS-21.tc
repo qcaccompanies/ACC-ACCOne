@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Ubah Tanggal Lahir - ATS-21</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>09345c50-d504-4a64-ace1-0b630388f7ba</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c94b2b23-0a6b-44b6-8442-81c33335bcf2</id>
+      <masked>false</masked>
+      <name>varTahun</name>
+   </variable>
+</TestCaseEntity>
