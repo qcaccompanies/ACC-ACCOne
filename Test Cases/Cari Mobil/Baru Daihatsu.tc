@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Baru Daihatsu</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2035f591-249d-4cf1-a1f0-7173650abde7</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ecbadb78-e26f-44bb-9256-004e3330e37c</id>
+      <masked>false</masked>
+      <name>namaMobilDaihatsu</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>68fa27e4-b437-47e3-a468-145f2a113160</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>

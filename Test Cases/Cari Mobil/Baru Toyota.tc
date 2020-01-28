@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Baru Toyota</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2fe363ea-0bbc-46f5-a91a-aa3c2906a748</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>464df041-32d7-45ee-9a48-316b43f05f04</id>
+      <masked>false</masked>
+      <name>namaMobilToyota</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1aeed532-fe54-4476-a860-f0ff23ea316b</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>
