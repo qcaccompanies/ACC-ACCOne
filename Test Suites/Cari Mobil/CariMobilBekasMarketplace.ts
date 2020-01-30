@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>CariMobilBekasMarketplace</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>0ea1b90e-850c-402f-9862-95985071f732</testSuiteGuid>
+   <testCaseLink>
+      <guid>d3864f93-2248-466d-ac3f-f9514ef9a9bd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cari Mobil/Bekas Marketplace</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>71135037-8744-4eae-a073-fe17383ddf85</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Cari Mobil/cariMobilBekasMarketplace</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>71135037-8744-4eae-a073-fe17383ddf85</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>7db92c28-f8dc-4df7-8cab-18d52252ffc8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>71135037-8744-4eae-a073-fe17383ddf85</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>namaMobil</value>
+         <variableId>ec56926b-f04b-4f0d-89a7-dc23760d166a</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

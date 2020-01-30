@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Baru</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8e031e29-4a1a-467b-9ec0-d6ac41b7f107</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9dba300b-76a2-426f-b505-140e4ad88567</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>54e9f205-06bf-4bbb-8cb4-a5b413dcd1cf</id>
+      <masked>false</masked>
+      <name>namaMobilBaru</name>
+   </variable>
+</TestCaseEntity>

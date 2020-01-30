@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Search Promo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b5af9880-dbea-4e28-a847-4637a4b7eb97</testCaseGuid>
+   <variable>
+      <defaultValue>'Passed'</defaultValue>
+      <description></description>
+      <id>b32f088b-3b37-40ce-893f-e9ea23f621ca</id>
+      <masked>false</masked>
+      <name>Search</name>
+   </variable>
+</TestCaseEntity>
