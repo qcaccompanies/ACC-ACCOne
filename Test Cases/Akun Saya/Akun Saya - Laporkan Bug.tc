@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Akun Saya - Laporkan Bug</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ac4629fa-128d-4c6f-a567-de75d457a4d5</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f531922c-c2c0-4d5f-8c72-3584683418ef</id>
+      <masked>false</masked>
+      <name>bug</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f97e55df-7c2a-43d7-b3e7-aa34ee0729d6</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>

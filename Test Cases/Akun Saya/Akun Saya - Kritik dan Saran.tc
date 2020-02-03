@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Akun Saya - Kritik dan Saran</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe01e601-1996-4e41-995e-9f1f43b2c8e8</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>33b7afea-33f2-4c7e-b028-371222e920df</id>
+      <masked>false</masked>
+      <name>kritikSaran</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6b66acae-d008-4e4d-88a8-7206349a2ac0</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>
