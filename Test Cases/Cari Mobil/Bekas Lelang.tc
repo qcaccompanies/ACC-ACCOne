@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Bekas Lelang</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>265bf12b-7676-4b5c-9bf0-2dcb7d41f3da</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a5ecd922-193a-42ad-a736-1ea855cd79a2</id>
+      <masked>false</masked>
+      <name>lokasi</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f9537de1-f8e4-4838-9a02-c94809cd380a</id>
+      <masked>false</masked>
+      <name>tanggalLelang</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>46a006d2-e886-4a21-9b64-00ef1bc50a82</id>
+      <masked>false</masked>
+      <name>namaEvent</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f2a8318a-7822-4ee3-9602-aa07379acf34</id>
+      <masked>false</masked>
+      <name>namaMobil</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b81659e4-335c-4a1d-a28f-3c6f3e634608</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>

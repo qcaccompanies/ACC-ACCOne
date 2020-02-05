@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>cariMobilRental</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>3b6289d4-e3e0-48d3-b709-2f1a87615dcd</dataFileGUID>
+   <dataSourceUrl>D:\MY WORLD\KULIAH (TUGAS)\TGS SEMS. 8\INTERNSHIT\Task ACC ONE\ACC-ACCOne\cariMobilRental.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Sheet1</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

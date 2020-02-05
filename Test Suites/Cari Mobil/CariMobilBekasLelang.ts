@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>CariMobilBekasLelang</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>d2c358f6-2c12-4997-b94d-cdbafa88a0b4</testSuiteGuid>
+   <testCaseLink>
+      <guid>82331263-3050-4d11-8f67-39cbdf8fdc75</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cari Mobil/Bekas Lelang</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b0231d8b-0ef6-4f2c-a5d9-1236b009217a</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value>5</value>
+         </iterationEntity>
+         <testDataId>Data Files/Cari Mobil/cariMobilBekasLelang</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>b0231d8b-0ef6-4f2c-a5d9-1236b009217a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>lokasi</value>
+         <variableId>a5ecd922-193a-42ad-a736-1ea855cd79a2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b0231d8b-0ef6-4f2c-a5d9-1236b009217a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>tanggalLelang</value>
+         <variableId>f9537de1-f8e4-4838-9a02-c94809cd380a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b0231d8b-0ef6-4f2c-a5d9-1236b009217a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>namaEvent</value>
+         <variableId>46a006d2-e886-4a21-9b64-00ef1bc50a82</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b0231d8b-0ef6-4f2c-a5d9-1236b009217a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>namaMobil</value>
+         <variableId>f2a8318a-7822-4ee3-9602-aa07379acf34</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b0231d8b-0ef6-4f2c-a5d9-1236b009217a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>b81659e4-335c-4a1d-a28f-3c6f3e634608</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

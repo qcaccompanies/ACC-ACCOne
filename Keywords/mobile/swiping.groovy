@@ -3,7 +3,7 @@ package mobile
 import org.openqa.selenium.Point
 import org.openqa.selenium.remote.RemoteWebElement
 
-//import com.detroitlabs.katalonmobileutil.testobject.XPathBuilder 
+//import com.detroitlabs.katalonmobileutil.testobject.XPathBuilder
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 
