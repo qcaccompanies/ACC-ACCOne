@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>4c31a6c4-5a16-446b-b820-910ea8e8005a</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>2</value>
          </iterationEntity>
          <testDataId>Data Files/Cari Mobil/cariMobilRental</testDataId>
       </testDataLink>
