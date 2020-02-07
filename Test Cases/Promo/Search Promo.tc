@@ -6,10 +6,17 @@
    <comment></comment>
    <testCaseGuid>b5af9880-dbea-4e28-a847-4637a4b7eb97</testCaseGuid>
    <variable>
-      <defaultValue>'Passed'</defaultValue>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>69e8c905-3a5b-4dae-ab5d-33d327044119</id>
+      <masked>false</masked>
+      <name>namaPromo</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>b32f088b-3b37-40ce-893f-e9ea23f621ca</id>
       <masked>false</masked>
-      <name>Search</name>
+      <name>condition</name>
    </variable>
 </TestCaseEntity>
