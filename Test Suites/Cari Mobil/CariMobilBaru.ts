@@ -36,6 +36,18 @@
          <value>namaMobilBaru</value>
          <variableId>54e9f205-06bf-4bbb-8cb4-a5b413dcd1cf</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>f60b93b9-599c-46ab-902c-d36d33ca57f5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>spesific</value>
+         <variableId>83f1cf5b-0723-4c45-a3df-59e4a3a3ec72</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f60b93b9-599c-46ab-902c-d36d33ca57f5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>paket</value>
+         <variableId>dc2361a2-674a-48f1-9ea4-7b86e632f2bf</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>cce2877e-2a75-4b5e-bbbe-5f56d07e65f4</guid>

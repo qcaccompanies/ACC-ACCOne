@@ -32,6 +32,16 @@ Mobile.tap(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), 0)
 
 Mobile.tapAtPosition(622, 1230)
 
+if (paket == 'yes') {
+    Mobile.tap(findTestObject('Cari Mobil/Baru/android.view.View0 - Paket'), 0)
+} else if (paket == 'no') {
+    Mobile.tap(findTestObject('Cari Mobil/Baru/android.view.View0 - Non Paket'), 0)
+}
+
+Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+
 if (condition == 'passed') {
     Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
 } else {

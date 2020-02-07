@@ -19,4 +19,18 @@
       <masked>false</masked>
       <name>namaMobilBaru</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>83f1cf5b-0723-4c45-a3df-59e4a3a3ec72</id>
+      <masked>false</masked>
+      <name>spesific</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dc2361a2-674a-48f1-9ea4-7b86e632f2bf</id>
+      <masked>false</masked>
+      <name>paket</name>
+   </variable>
 </TestCaseEntity>
