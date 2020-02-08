@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Detail Kendaraan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cae3648d-a94b-421d-a6b3-c0d60b62f6b9</testCaseGuid>
+   <variable>
+      <defaultValue>'DAIHATSU'</defaultValue>
+      <description></description>
+      <id>86a743b9-1a1d-43ab-b741-7e170cdfdbe3</id>
+      <masked>false</masked>
+      <name>Brand</name>
+   </variable>
+   <variable>
+      <defaultValue>'AYLA'</defaultValue>
+      <description></description>
+      <id>69fb34d5-8147-4b9d-9dfa-05b6285912b8</id>
+      <masked>false</masked>
+      <name>Type</name>
+   </variable>
+   <variable>
+      <defaultValue>'T: 1.0 M A/T NEW'</defaultValue>
+      <description></description>
+      <id>1dac46db-c38b-451c-8b30-ffbc42f6ca96</id>
+      <masked>false</masked>
+      <name>Model</name>
+   </variable>
+   <variable>
+      <defaultValue>'2018'</defaultValue>
+      <description></description>
+      <id>f08aa093-97f6-4e97-af39-2837a92e570c</id>
+      <masked>false</masked>
+      <name>Tahun</name>
+   </variable>
+</TestCaseEntity>

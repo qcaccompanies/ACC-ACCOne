@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Mobile Bekas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9c717011-6484-4d5f-b228-ba3167aaf2a8</testCaseGuid>
+   <variable>
+      <defaultValue>'DAIHATSU'</defaultValue>
+      <description></description>
+      <id>b00e81de-5c4d-4504-8619-9c36ebb2e854</id>
+      <masked>false</masked>
+      <name>Brand</name>
+   </variable>
+   <variable>
+      <defaultValue>'AYLA'</defaultValue>
+      <description></description>
+      <id>d7ee60fe-976c-450b-9299-cd026433cfce</id>
+      <masked>false</masked>
+      <name>Type</name>
+   </variable>
+   <variable>
+      <defaultValue>'T:1.0 M A/T NEW'</defaultValue>
+      <description></description>
+      <id>89490b47-140c-4998-b405-8289348dfc09</id>
+      <masked>false</masked>
+      <name>Model</name>
+   </variable>
+   <variable>
+      <defaultValue>'2019'</defaultValue>
+      <description></description>
+      <id>602f63d0-228d-4f9d-b3d7-e7bb86f0c657</id>
+      <masked>false</masked>
+      <name>Tahun</name>
+   </variable>
+   <variable>
+      <defaultValue>'Jakarta'</defaultValue>
+      <description></description>
+      <id>63c65852-f4c7-4bce-aa51-fb99e066f6dd</id>
+      <masked>false</masked>
+      <name>Lokasi</name>
+   </variable>
+   <variable>
+      <defaultValue>'Baru'</defaultValue>
+      <description></description>
+      <id>219c7881-8cf1-41e4-9d5a-28a801f446a5</id>
+      <masked>false</masked>
+      <name>JenisMobil</name>
+   </variable>
+</TestCaseEntity>
