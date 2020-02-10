@@ -20,11 +20,15 @@ Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\
 
 Mobile.tap(findTestObject('Promo/LihatSemua'), 0)
 
-if (Search == 'Passed') {
-    Mobile.setText(findTestObject('Promo/SearchPromo'), 'BPKB', 0)
+Mobile.setText(findTestObject('Promo/SearchPromo'), namaPromo, 0)
 
-    Mobile.tapAtPosition(360, 370)
-} else if (Search == 'Failed') {
-    Mobile.setText(findTestObject('Promo/SearchPromo'), 'lalala', 0)
+if (condition == 'passed') {
+    Mobile.verifyElementNotVisible(findTestObject('Promo/alertPromoTidakDitemukan'), 0, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tap(findTestObject('Promo/tapObjectCariPromo', [('text') : namaPromo]), 0)
+
+    Mobile.checkElement(findTestObject('Promo/SyaratDanKetentuan'), 0)
+} else if (condition == 'failed') {
+    Mobile.verifyElementVisible(findTestObject('Promo/alertPromoTidakDitemukan'), 0, FailureHandling.STOP_ON_FAILURE)
 }
 
