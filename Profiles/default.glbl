@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<GlobalVariableEntities>
-   <description></description>
-   <name>default</name>
-   <tag></tag>
-   <defaultProfile>true</defaultProfile>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'acc.one.apk'</initValue>
-      <name>ApkName</name>
-   </GlobalVariableEntity>
-</GlobalVariableEntities>
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
@@ -19,4 +5,3 @@
    <tag></tag>
    <defaultProfile>true</defaultProfile>
 </GlobalVariableEntities>
->>>>>>> branch 'master' of https://github.com/qcaccompanies/ACC-Seamless.git
