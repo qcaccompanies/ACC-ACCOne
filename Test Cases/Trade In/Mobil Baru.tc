@@ -6,35 +6,35 @@
    <comment></comment>
    <testCaseGuid>c5563f29-b9f5-4dac-af1d-b6f1ec965413</testCaseGuid>
    <variable>
-      <defaultValue>'DAIHATSU'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>570a2ecb-dfcd-40ce-bba5-5961846ebd4a</id>
       <masked>false</masked>
       <name>BrandTrade</name>
    </variable>
    <variable>
-      <defaultValue>'NEW AYLA'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>a290eecd-7e30-4c31-9478-c8b6f92ee148</id>
       <masked>false</masked>
       <name>TypeTrade</name>
    </variable>
    <variable>
-      <defaultValue>'T:1.0 X DLX M/T'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>044d460f-2eca-45f6-ab36-def1390626c9</id>
       <masked>false</masked>
       <name>ModelTrade</name>
    </variable>
    <variable>
-      <defaultValue>'2019'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>271d612b-22c4-40a0-ba25-46cc99c77d8f</id>
       <masked>false</masked>
       <name>TahunTrade</name>
    </variable>
    <variable>
-      <defaultValue>'Jakarta'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>bb8b8cef-276b-4a31-80bb-eb3d89a59533</id>
       <masked>false</masked>

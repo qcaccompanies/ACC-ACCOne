@@ -20,7 +20,7 @@
       <name>Type</name>
    </variable>
    <variable>
-      <defaultValue>'T: 1.0 M A/T NEW'</defaultValue>
+      <defaultValue>'T:1.0 M A/T NEW'</defaultValue>
       <description></description>
       <id>1dac46db-c38b-451c-8b30-ffbc42f6ca96</id>
       <masked>false</masked>

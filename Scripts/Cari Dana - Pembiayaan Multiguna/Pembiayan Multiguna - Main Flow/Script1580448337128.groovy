@@ -18,5 +18,5 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Cari Dana - Pembiayaan Multiguna/Start_Application'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Cari Dana - Pembiayaan Multiguna/Detail Kendaraan'), [('Brand') : 'DAIHATSU', ('Type') : 'AYLA'
-        , ('Model') : 'T: 1.0 M A/T NEW', ('Tahun') : '2018'], FailureHandling.STOP_ON_FAILURE)
+        , ('Model') : 'T:1.0 M A/T NEW', ('Tahun') : '2018'], FailureHandling.STOP_ON_FAILURE)
 

@@ -21,18 +21,18 @@ Mobile.tap(findTestObject('Trade In/Cari_Dana_BTN'), 0)
 
 Mobile.tap(findTestObject('Trade In/Trade_In_BTN'), 0)
 
-WebUI.callTestCase(findTestCase('Trade In/Detail Kendaraan'), [('Brand') : 'DAIHATSU', ('Type') : 'AYLA', ('Model') : 'T:1.0 M A/T NEW'
-        , ('Tahun') : '2018', ('Lokasi') : 'Jakarta'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Trade In/Detail Kendaraan'), [('Brand') : Brand, ('Type') : Type, ('Model') : Model, ('Tahun') : Tahun
+        , ('Lokasi') : Lokasi], FailureHandling.STOP_ON_FAILURE)
 
 if (JenisMobil == 'Baru') {
     Mobile.tap(findTestObject('Trade In/NewCar'), 0)
 
-    WebUI.callTestCase(findTestCase('Trade In/Mobil Baru'), [('BrandTrade') : 'DAIHATSU', ('TypeTrade') : 'NEW AYLA', ('ModelTrade') : 'T:1.0 X DLX M/T'
-            , ('TahunTrade') : '2019', ('LokasiTrade') : 'Jakarta'], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Trade In/Mobil Baru'), [('BrandTrade') : BrandTrade, ('TypeTrade') : TypeTrade, ('ModelTrade') : ModelTrade
+            , ('TahunTrade') : TahunTrade, ('LokasiTrade') : LokasiTrade], FailureHandling.STOP_ON_FAILURE)
 } else if (JenisMobil == 'Bekas') {
     Mobile.tap(findTestObject('Trade In/UsedCar'), 0)
 
-    WebUI.callTestCase(findTestCase('Trade In/Mobile Bekas'), [('Brand') : 'DAIHATSU', ('Type') : 'AYLA', ('Model') : 'T:1.0 M A/T NEW'
-            , ('Tahun') : '2019', ('Lokasi') : 'Jakarta', ('JenisMobil') : 'Baru'], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Trade In/Mobile Bekas'), [('BrandTrade') : BrandTrade, ('TypeTrade') : TypeTrade, ('ModelTrade') : ModelTrade
+            , ('TahunTrade') : TahunTrade, ('LokasiTrade') : LokasiTrade], FailureHandling.STOP_ON_FAILURE)
 }
 
