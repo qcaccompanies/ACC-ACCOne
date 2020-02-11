@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Lupa Kata Sandi</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce78d217-e65c-4961-b02e-ece895e49fc0</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8618a408-f2ec-45b9-a596-3bd14a535701</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e3d86e84-e565-4f9a-9c4c-04aeb6586898</id>
+      <masked>false</masked>
+      <name>kirimOTPke</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cfa5fa1e-bba7-4fbe-b7da-af94d7adcbd1</id>
+      <masked>false</masked>
+      <name>OTP</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>af3bb755-91d8-45a9-8920-9464234b0464</id>
+      <masked>false</masked>
+      <name>kataSandi</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b780c593-646f-4c43-9c34-8ecbd577b8ac</id>
+      <masked>false</masked>
+      <name>kataSandi2</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>967fb37b-e330-4d9b-bdb5-14db094c322a</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>
