@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Lihat Status Pengajuan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b61ddfb2-2eaa-4335-bb50-1607c7a4573e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9f06ddb3-4be4-4713-be8f-80ee08bea308</id>
+      <masked>false</masked>
+      <name>namaMobil</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b708b696-daea-41b9-ae22-6505a8925d87</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>
