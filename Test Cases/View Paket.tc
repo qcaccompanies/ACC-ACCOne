@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>View Paket</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8aa61dd2-8827-4e25-8994-f3f9c96b3bfb</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6d515638-dffe-4359-896f-7ead42cb60e6</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>
