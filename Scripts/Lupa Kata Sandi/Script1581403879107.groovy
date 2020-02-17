@@ -20,7 +20,7 @@ Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Lupa Kata Sandi/txtMasukatauDaftar'), 0)
+Mobile.tapAtPosition(443, 229)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -34,83 +34,87 @@ Mobile.setText(findTestObject('Lupa Kata Sandi/editTextEmail'), email, 0)
 
 Mobile.tap(findTestObject('Lupa Kata Sandi/btnKonfirmasi'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-if (kirimOTPke == 'email') {
-    Mobile.tap(findTestObject('Lupa Kata Sandi/kirimKeEmail'), 0)
+if (condition == 'emailSalah') {
+    Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertEmailSalah'), 0, FailureHandling.STOP_ON_FAILURE)
 } else {
-    Mobile.tap(findTestObject('Lupa Kata Sandi/kirimSMS'), 0)
-}
-
-if (condition == 'kodeOTPsalah') {
-    Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
-
-    Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
-
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertKodeOTPSalah'), 0)
-} else if (condition == 'tunggu1Menit') {
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+    if (kirimOTPke == 'email') {
+        Mobile.tap(findTestObject('Lupa Kata Sandi/kirimKeEmail'), 0)
+    } else {
+        Mobile.tap(findTestObject('Lupa Kata Sandi/kirimSMS'), 0)
+    }
+    
+    if (condition == 'kodeOTPsalah') {
+        Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
 
-    Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
+        Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
 
-    Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
+        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertKodeOTPSalah'), 0)
+    } else if (condition == 'tunggu1Menit') {
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
+        Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
 
-    Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
+        Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
 
-    Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
+        Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
 
-    Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertTunggu1Menit'), 0)
-} else {
-    Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
+        Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
 
-    Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
+        Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
 
-    Mobile.verifyElementNotVisible(findTestObject('Lupa Kata Sandi/alertKodeOTPSalah'), 0)
+        Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
 
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertTunggu1Menit'), 0)
+    } else {
+        Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.setText(findTestObject('Lupa Kata Sandi/editTextSandi1'), kataSandi, 0)
+        Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
 
-    Mobile.setText(findTestObject('Lupa Kata Sandi/editTextSandi2'), kataSandi2, 0)
+        Mobile.verifyElementNotVisible(findTestObject('Lupa Kata Sandi/alertKodeOTPSalah'), 0)
 
-    if (condition == 'minimalAda1Angka') {
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertFormatBelumSesuai'), 0)
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+        Mobile.setText(findTestObject('Lupa Kata Sandi/editTextSandi1'), kataSandi, 0)
 
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin1Angka'), 0)
-    } else if (condition == 'minimalAda1Huruf') {
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertFormatBelumSesuai'), 0)
+        Mobile.setText(findTestObject('Lupa Kata Sandi/editTextSandi2'), kataSandi2, 0)
 
-        Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+        if (condition == 'minimalAda1Angka') {
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertFormatBelumSesuai'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin1Huruf'), 0)
-    } else if (condition == 'passwordHarusDiisi') {
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertPasswordHarusDiisi'), 0)
+            Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
 
-        Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin1Angka'), 0)
+        } else if (condition == 'minimalAda1Huruf') {
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertFormatBelumSesuai'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin7KarFinal'), 0)
-    } else if (condition == 'harus7Karakter') {
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin7KarBiasa'), 0)
+            Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
 
-        Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin1Huruf'), 0)
+        } else if (condition == 'passwordHarusDiisi') {
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertPasswordHarusDiisi'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin7KarFinal'), 0)
-    } else if (condition == 'passwordTidakSesuai') {
-        Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+            Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertPasswordTidakSesuai'), 0)
-    } else if (condition == 'passed') {
-        Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin7KarFinal'), 0)
+        } else if (condition == 'harus7Karakter') {
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin7KarBiasa'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertPasswordBerhasilDiganti'), 0)
+            Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin7KarFinal'), 0)
+        } else if (condition == 'passwordTidakSesuai') {
+            Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertPasswordTidakSesuai'), 0)
+        } else if (condition == 'passed') {
+            Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertPasswordBerhasilDiganti'), 0)
+        }
     }
 }
 

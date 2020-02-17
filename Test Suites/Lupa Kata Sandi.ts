@@ -20,7 +20,7 @@
          <id>c49b8403-29e9-4a42-89ee-4ec4e86eb0e8</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>6</value>
+            <value>10</value>
          </iterationEntity>
          <testDataId>Data Files/Lupa Kata Sandi</testDataId>
       </testDataLink>
