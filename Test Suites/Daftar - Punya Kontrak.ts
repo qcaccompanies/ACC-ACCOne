@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Daftar - Punya Kontrak</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>f4fb24b9-f97f-4bdf-a832-32fd480ee831</testSuiteGuid>
+   <testCaseLink>
+      <guid>26893777-786d-4b18-b6fc-07b5f7393cfe</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Daftar - Punya Kontrak/Daftar - Tidak Ubah Nomor HP</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>18f214a0-add4-438d-a9d7-ed2638a78a9c</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Daftar - Punya Kontrak</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>18f214a0-add4-438d-a9d7-ed2638a78a9c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>noPolisi</value>
+         <variableId>f135db81-c547-4832-8ed4-2ca8fa611bcf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>18f214a0-add4-438d-a9d7-ed2638a78a9c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>digitTelp</value>
+         <variableId>8e09fcbe-a57d-44d2-ae25-404b7e5d53b0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>18f214a0-add4-438d-a9d7-ed2638a78a9c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>namaLengkap</value>
+         <variableId>1e4888f4-d306-456a-923f-5835bb5e5827</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>18f214a0-add4-438d-a9d7-ed2638a78a9c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>alamatEmail</value>
+         <variableId>eb525cc8-8b58-4ac7-b1b4-1d7d30295edc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>18f214a0-add4-438d-a9d7-ed2638a78a9c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jenisKelamin</value>
+         <variableId>f085f96d-8ea6-4800-9707-821e1f356967</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>18f214a0-add4-438d-a9d7-ed2638a78a9c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>52cb6148-c42c-4b22-81e1-6167463c7470</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>18f214a0-add4-438d-a9d7-ed2638a78a9c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>confirmPassword</value>
+         <variableId>c042cda4-4e47-4de7-8abd-8a9d0caa357b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>18f214a0-add4-438d-a9d7-ed2638a78a9c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>1e140917-ccbd-476d-9d99-485383b57b38</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
