@@ -30,59 +30,67 @@ Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNoPolisi'), noPoli
 
 Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarNoPolisi'), 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/tapObject', [('text') : digitTelp]), 0)
-
-Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNamaLengkap'), namaLengkap, 0)
-
-if (condition == 'namaMin3Karakter') {
-    Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertNamaLengkapMinimal3KarakterdanMaksimal50Karakter'), 
-        0)
+if (condition == 'noPolisiTidakDapatDiproses') {
+    Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/alertKontrakNoPolisiTidakTerdaftar'), 0)
 } else {
-    Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextEmail'), alamatEmail, 0)
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/tapObject', [('text') : digitTelp]), 0)
 
-    if (condition == 'emailMasihKosong') {
-        not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+    Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), confirmPassword, 0)
+    Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNamaLengkap'), namaLengkap, 0)
 
-        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextPassword'), password, 0)
-
-        if (jenisKelamin == 'perempuan') {
-            Mobile.tap(findTestObject('Daftar - Punya Kontrak/perempuan'), 0)
-        } else {
-            Mobile.tap(findTestObject('Daftar - Punya Kontrak/lakilaki'), 0)
-        }
-        
-        Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertSilakanisiemail'), 0)
-    } else if (condition == 'formatEmailInvalid') {
-        Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatemailbelumsesuai'), 0)
-    } else if (condition == 'emailSudahTerdaftar') {
-        Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertEmailsudahdigunakan'), 0)
+    if (condition == 'namaMin3Karakter') {
+        Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertNamaLengkapMinimal3KarakterdanMaksimal50Karakter'), 
+            0)
     } else {
-        if (jenisKelamin == 'perempuan') {
-            Mobile.tap(findTestObject('Daftar - Punya Kontrak/perempuan'), 0)
-        } else {
-            Mobile.tap(findTestObject('Daftar - Punya Kontrak/lakilaki'), 0)
-        }
-        
-        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextPassword'), password, 0)
+        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextEmail'), alamatEmail, 0)
 
-        if (condition == 'kataSandiKosong') {
-            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertKataSandiHarusDiisi'), 0)
-        } else if (condition == 'passMin7Karakter') {
-            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertPasswordminimal7karakter'), 0)
-        } else if (condition == 'passMin1Huruf') {
-            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatbelumsesuai'), 0)
-        } else if (condition == 'passMin1Angka') {
-            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatbelumsesuai'), 0)
-        } else {
-        }
-        
-        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), confirmPassword, 0)
+        if (condition == 'emailMasihKosong') {
+            not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
 
-        not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+            Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), confirmPassword, 0)
+
+            Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextPassword'), password, 0)
+
+            if (jenisKelamin == 'perempuan') {
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/perempuan'), 0)
+            } else {
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/lakilaki'), 0)
+            }
+            
+            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertSilakanisiemail'), 0)
+        } else if (condition == 'formatEmailInvalid') {
+            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatemailbelumsesuai'), 0)
+        } else if (condition == 'emailSudahTerdaftar') {
+            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertEmailsudahdigunakan'), 0)
+        } else {
+            if (jenisKelamin == 'perempuan') {
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/perempuan'), 0)
+            } else {
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/lakilaki'), 0)
+            }
+            
+            Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextPassword'), password, 0)
+
+            if (condition == 'kataSandiKosong') {
+                Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertKataSandiHarusDiisi'), 0)
+            } else if (condition == 'passMin7Karakter') {
+                Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertPasswordminimal7karakter'), 0)
+            } else if (condition == 'passMin1Huruf') {
+                Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatbelumsesuai'), 0)
+            } else if (condition == 'passMin1Angka') {
+                Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatbelumsesuai'), 0)
+            } else {
+            }
+            
+            Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), confirmPassword, 0)
+
+            not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+
+            if (condition == 'passed') {
+                Mobile.verifyElementNotVisible(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+            }
+        }
     }
 }
 

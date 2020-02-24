@@ -18,45 +18,102 @@ import internal.GlobalVariable as GlobalVariable
 Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
     false)
 
+Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnMasukatauDaftar'), 0)
 
 Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftar'), 0)
 
 Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnPunyaKontrak'), 0)
 
-Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNoPolisi'), 'B2680RM', 0)
+Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNoPolisi'), noPolisi, 0)
 
 Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarNoPolisi'), 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnUbahnomorhandphone'), 0)
+if (condition == 'noPolisiTidakDapatDiproses') {
+    Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/alertKontrakNoPolisiTidakTerdaftar'), 0) //if (Mobile.verifyElementVisible(null, 0, FailureHandling.OPTIONAL)) {
+    //}
+} else {
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnUbahnomorhandphone'), 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/pickListDate'), 0)
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/pickListDate'), 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnOKdate'), 0)
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnOKdate'), 0)
 
-Mobile.setText(findTestObject('Daftar - Punya Kontrak/editText4DigitAngkaTerakhir'), '6866', 0)
+    if (Mobile.verifyElementVisible(null, 0, FailureHandling.OPTIONAL)) {
+        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editText4DigitAngkaTerakhir'), digitTerakhirKontrak, 0)
+    } else if (Mobile.verifyElementVisible(null, 0, FailureHandling.OPTIONAL)) {
+        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextMasukkanNilaiAngsuran'), nilaiAngsuran, 0)
+    } else {
+        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextTanggalJatuhTempo'), tglJatuhTempo, 0)
+    }
+    
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnVerifikasi'), 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnVerifikasi'), 0)
+    Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNoHPbaru'), noTelpBaru, 0)
 
-Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNoHPbaru'), '083116242603', 0)
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnKonfirmasi'), 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnKonfirmasi'), 0)
+    Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnOKnoHPtelahDiubah'), 0)
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnOKnoHPtelahDiubah'), 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/android.widget.EditText0 - B2680RM'), 0)
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/android.widget.EditText0 - B2680RM'), 0)
 
-Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNamaLengkap'), 'Trisna Jihan', 0)
+    Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNamaLengkap'), namaLengkap, 0)
 
-Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextEmail'), 'rizkaaa20@gmail.com', 0)
+    if (condition == 'namaMin3Karakter') {
+        Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertNamaLengkapMinimal3KarakterdanMaksimal50Karakter'), 
+            0)
+    } else {
+        Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextEmail'), alamatEmail, 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/perempuan'), 0)
+        if (condition == 'emailMasihKosong') {
+            not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/lakilaki'), 0)
+            Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), confirmPassword, 0)
 
-Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextPassword'), 'A123456', 0)
+            Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextPassword'), password, 0)
 
-Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), 'A123456', 0)
+            if (jenisKelamin == 'perempuan') {
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/perempuan'), 0)
+            } else {
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/lakilaki'), 0)
+            }
+            
+            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertSilakanisiemail'), 0)
+        } else if (condition == 'formatEmailInvalid') {
+            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatemailbelumsesuai'), 0)
+        } else if (condition == 'emailSudahTerdaftar') {
+            Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertEmailsudahdigunakan'), 0)
+        } else {
+            if (jenisKelamin == 'perempuan') {
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/perempuan'), 0)
+            } else {
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/lakilaki'), 0)
+            }
+            
+            Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextPassword'), password, 0)
 
-not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+            if (condition == 'kataSandiKosong') {
+                Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertKataSandiHarusDiisi'), 0)
+            } else if (condition == 'passMin7Karakter') {
+                Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertPasswordminimal7karakter'), 0)
+            } else if (condition == 'passMin1Huruf') {
+                Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatbelumsesuai'), 0)
+            } else if (condition == 'passMin1Angka') {
+                Mobile.verifyElementExist(findTestObject('Daftar - Punya Kontrak/alertFormatbelumsesuai'), 0)
+            } else {
+            }
+            
+            Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), confirmPassword, 0)
+
+            not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+
+            if (condition == 'passed') {
+                Mobile.verifyElementNotVisible(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+            }
+        }
+    }
+}
 

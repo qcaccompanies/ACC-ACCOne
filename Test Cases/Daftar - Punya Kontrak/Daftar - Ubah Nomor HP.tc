@@ -15,16 +15,23 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>5a5eb11f-bac8-457a-b84e-45e68b90eb5c</id>
+      <id>9e0f2e04-511d-41ad-9e81-58e1747443f1</id>
       <masked>false</masked>
-      <name>calonNomorTelepon</name>
+      <name>noTelpBaru</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>193b275f-8bb9-4920-9cc0-b036f31319af</id>
       <masked>false</masked>
-      <name>tanggal</name>
+      <name>tglLahir</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>759088fe-84e7-49cd-8df6-5b4153f63077</id>
+      <masked>false</masked>
+      <name>tglJatuhTempo</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
@@ -32,6 +39,13 @@
       <id>a8335c75-4476-44f1-a2e9-e092a7c55182</id>
       <masked>false</masked>
       <name>digitTerakhirKontrak</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>194cb3b3-c679-41bb-8c92-b26a19bbdcad</id>
+      <masked>false</masked>
+      <name>nilaiAngsuran</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>

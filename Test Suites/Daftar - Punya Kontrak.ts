@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>18f214a0-add4-438d-a9d7-ed2638a78a9c</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-2</value>
          </iterationEntity>
          <testDataId>Data Files/Daftar - Punya Kontrak</testDataId>
       </testDataLink>
