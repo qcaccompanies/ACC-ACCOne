@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>26893777-786d-4b18-b6fc-07b5f7393cfe</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Daftar - Punya Kontrak/Daftar - Tidak Ubah Nomor HP</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -71,6 +71,93 @@
          <type>DATA_COLUMN</type>
          <value>condition</value>
          <variableId>1e140917-ccbd-476d-9d99-485383b57b38</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>51c36cb5-6040-4c05-aace-ee9db0f5c352</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Daftar - Punya Kontrak/Daftar - Ubah Nomor HP</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b41801c3-9855-487e-9f61-14e10c8fb876</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Daftar - Punya Kontrak (Ubah No HP)</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>noPolisi</value>
+         <variableId>e48e4a14-2cc8-4920-b36f-197462e8877d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>noTelpBaru</value>
+         <variableId>9e0f2e04-511d-41ad-9e81-58e1747443f1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>tglLahir</value>
+         <variableId>193b275f-8bb9-4920-9cc0-b036f31319af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>tglJatuhTempo</value>
+         <variableId>759088fe-84e7-49cd-8df6-5b4153f63077</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>digitTerakhirKontrak</value>
+         <variableId>a8335c75-4476-44f1-a2e9-e092a7c55182</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nilaiAngsuran</value>
+         <variableId>194cb3b3-c679-41bb-8c92-b26a19bbdcad</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>namaLengkap</value>
+         <variableId>076fe9b8-ac97-4066-bc32-a9c136ca29e3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>alamatEmail</value>
+         <variableId>0b7f03f2-aa70-46d1-ab62-bd9c67f3961a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>jenisKelamin</value>
+         <variableId>da9bd01a-e29b-4da1-b7ff-d58cc930f67d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>d3ea80fe-eff5-42e4-be49-ef7b433732e7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>confirmPassword</value>
+         <variableId>d577749b-8af8-4bf4-bc31-6589d0edb9cb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b41801c3-9855-487e-9f61-14e10c8fb876</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>6474bf83-2082-4d18-b95e-4c82b86eca30</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

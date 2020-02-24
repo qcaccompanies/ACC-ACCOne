@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Daftar - Punya Kontrak (Ubah No HP)</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>da6f741a-df8e-48a1-9024-728fc8849717</dataFileGUID>
+   <dataSourceUrl>D:\MY WORLD\KULIAH (TUGAS)\TGS SEMS. 8\INTERNSHIT\Task ACC ONE\ACC-ACCOne\Daftar - Punya Kontrak.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>ubah no hp</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
