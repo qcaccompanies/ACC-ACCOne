@@ -31,8 +31,8 @@ Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNoPolisi'), noPoli
 Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarNoPolisi'), 0)
 
 if (condition == 'noPolisiTidakDapatDiproses') {
-    Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/alertKontrakNoPolisiTidakTerdaftar'), 0) //if (Mobile.verifyElementVisible(null, 0, FailureHandling.OPTIONAL)) {
-    //}
+    Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/alertKontrakNoPolisiTidakTerdaftar'), 0 //if (Mobile.verifyElementVisible(null, 0, FailureHandling.OPTIONAL)) {
+        ) //}
 } else {
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnUbahnomorhandphone'), 0)
 
@@ -40,9 +40,10 @@ if (condition == 'noPolisiTidakDapatDiproses') {
 
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnOKdate'), 0)
 
-    if (Mobile.verifyElementVisible(null, 0, FailureHandling.OPTIONAL)) {
+    if (Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/tapObject', [('text') : 'Masukkan 4 angka terakhir']), 
+        0, FailureHandling.OPTIONAL)) {
         Mobile.setText(findTestObject('Daftar - Punya Kontrak/editText4DigitAngkaTerakhir'), digitTerakhirKontrak, 0)
-    } else if (Mobile.verifyElementVisible(null, 0, FailureHandling.OPTIONAL)) {
+    } else if (Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/editTextMasukkanNilaiAngsuran'), 0, FailureHandling.OPTIONAL)) {
         Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextMasukkanNilaiAngsuran'), nilaiAngsuran, 0)
     } else {
         Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextTanggalJatuhTempo'), tglJatuhTempo, 0)
