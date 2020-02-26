@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Baru Campur</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>74193ebf-d1e1-4349-8bfe-3c9922d078c1</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0ef3771f-6080-4359-80e1-991e0385a969</id>
+      <masked>false</masked>
+      <name>namaMobil</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a3713f43-c6a4-406b-84f4-e67c499399fd</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6608d230-60f1-4a16-8b73-2369bf800488</id>
+      <masked>false</masked>
+      <name>spesific</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0c0b0e49-7d4d-4dd1-bf2b-e524e839c6cb</id>
+      <masked>false</masked>
+      <name>paket</name>
+   </variable>
+</TestCaseEntity>

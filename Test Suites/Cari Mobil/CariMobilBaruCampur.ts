@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>CariMobilBaruCampur</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>95736f4a-f669-4383-81a8-bb354081a6ef</testSuiteGuid>
+   <testCaseLink>
+      <guid>9ca89b62-d662-4d41-9442-a66cf3a731a8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cari Mobil/Baru Campur</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>6b9ef5bd-a973-4986-98de-4a273308a538</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Cari Mobil/cariMobilBaruCampur</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>6b9ef5bd-a973-4986-98de-4a273308a538</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>namaMobil</value>
+         <variableId>0ef3771f-6080-4359-80e1-991e0385a969</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6b9ef5bd-a973-4986-98de-4a273308a538</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>a3713f43-c6a4-406b-84f4-e67c499399fd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6b9ef5bd-a973-4986-98de-4a273308a538</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>spesific</value>
+         <variableId>6608d230-60f1-4a16-8b73-2369bf800488</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6b9ef5bd-a973-4986-98de-4a273308a538</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>paket</value>
+         <variableId>0c0b0e49-7d4d-4dd1-bf2b-e524e839c6cb</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
