@@ -20,7 +20,9 @@ Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tapAtPosition(443, 229)
+not_run: Mobile.tapAtPosition(443, 229)
+
+Mobile.tapAtPosition(500, 250)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
