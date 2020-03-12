@@ -20,7 +20,7 @@
          <id>6b9ef5bd-a973-4986-98de-4a273308a538</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value></value>
+            <value>5-9</value>
          </iterationEntity>
          <testDataId>Data Files/Cari Mobil/cariMobilBaruCampur</testDataId>
       </testDataLink>
@@ -45,8 +45,14 @@
       <variableLink>
          <testDataLinkId>6b9ef5bd-a973-4986-98de-4a273308a538</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>paket</value>
-         <variableId>0c0b0e49-7d4d-4dd1-bf2b-e524e839c6cb</variableId>
+         <value>merek</value>
+         <variableId>4f88c614-38a7-496f-b1f9-47ab3c6fe173</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6b9ef5bd-a973-4986-98de-4a273308a538</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>brand</value>
+         <variableId>56d69b88-020c-4954-b75a-1a5a3fc6d958</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

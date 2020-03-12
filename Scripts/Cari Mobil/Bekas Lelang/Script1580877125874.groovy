@@ -28,7 +28,7 @@ Mobile.tap(findTestObject('Cari Mobil/Bekas Lelang/boxLelang'), 0)
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.swipe(660, 175, 70, 175)
+Mobile.swipe(660, 149, 70, 149)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 

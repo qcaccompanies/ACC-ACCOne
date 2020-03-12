@@ -29,8 +29,15 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>0c0b0e49-7d4d-4dd1-bf2b-e524e839c6cb</id>
+      <id>4f88c614-38a7-496f-b1f9-47ab3c6fe173</id>
       <masked>false</masked>
-      <name>paket</name>
+      <name>merek</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>56d69b88-020c-4954-b75a-1a5a3fc6d958</id>
+      <masked>false</masked>
+      <name>brand</name>
    </variable>
 </TestCaseEntity>

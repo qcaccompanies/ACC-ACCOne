@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one.apk', 
+Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
     false)
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
@@ -70,7 +70,7 @@ if (condition == 'emailSalah') {
 
         Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertTunggu1Menit'), 0)
     } else {
-        Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
+        Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
 
         Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
 
@@ -83,14 +83,10 @@ if (condition == 'emailSalah') {
         Mobile.setText(findTestObject('Lupa Kata Sandi/editTextSandi2'), kataSandi2, 0)
 
         if (condition == 'minimalAda1Angka') {
-            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertFormatBelumSesuai'), 0)
-
             Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
 
             Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin1Angka'), 0)
         } else if (condition == 'minimalAda1Huruf') {
-            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertFormatBelumSesuai'), 0)
-
             Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
 
             Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertMin1Huruf'), 0)
@@ -114,6 +110,10 @@ if (condition == 'emailSalah') {
             Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
 
             Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertPasswordBerhasilDiganti'), 0)
+        } else if (condition == 'passwordTidakSesuaiHarusDiisi') {
+            Mobile.tap(findTestObject('Lupa Kata Sandi/btnResetDanMasuk'), 0)
+
+            Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/Konfirmasi Kata Sandi harus diisi'), 0)
         }
     }
 }

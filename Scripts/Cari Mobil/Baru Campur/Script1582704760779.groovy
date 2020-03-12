@@ -24,7 +24,7 @@ Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/boxCariMobil'), 0)
 
 Mobile.tap(findTestObject('Cari Mobil/Baru/boxMobilBaru'), 0)
 
-if (condition == 'passed') {
+if (brand == '') {
     Mobile.tap(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), 0)
 
     Mobile.setText(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), namaMobil, 0)
@@ -33,86 +33,70 @@ if (condition == 'passed') {
 
     Mobile.tapAtPosition(622, 1230)
 
-    if (paket == 'yes') {
-        Mobile.tap(findTestObject('Cari Mobil/Baru/android.view.View0 - Paket'), 0)
-    } else if (paket == 'no') {
-        Mobile.tap(findTestObject('Cari Mobil/Baru/android.view.View0 - Non Paket'), 0)
-    }
-    
     Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
 
-    Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
-} else if (condition == 'failed') {
-    Mobile.tap(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), 0)
-
-    Mobile.setText(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), namaMobil, 0)
-
-    Mobile.tap(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), 0)
-
-    Mobile.tapAtPosition(622, 1230)
-
-    if (paket == 'yes') {
-        Mobile.tap(findTestObject('Cari Mobil/Baru/android.view.View0 - Paket'), 0)
-    } else if (paket == 'no') {
-        Mobile.tap(findTestObject('Cari Mobil/Baru/android.view.View0 - Non Paket'), 0)
+    if (condition == 'mainPassed') {
+        Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+    } else {
+        Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
     }
-    
-    Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
-
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
-
-    Mobile.tap(findTestObject('Cari Mobil/Baru/btnUbahPencarian'), 0)
-} else if (condition == 'daihatsuFailed') {
+} else if (brand == 'daihatsu') {
     Mobile.tap(findTestObject('Cari Mobil/Baru/boxDaihatsu'), 0)
 
-    Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), 0)
+    if (merek != '') {
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : merek]), 0)
 
-    Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), namaMobil, 0)
+        Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), 0)
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+    } else {
+        Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), 0)
 
-    Mobile.tapAtPosition(622, 1230)
+        Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), namaMobil, 0)
 
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/cautionsToyotaNotFound'), 0)
-} else if (condition == 'daihatsuPassed') {
-    Mobile.tap(findTestObject('Cari Mobil/Baru/boxDaihatsu'), 0)
+        Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), 0)
 
-    Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), 0)
+        Mobile.tapAtPosition(622, 1230)
 
-    Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), namaMobil, 0)
+        Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), 0)
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
 
-    Mobile.tapAtPosition(622, 1230)
-
-    Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/cautionsToyotaNotFound'), 0)
-} else if (condition == 'toyotaPassed') {
+        if (condition == 'daihatsuPassed') {
+            Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+        } else {
+            Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+        }
+    }
+} else if (brand == 'toyota') {
     Mobile.tap(findTestObject('Cari Mobil/Baru/boxToyota'), 0)
 
-    Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxToyota'), 0)
+    if (merek != '') {
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : merek]), 0)
 
-    Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxToyota'), namaMobil, 0)
+        Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxToyota'), 0)
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+    } else {
+        Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxToyota'), 0)
 
-    Mobile.tapAtPosition(622, 1230)
+        Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxToyota'), namaMobil, 0)
 
-    Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/cautionsToyotaNotFound'), 0)
-} else {
-    Mobile.tap(findTestObject('Cari Mobil/Baru/boxToyota'), 0)
+        Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxToyota'), 0)
 
-    Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxToyota'), 0)
+        Mobile.tapAtPosition(622, 1230)
 
-    Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxToyota'), namaMobil, 0)
+        Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxToyota'), 0)
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
 
-    Mobile.tapAtPosition(622, 1230)
-
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/cautionsToyotaNotFound'), 0)
+        if (condition == 'toyotaPassed') {
+            Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+        } else {
+            Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+        }
+    }
 }
 

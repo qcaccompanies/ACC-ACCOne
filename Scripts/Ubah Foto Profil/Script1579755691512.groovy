@@ -20,14 +20,6 @@ Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\
 
 WebUI.delay(20)
 
-not_run: Mobile.tap(findTestObject('Ubah Foto Profil/MasukatauDaftar'), 0)
-
-not_run: Mobile.setText(findTestObject('Ubah Foto Profil/etEmailAtauTelepon'), 'rizkariz20@gmail.com', 0)
-
-not_run: Mobile.setText(findTestObject('Ubah Foto Profil/etPassword'), 'Rizkariz20', 0)
-
-not_run: Mobile.tap(findTestObject('Ubah Foto Profil/btnMasuk'), 0)
-
 Mobile.tap(findTestObject('Ubah Foto Profil/txtMyAccount'), 0)
 
 WebUI.delay(5)
@@ -35,7 +27,9 @@ WebUI.delay(5)
 if (picture == 'galeri') {
     Mobile.tap(findTestObject('Ubah Foto Profil/btnFotoo'), 0)
 
-    Mobile.tap(findTestObject('Ubah Foto Profil/fotoGaleri'), 0)
+    Mobile.tap(findTestObject('Ubah Foto Profil/android.view.View0 -  Gallery'), 0)
+
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.scrollToText(namaFoto, FailureHandling.STOP_ON_FAILURE)
 
@@ -49,22 +43,22 @@ if (picture == 'galeri') {
 
     Mobile.tap(findTestObject('Ubah Foto Profil/btnOptionCamera'), 0)
 
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
     Mobile.tapAtPosition(380, 1166)
 
-    if (takePhoto == 'Yes') {
-        Mobile.tap(findTestObject('Ubah Foto Profil/btnDone'), 0)
+    if (condition == 'passedRetake') {
+        Mobile.tap(findTestObject('Ubah Foto Profil/btnRetake'), 0)
 
-        if (condition == 'passed') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/txtProfil'), 0)
-        }
-    } else {
-        Mobile.tap(findTestObject('Ubah Foto Profil/btnClose'), 0)
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.pressBack()
-
-        if (condition == 'passed') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/txtLihatProfil'), 0)
-        }
+        Mobile.tapAtPosition(380, 1166)
     }
+    
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tap(findTestObject('Ubah Foto Profil/btnDone'), 0)
+
+    Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/txtProfil'), 0)
 }
 

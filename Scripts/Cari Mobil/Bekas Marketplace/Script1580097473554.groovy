@@ -30,18 +30,82 @@ Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/boxMobilBekas'), 0)
 
 Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/boxMarketplace'), 0)
 
-Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), 0)
+if (brand == '') {
+    Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), 0)
 
-Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), namaMobil, 0)
+    Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), namaMobil, 0)
 
-Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), 0)
+    Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), 0)
 
-Mobile.tapAtPosition(622, 1228)
+    Mobile.tapAtPosition(622, 1230)
 
-if (condition == 'passed') {
-    Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Bekas Marketplace/cautionNoCarFound'), 0)
-} else {
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Bekas Marketplace/cautionNoCarFound'), 0)
+    Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+
+    if (condition == 'mainPassed') {
+        Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+    } else {
+        Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+    }
+} else if (brand == 'daihatsu') {
+    Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/btnDaihatsu'), 0)
+
+    if (merek != '') {
+        Mobile.swipe(641, 287, 200, 287)
+
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : merek]), 0)
+
+        Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+    } else {
+        Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
+
+        Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), namaMobil, 0)
+
+        Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
+
+        Mobile.tapAtPosition(622, 1230)
+
+        Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+
+        if (condition == 'daihatsuPassed') {
+            Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+        } else {
+            Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+        }
+    }
+} else if (brand == 'toyota') {
+    Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/btnToyota'), 0)
+
+    if (merek != '') {
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : merek]), 0)
+
+        Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+    } else {
+        Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
+
+        Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), namaMobil, 0)
+
+        Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
+
+        Mobile.tapAtPosition(622, 1230)
+
+        Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+
+        if (condition == 'toyotaPassed') {
+            Mobile.verifyElementNotVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+        } else {
+            Mobile.verifyElementVisible(findTestObject('Cari Mobil/Baru/textCautionMobilNotFoundBaru'), 0)
+        }
+    }
 }
 
 not_run: Mobile.sendKeys(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), Keys.chord(Keys.META))

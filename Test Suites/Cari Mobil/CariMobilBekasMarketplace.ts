@@ -9,15 +9,15 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>0ea1b90e-850c-402f-9862-95985071f732</testSuiteGuid>
+   <testSuiteGuid>5ac26e26-d3bd-4db8-b3d9-ca442b3d6b19</testSuiteGuid>
    <testCaseLink>
-      <guid>d3864f93-2248-466d-ac3f-f9514ef9a9bd</guid>
+      <guid>0fa52072-ea3d-4e19-b744-a60022a595f3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Cari Mobil/Bekas Marketplace</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>71135037-8744-4eae-a073-fe17383ddf85</id>
+         <id>fd55515c-2bf9-4a65-b434-f4954cbbe846</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -25,16 +25,34 @@
          <testDataId>Data Files/Cari Mobil/cariMobilBekasMarketplace</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>71135037-8744-4eae-a073-fe17383ddf85</testDataLinkId>
+         <testDataLinkId>fd55515c-2bf9-4a65-b434-f4954cbbe846</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>condition</value>
          <variableId>7db92c28-f8dc-4df7-8cab-18d52252ffc8</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>71135037-8744-4eae-a073-fe17383ddf85</testDataLinkId>
+         <testDataLinkId>fd55515c-2bf9-4a65-b434-f4954cbbe846</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>namaMobil</value>
          <variableId>ec56926b-f04b-4f0d-89a7-dc23760d166a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>fd55515c-2bf9-4a65-b434-f4954cbbe846</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>spesific</value>
+         <variableId>4d79d3dc-37c5-4835-90de-531e01371870</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>fd55515c-2bf9-4a65-b434-f4954cbbe846</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>merek</value>
+         <variableId>a8d7fdbb-1d31-479c-89a2-5e75e965e870</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>fd55515c-2bf9-4a65-b434-f4954cbbe846</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>brand</value>
+         <variableId>3a195724-2cfe-491f-9e58-abaa401e22c1</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

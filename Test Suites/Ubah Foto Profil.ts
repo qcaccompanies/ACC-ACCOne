@@ -20,7 +20,7 @@
          <id>c614b30d-2997-44e1-83c8-163084d9233b</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value></value>
+            <value>4</value>
          </iterationEntity>
          <testDataId>Data Files/Ubah Foto Profil</testDataId>
       </testDataLink>
@@ -35,12 +35,6 @@
          <type>DATA_COLUMN</type>
          <value>namaFoto</value>
          <variableId>9083e2db-0ad6-42b6-a393-5580fb4d6415</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>c614b30d-2997-44e1-83c8-163084d9233b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>takePhoto</value>
-         <variableId>d4b0f890-b9a7-41d4-98df-dc4637d1b591</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>c614b30d-2997-44e1-83c8-163084d9233b</testDataLinkId>

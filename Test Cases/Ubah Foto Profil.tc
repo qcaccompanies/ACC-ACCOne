@@ -22,13 +22,6 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>d4b0f890-b9a7-41d4-98df-dc4637d1b591</id>
-      <masked>false</masked>
-      <name>takePhoto</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>b808aa7a-a18a-40e6-be83-62e09fdfe500</id>
       <masked>false</masked>
       <name>condition</name>

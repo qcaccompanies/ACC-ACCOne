@@ -31,11 +31,11 @@ if (condition == 'searchByText') {
 
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Lihat Status Pengajuan/lihatDetailPengajuan'), 0)
+    Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
+
+    Mobile.tap(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
 
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/verifyNomorKontrak'), 0)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 } else if (condition == 'searchByScroll') {
@@ -47,11 +47,11 @@ if (condition == 'searchByText') {
 
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Lihat Status Pengajuan/lihatDetailPengajuan'), 0)
+    Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
+
+    Mobile.tap(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
 
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/verifyNomorKontrak'), 0)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 } else {
@@ -59,7 +59,7 @@ if (condition == 'searchByText') {
 
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/alertPengajuanMobilTidakDitemukan'), 0)
+    Mobile.verifyElementNotVisible(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
 }
 
 Mobile.pressBack()

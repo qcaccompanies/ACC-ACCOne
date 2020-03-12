@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (1).apk', 
     false)
 
-Mobile.scrollToText('ACC ONE SEAMLESS ZENN', FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText(namaPaket, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('View Paket/tapObject', [('text') : 'ACC ONE SEAMLESS ZENN']), 0)
+Mobile.tap(findTestObject('View Paket/tapObject', [('text') : namaPaket]), 0)
 
 Mobile.tap(findTestObject('View Paket/tapObject', [('text') : 'Syarat & Ketentuan']), 0)
 
