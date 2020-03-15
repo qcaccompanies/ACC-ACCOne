@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Simulasi Kredit Mobil Baru</name>
+   <name>Simulasi Kredit Mobil Baru Paket</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>99d510f4-da42-4d11-8a9a-fd03098ae3de</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b340b94b-aa15-4134-9d9d-24a1acc11ea8</id>
+      <masked>false</masked>
+      <name>paket</name>
+   </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>

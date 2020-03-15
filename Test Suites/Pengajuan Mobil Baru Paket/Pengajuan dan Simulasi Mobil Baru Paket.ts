@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>SimulasiKreditMobilBaru</name>
+   <name>Pengajuan dan Simulasi Mobil Baru Paket</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -14,7 +14,7 @@
       <guid>d509e0bd-a0c4-4cfd-819f-01ba45efa1ea</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Task Rizka/Simulasi Kredit Mobil Baru</testCaseId>
+      <testCaseId>Test Cases/Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>16fdc041-3be3-41d3-b1c1-195ddb93541a</id>
@@ -22,7 +22,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/Task Rizka/SimulasiKreditMobilBaruCashbacc</testDataId>
+         <testDataId>Data Files/Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>16fdc041-3be3-41d3-b1c1-195ddb93541a</testDataLinkId>
@@ -71,6 +71,12 @@
          <type>DATA_COLUMN</type>
          <value>namaPaketBaru</value>
          <variableId>16503ab4-a129-4a09-a25a-a0490a610391</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>16fdc041-3be3-41d3-b1c1-195ddb93541a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>paket</value>
+         <variableId>b340b94b-aa15-4134-9d9d-24a1acc11ea8</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
