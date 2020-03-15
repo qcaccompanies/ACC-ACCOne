@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>d509e0bd-a0c4-4cfd-819f-01ba45efa1ea</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
