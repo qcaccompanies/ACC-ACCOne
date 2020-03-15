@@ -71,6 +71,9 @@ if (paket == 'Yes') {
         Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/agree'), 0)
 
         Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/Ajukan Sekarang'), 0)
+
+        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/android.view.View0 - Yeay'), 
+            0)
     }
 } else if (brand == 'Toyota') {
     Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/boxToyota'), 0)
@@ -104,6 +107,9 @@ if (paket == 'Yes') {
         Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/agree'), 0)
 
         Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/Ajukan Sekarang'), 0)
+
+        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/android.view.View0 - Yeay'), 
+            0)
     }
 } else if (brand == 'Daihatsu') {
     Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/boxDaihatsu'), 0)
@@ -137,6 +143,9 @@ if (paket == 'Yes') {
         Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/agree'), 0)
 
         Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/Ajukan Sekarang'), 0)
+
+        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/android.view.View0 - Yeay'), 
+            0)
     }
 }
 
