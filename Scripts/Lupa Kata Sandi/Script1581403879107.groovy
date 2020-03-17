@@ -41,13 +41,19 @@ if (condition == 'emailSalah') {
 } else {
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-    if (kirimOTPke == 'email') {
+	if (kirimOTPke == 'email') {
         Mobile.tap(findTestObject('Lupa Kata Sandi/kirimKeEmail'), 0)
     } else {
         Mobile.tap(findTestObject('Lupa Kata Sandi/kirimSMS'), 0)
     }
     
-    if (condition == 'kodeOTPsalah') {
+    if (Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/checkBoxCaptcha'), 0, FailureHandling.OPTIONAL)){
+		Mobile.tap(findTestObject('Lupa Kata Sandi/checkBoxCaptcha'), 0)
+		Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+		Mobile.tap(findTestObject('Lupa Kata Sandi/SubmitCaptcha'), 0)
+	}
+	
+	if (condition == 'kodeOTPsalah') {
         Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
 
         Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
@@ -71,7 +77,7 @@ if (condition == 'emailSalah') {
         Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)
 
         Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/alertTunggu1Menit'), 0)
-    } else {
+    }else {
         Mobile.setText(findTestObject('Lupa Kata Sandi/editTextOTP'), OTP, 0)
 
         Mobile.tap(findTestObject('Lupa Kata Sandi/btnVerifikasi'), 0)

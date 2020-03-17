@@ -22,44 +22,38 @@ Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Lihat Status Pengajuan/btnStatusPeng'), 0)
 
-if (condition == 'searchByText') {
-    Mobile.setText(findTestObject('Lihat Status Pengajuan/editTextCariMobilPengajuan'), namaMobil, 0)
-
-    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
-
-    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
-
-    Mobile.tap(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
-
-    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-} else if (condition == 'searchByScroll') {
+if (condition == 'searchByScroll') {
     Mobile.scrollToText(namaMobil, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+    Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
 
-    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+    Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
 
     Mobile.tap(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
 
-    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+    Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 } else {
-    Mobile.setText(findTestObject('Lihat Status Pengajuan/editTextCariMobilPengajuan'), namaMobil, 0)
+    Mobile.setText(findTestObject('Lihat Status Pengajuan/editTextSearch'), namaMobil, 0)
 
-    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+    Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.verifyElementNotVisible(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
+    Mobile.tap(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
+
+    Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+    if (condition == 'failed') {
+        Mobile.verifyElementNotVisible(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
+    } else {
+        Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
+
+        Mobile.tap(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
+
+        Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+    }
 }
 
 Mobile.pressBack()

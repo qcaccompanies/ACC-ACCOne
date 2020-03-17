@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>28770811-d400-4616-bb88-0181cf7242d3</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value>4</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
          </iterationEntity>
          <testDataId>Data Files/Lihat Status Pengajuan</testDataId>
       </testDataLink>
