@@ -52,13 +52,19 @@ if (brand == '') {
     Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/btnDaihatsu'), 0)
 
     if (merek != '') {
-        Mobile.swipe(641, 287, 200, 287)
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+        not_run: Mobile.swipe(641, 287, 200, 287)
+
+        Mobile.swipe(955, 450, 240, 450)
 
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : merek]), 0)
 
         Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
     } else {
         Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
 
