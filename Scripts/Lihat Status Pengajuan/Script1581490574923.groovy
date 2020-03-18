@@ -41,13 +41,13 @@ if (condition == 'searchByScroll') {
 
     Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
-
-    Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
     if (condition == 'failed') {
         Mobile.verifyElementNotVisible(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
     } else {
+        Mobile.tap(findTestObject('Lihat Status Pengajuan/tapObject', [('text') : namaMobil]), 0)
+
+        Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
         Mobile.verifyElementVisible(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
 
         Mobile.tap(findTestObject('Lihat Status Pengajuan/btnLihat Detail Pengajuan'), 0)
@@ -55,8 +55,6 @@ if (condition == 'searchByScroll') {
         Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
     }
 }
-
-Mobile.pressBack()
 
 Mobile.pressBack()
 

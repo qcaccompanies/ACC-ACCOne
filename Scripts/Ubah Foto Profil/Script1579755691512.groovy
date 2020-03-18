@@ -25,21 +25,25 @@ Mobile.tap(findTestObject('Ubah Foto Profil/txtMyAccount'), 0)
 WebUI.delay(5)
 
 if (picture == 'galeri') {
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnFotoo'), 0)
+    Mobile.tap(findTestObject('Ubah Foto Profil/btnEditPhoto'), 0)
 
-    Mobile.tap(findTestObject('Ubah Foto Profil/android.view.View0 -  Gallery'), 0)
+    Mobile.tap(findTestObject('Ubah Foto Profil/btnGalerry'), 0)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.scrollToText(namaFoto, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Ubah Foto Profil/Select Photo', [('text') : namaFoto]), 0)
-
     if (condition == 'passed') {
-        Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/txtProfil'), 0)
+        Mobile.tap(findTestObject('Ubah Foto Profil/Select Photo', [('text') : namaFoto]), 0)
+
+        Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Foto Profile Berhasil Diganti'), 0)
+    } else if (condition == 'failed') {
+        Mobile.pressBack()
+
+        Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Upload Gambar Gagal'), 0)
     }
 } else {
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnFotoo'), 0)
+    Mobile.tap(findTestObject('Ubah Foto Profil/btnEditPhoto'), 0)
 
     Mobile.tap(findTestObject('Ubah Foto Profil/btnOptionCamera'), 0)
 
@@ -55,10 +59,20 @@ if (picture == 'galeri') {
         Mobile.tapAtPosition(380, 1166)
     }
     
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+    if (condition == 'failed') {
+        Mobile.tap(findTestObject('Ubah Foto Profil/btnRetake'), 0)
 
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnDone'), 0)
+        Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/txtProfil'), 0)
+        Mobile.pressBack()
+
+        Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Upload Gambar Gagal'), 0)
+    } else {
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('Ubah Foto Profil/btnDone'), 0)
+
+        Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Foto Profile Berhasil Diganti'), 0)
+    }
 }
 

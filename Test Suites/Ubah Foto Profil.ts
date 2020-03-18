@@ -19,7 +19,7 @@
          <combinationType>ONE</combinationType>
          <id>c614b30d-2997-44e1-83c8-163084d9233b</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
+            <iterationType>SPECIFIC</iterationType>
             <value>4</value>
          </iterationEntity>
          <testDataId>Data Files/Ubah Foto Profil</testDataId>
