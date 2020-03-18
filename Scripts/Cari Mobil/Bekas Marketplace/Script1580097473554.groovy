@@ -93,6 +93,8 @@ if (brand == '') {
         Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
+
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
     } else {
         Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
 
