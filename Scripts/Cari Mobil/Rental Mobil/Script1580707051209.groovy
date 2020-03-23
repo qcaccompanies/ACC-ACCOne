@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one.apk', 
+Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
     false)
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
@@ -106,30 +106,24 @@ if (condition == 'passed') {
     if (warnaSemua == 'Yes') {
         Mobile.tapAtPosition(89, 904)
 
-        not_run: Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/semuaBtn'), 0)
+        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/semuaaa'), 0)
     } else {
         if (warnaHitam == 'Yes') {
-            Mobile.tapAtPosition(170, 907)
+            not_run: Mobile.tapAtPosition(170, 907)
 
-            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/Whitam'), 0)
+            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/hitammmm'), 0)
         }
         
         if (warnaPutih == 'Yes') {
             not_run: Mobile.tapAtPosition(243, 907)
 
-            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/Wputih'), 0)
+            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/putihhhh'), 0)
         }
         
         if (warnaSilver == 'Yes') {
             not_run: Mobile.tapAtPosition(309, 907)
 
-            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/Wsilver'), 0)
-        }
-        
-        if (warnaMerah == 'Yes') {
-            not_run: Mobile.tapAtPosition(383, 907)
-
-            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/Wmerah'), 0)
+            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/silverrrr'), 0)
         }
     }
     
