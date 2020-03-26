@@ -31,12 +31,13 @@ Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNoPolisi'), noPoli
 Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarNoPolisi'), 0)
 
 if (condition == 'noPolisiTidakDapatDiproses') {
-    Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/alertKontrakNoPolisiTidakTerdaftar'), 0 //if (Mobile.verifyElementVisible(null, 0, FailureHandling.OPTIONAL)) {
-        ) //}
+    Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/alertKontrakNoPolisiTidakTerdaftar'), 0)
 } else {
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnUbahnomorhandphone'), 0)
 
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/pickListDate'), 0)
+
+    Mobile.delay(30, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnOKdate'), 0)
 
@@ -55,9 +56,27 @@ if (condition == 'noPolisiTidakDapatDiproses') {
 
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnKonfirmasi'), 0)
 
-    Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+    if (Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/btnRecaptcha'), 0, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnRecaptcha'), 0)
+
+        Mobile.delay(30, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnSubmitCaptcha'), 0)
+
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+    }
+    
+    Mobile.setText(findTestObject('Daftar - Punya Kontrak/KodeOTP'), '261294', 0)
+
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnVerifikasi (1)'), 0)
+
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnOKnoHPtelahDiubah'), 0)
+
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/android.widget.EditText0 - B2680RM'), 0)
 
@@ -70,8 +89,6 @@ if (condition == 'noPolisiTidakDapatDiproses') {
         Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextEmail'), alamatEmail, 0)
 
         if (condition == 'emailMasihKosong') {
-            not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
-
             Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), confirmPassword, 0)
 
             Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextPassword'), password, 0)

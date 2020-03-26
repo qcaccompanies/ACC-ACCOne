@@ -19,7 +19,7 @@ import io.appium.java_client.android.nativekey.AndroidKey as AndroidKey
 import io.appium.java_client.android.nativekey.KeyEvent as KeyEvent
 import io.appium.java_client.android.AndroidDriver as AndroidDriver
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one.apk', 
+Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
     false)
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
@@ -54,9 +54,9 @@ if (brand == '') {
     if (merek != '') {
         Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-        not_run: Mobile.swipe(641, 287, 200, 287)
+        Mobile.swipe(641, 287, 200, 287)
 
-        Mobile.swipe(955, 450, 240, 450)
+        not_run: Mobile.swipe(955, 450, 240, 450)
 
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : merek]), 0)
 

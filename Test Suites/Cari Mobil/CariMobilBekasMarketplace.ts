@@ -20,7 +20,7 @@
          <id>fd55515c-2bf9-4a65-b434-f4954cbbe846</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value></value>
+            <value>1</value>
          </iterationEntity>
          <testDataId>Data Files/Cari Mobil/cariMobilBekasMarketplace</testDataId>
       </testDataLink>

@@ -35,7 +35,21 @@ if (condition == 'noPolisiTidakDapatDiproses') {
 } else {
     Mobile.tap(findTestObject('Daftar - Punya Kontrak/tapObject', [('text') : digitTelp]), 0)
 
-    Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
+    if (Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/btnRecaptcha'), 0, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnRecaptcha'), 0)
+
+        Mobile.delay(30, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnSubmitCaptcha'), 0)
+
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+    }
+    
+    Mobile.setText(findTestObject('Daftar - Punya Kontrak/KodeOTP'), '261294', 0)
+
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnVerifikasi (1)'), 0)
+
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextNamaLengkap'), namaLengkap, 0)
 
