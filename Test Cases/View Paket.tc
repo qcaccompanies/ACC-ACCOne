@@ -6,10 +6,17 @@
    <comment></comment>
    <testCaseGuid>8aa61dd2-8827-4e25-8994-f3f9c96b3bfb</testCaseGuid>
    <variable>
-      <defaultValue>'ACC ONE SEAMLESS ZENN'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>abd87c60-d109-408d-9744-b67951b4c838</id>
       <masked>false</masked>
       <name>namaPaket</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f5edcb9c-ac4c-49f9-bcf8-bd08d7e6a3bd</id>
+      <masked>false</masked>
+      <name>condition</name>
    </variable>
 </TestCaseEntity>
