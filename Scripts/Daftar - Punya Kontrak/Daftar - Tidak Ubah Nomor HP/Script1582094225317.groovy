@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
     false)
 
-Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(30, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnMasukatauDaftar'), 0)
+Mobile.tapAtPosition(443, 229)
 
 Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftar'), 0)
 
@@ -32,8 +32,14 @@ Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarNoPolisi'), 0)
 
 if (condition == 'noPolisiTidakDapatDiproses') {
     Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/alertKontrakNoPolisiTidakTerdaftar'), 0)
+} else if (condition == 'nomorSudahTerdaftar') {
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnNomor'), 0)
+
+    Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/Nomor hp anda telah terdaftar'), 0)
 } else {
-    Mobile.tap(findTestObject('Daftar - Punya Kontrak/tapObject', [('text') : digitTelp]), 0)
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnNomor'), 0)
+
+    Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnNomor'), 0)
 
     if (Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/btnRecaptcha'), 0, FailureHandling.OPTIONAL)) {
         Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnRecaptcha'), 0)
@@ -99,10 +105,14 @@ if (condition == 'noPolisiTidakDapatDiproses') {
             
             Mobile.setText(findTestObject('Daftar - Punya Kontrak/editTextConfirmPassword'), confirmPassword, 0)
 
-            not_run: Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+            Mobile.tap(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
 
             if (condition == 'passed') {
-                Mobile.verifyElementNotVisible(findTestObject('Daftar - Punya Kontrak/btnDaftarAkun'), 0)
+                Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+                Mobile.verifyElementVisible(findTestObject('Daftar - Punya Kontrak/Masuk'), 0)
+
+                Mobile.tap(findTestObject('Daftar - Punya Kontrak/Masuk'), 0)
             }
         }
     }
