@@ -13,14 +13,14 @@
    <testCaseLink>
       <guid>d509e0bd-a0c4-4cfd-819f-01ba45efa1ea</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>16fdc041-3be3-41d3-b1c1-195ddb93541a</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>5-7</value>
          </iterationEntity>
          <testDataId>Data Files/Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket</testDataId>
       </testDataLink>
@@ -82,7 +82,7 @@
    <testCaseLink>
       <guid>16fcf3df-50c6-43cc-8b7d-a678eb7d792b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Pengajuan Mobil Baru Paket/Pengajuan Mobil Baru Paket</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
