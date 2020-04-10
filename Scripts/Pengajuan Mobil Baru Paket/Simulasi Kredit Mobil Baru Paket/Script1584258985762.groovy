@@ -123,64 +123,70 @@ if (paket == 'Yes') {
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-    if (gantiPaket == 'Yes') {
-        Mobile.tap(findTestObject('Daftar - Punya Kontrak/android.view.View0 - PAKET CASHBACC'), 0)
-
-        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-        Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/pilihPaket'), 0)
-    }
-    
     Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/hitsimButton'), 0)
 
     Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/DPbtn'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.setText(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/inputDP'), persenDP, 0)
+    if (condition == 'kurangDari20Persen') {
+        Mobile.setText(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/inputDP'), persenDP, 
+            0)
 
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-    if (Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/stokKosong'), 
-        0, FailureHandling.OPTIONAL)) {
-        Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/Ubah Simulasi'), 0, FailureHandling.STOP_ON_FAILURE)
+        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/DP Minimal 20'), 
+            0)
+    } else if (condition == 'dpHarusDiisi') {
+        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/Harus diisi'), 
+            0)
     } else {
-        if (periodeBayar == '12') {
-            Mobile.tapAtPosition(50, 750)
-        } else if (periodeBayar == '24') {
-            Mobile.tapAtPosition(211, 750)
-        } else if (periodeBayar == '36') {
-            Mobile.tapAtPosition(360, 750)
-        } else if (periodeBayar == '48') {
-            Mobile.tapAtPosition(516, 750)
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.setText(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/inputDP'), persenDP, 
+            0)
+
+        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+        if (Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/stokKosong'), 
+            0, FailureHandling.OPTIONAL)) {
+            Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/Ubah Simulasi'), 0, FailureHandling.STOP_ON_FAILURE)
         } else {
-            Mobile.tapAtPosition(663, 750)
-        }
-        
-        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-        Mobile.hideKeyboard()
-
-        if (creditOrCash != 'Credit') {
-            Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/cash'), 0)
-        }
-        
-        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-        if (protection != 'Yes') {
-            Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/protection'), 0)
-        }
-        
-        Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-        if (condition == 'cancelSaved') {
-            Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/back (1)'), 0)
-
+            if (periodeBayar == '12') {
+                Mobile.tapAtPosition(50, 750)
+            } else if (periodeBayar == '24') {
+                Mobile.tapAtPosition(211, 750)
+            } else if (periodeBayar == '36') {
+                Mobile.tapAtPosition(360, 750)
+            } else if (periodeBayar == '48') {
+                Mobile.tapAtPosition(516, 750)
+            } else {
+                Mobile.tapAtPosition(663, 750)
+            }
+            
             Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-        } else {
-            Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/save (1)'), 0)
 
+            Mobile.hideKeyboard()
+
+            if (creditOrCash != 'Credit') {
+                Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/cash'), 0)
+            }
+            
             Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+            if (protection != 'Yes') {
+                Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/protection'), 0)
+            }
+            
+            Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+            if (condition == 'cancelSaved') {
+                Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/back (1)'), 0)
+
+                Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+            } else {
+                Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/save (1)'), 0)
+
+                Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+            }
         }
     }
 }
