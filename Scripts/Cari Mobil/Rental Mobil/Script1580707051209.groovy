@@ -91,6 +91,10 @@ if (condition == 'passed') {
     
     Mobile.hideKeyboard()
 
+    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/bidUsaha2'), 0)
+
     if (bidangUsaha == 'Pertanian') {
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnPertanian'), 0)
     } else if (bidangUsaha == 'Finance') {
@@ -236,6 +240,12 @@ if (condition == 'passed') {
     
     Mobile.hideKeyboard()
 
+    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/bidUsaha2'), 0)
+
+    Mobile.hideKeyboard()
+
     if (typeCustomer != 'Personal') {
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/android.widget.Button0 - Company'), 0)
     }
@@ -275,6 +285,10 @@ if (condition == 'passed') {
     }
     
     Mobile.hideKeyboard()
+
+    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/bidUsaha2'), 0)
 
     if (bidangUsaha == 'Pertanian') {
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnPertanian'), 0)

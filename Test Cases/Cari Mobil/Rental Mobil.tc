@@ -99,13 +99,6 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>0307847e-6a0e-4d5b-a1dc-c6193007a1c4</id>
-      <masked>false</masked>
-      <name>warnaMerah</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>aba27f47-55fd-444c-ad7a-a7d2d6cc2e67</id>
       <masked>false</masked>
       <name>warnaSemua</name>
