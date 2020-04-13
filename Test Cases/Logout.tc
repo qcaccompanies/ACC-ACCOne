@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Logout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>20933cff-a219-4060-98e9-2f2fd33ec65d</testCaseGuid>
+   <variable>
+      <defaultValue>'rizkariz20@gmail.com'</defaultValue>
+      <description></description>
+      <id>4bf49447-cd48-45ec-9e79-f64c89c1c01d</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'A123456'</defaultValue>
+      <description></description>
+      <id>491b067c-9413-4f21-9515-26a9dcd5ecb6</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'passed'</defaultValue>
+      <description></description>
+      <id>c496d0f3-8734-4224-b824-b95e706a2bbf</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>
