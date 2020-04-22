@@ -20,20 +20,18 @@ Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\
 
 Mobile.scrollToText(namaPaket, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('View Paket/tapObject', [('text') : namaPaket]), 0)
+Mobile.tap(findTestObject('View Paket/paketCashbacc'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 if (condition == 'passed') {
     Mobile.verifyElementVisible(findTestObject('View Paket/tapObject', [('text') : namaPaket]), 0)
 
-    Mobile.tap(findTestObject('View Paket/tapObject', [('text') : 'Syarat & Ketentuan']), 0)
-
     CustomKeywords.'ScrollUpDown.UpDown'(517, 1150, 517, 400)
 
     CustomKeywords.'ScrollUpDown.UpDown'(517, 400, 517, 1100)
 
-    Mobile.tap(findTestObject('View Paket/tapObject', [('text') : 'Daftar Unit']), 0)
+    Mobile.tap(findTestObject('View Paket/tapObject', [('text') : 'Syarat & Ketentuan']), 0)
 
     CustomKeywords.'ScrollUpDown.UpDown'(517, 1150, 517, 400)
 

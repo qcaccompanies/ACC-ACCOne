@@ -20,6 +20,24 @@ Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\
 
 WebUI.delay(20)
 
+Mobile.tapAtPosition(651, 1235)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+if (Mobile.verifyElementVisible(findTestObject('Logout/Masuk  Daftar'), 0, FailureHandling.OPTIONAL)) {
+    Mobile.tap(findTestObject('Logout/Masuk  Daftar'), 0)
+
+    Mobile.setText(findTestObject('Logout/email'), email, 0)
+
+    Mobile.setText(findTestObject('Logout/password'), password, 0)
+
+    Mobile.tap(findTestObject('Logout/Masuk'), 0)
+
+    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+} else {
+    Mobile.pressBack()
+}
+
 Mobile.tap(findTestObject('Ubah Foto Profil/txtMyAccount'), 0)
 
 WebUI.delay(5)

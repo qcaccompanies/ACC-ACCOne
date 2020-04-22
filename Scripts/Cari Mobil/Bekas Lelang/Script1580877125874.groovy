@@ -63,7 +63,7 @@ if (lokasi == 'BATAM') {
     if (lokasi == '') {
         Mobile.tapAtPosition(87, 419)
 
-        Mobile.verifyElementVisible(findTestObject('Cari Mobil/Bekas Lelang/alertHarusDipilih'), 0)
+        Mobile.verifyElementVisible(findTestObject('Cari Mobil/Bekas Lelang/Alert Harus dipilih'), 0)
     } else {
         Mobile.tap(findTestObject('Cari Mobil/Bekas Lelang/btnTapObject', [('text') : lokasi]), 0)
     }

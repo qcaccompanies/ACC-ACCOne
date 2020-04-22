@@ -13,13 +13,13 @@
    <testCaseLink>
       <guid>1b7c3a43-31fe-429e-9346-ee3edb7fd82c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Akun Saya/Akun Saya - Kritik dan Saran</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>fada181d-d034-4e48-9649-9209af97157d</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
+            <iterationType>ALL</iterationType>
             <value>2</value>
          </iterationEntity>
          <testDataId>Data Files/Akun Saya Data/Akun Saya</testDataId>
@@ -67,7 +67,7 @@
    <testCaseLink>
       <guid>27e5b9b8-7992-463a-871b-89e68c20aca0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Akun Saya/Akun Saya - Pengaturan</testCaseId>
    </testCaseLink>
    <testCaseLink>

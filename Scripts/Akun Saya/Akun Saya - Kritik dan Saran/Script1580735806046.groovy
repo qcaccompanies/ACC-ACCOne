@@ -15,13 +15,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
+    false)
 
-Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+Mobile.tapAtPosition(651, 1235)
 
-Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+if (Mobile.verifyElementVisible(findTestObject('Logout/Masuk  Daftar'), 0, FailureHandling.OPTIONAL)) {
+    Mobile.tap(findTestObject('Logout/Masuk  Daftar'), 0)
+
+    Mobile.setText(findTestObject('Logout/email'), email, 0)
+
+    Mobile.setText(findTestObject('Logout/password'), password, 0)
+
+    Mobile.tap(findTestObject('Logout/Masuk'), 0)
+
+    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tapAtPosition(651, 1235)
+}
 
 Mobile.tap(findTestObject('Akun/Label Kritik  Saran'), 0)
 
@@ -36,12 +51,12 @@ Mobile.setText(findTestObject('Akun Saya - Kritik dan Saran/Field Kritik  Saran'
 Mobile.tap(findTestObject('Akun Saya - Laporkan Bug/Btn Submit'), 0)
 
 if (condition.toString() == 'emptyField') {
-    Mobile.verifyElementExist(findTestObject('Akun Saya - Kritik dan Saran/Text Kritik dan Saran'), 0)
+    Mobile.verifyElementExist(findTestObject('Akun Saya - Kritik dan Saran/Field Tidak Boleh Kosong'), 0)
 } else {
-    not_run: Mobile.verifyElementVisible(findTestObject('Akun Saya - Kritik dan Saran/Btn Yeay'), 0)
+    Mobile.verifyElementVisible(findTestObject('Akun Saya - Kritik dan Saran/Terima kasih.'), 0)
 
-    Mobile.tap(findTestObject('Akun Saya - Kritik dan Saran/Btn Yeay'), 0)
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tap(findTestObject('Akun Saya - Kritik dan Saran/btnYeay'), 0)
 }
-
-Mobile.closeApplication()
 

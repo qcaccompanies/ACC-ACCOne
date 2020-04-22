@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>26893777-786d-4b18-b6fc-07b5f7393cfe</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Daftar - Punya Kontrak/Daftar - Tidak Ubah Nomor HP</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -82,8 +82,8 @@
          <combinationType>ONE</combinationType>
          <id>b41801c3-9855-487e-9f61-14e10c8fb876</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>11</value>
+            <iterationType>RANGE</iterationType>
+            <value>1-5</value>
          </iterationEntity>
          <testDataId>Data Files/Daftar - Punya Kontrak (Ubah No HP)</testDataId>
       </testDataLink>
