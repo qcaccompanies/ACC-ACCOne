@@ -160,7 +160,7 @@ if (condition == 'passed') {
 
     Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnAjukan'), 0)
 
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/alertSedangDiproses'), 0)
+    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/Notif Pengajuan Biaya berhasil dilakukan'), 0)
 
     Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnOkay'), 0)
 } else if (condition == 'bidangUsahaIsEmptyUsaha') {
@@ -206,7 +206,7 @@ if (condition == 'passed') {
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/android.widget.Button0 - Company'), 0)
     }
     
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/alertHarusDiiisi'), 0)
+    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus Diiisi'), 0)
 } else if (condition == 'bidangUsahaDanVariabelLainIsEmptyUsaha') {
     Mobile.scrollToText(model)
 
@@ -250,9 +250,9 @@ if (condition == 'passed') {
         Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/android.widget.Button0 - Company'), 0)
     }
     
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/alertHarusdipilih (1)'), 0)
+    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus dipilih'), 0)
 
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/alertHarusDiiisi'), 0)
+    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus Diiisi'), 0)
 } else if (condition == 'variabelLainIsEmptyUsaha') {
     Mobile.scrollToText(model)
 
@@ -298,7 +298,7 @@ if (condition == 'passed') {
         Mobile.tapAtPosition(293, 600)
     }
     
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/alertHarusdipilih (1)'), 0)
+    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus dipilih'), 0)
 } else {
     Mobile.scrollToText(model)
 
@@ -326,6 +326,6 @@ if (condition == 'passed') {
 
     Mobile.tapAtPosition(680, 390)
 
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/alertHarusdipilih (1)'), 0)
+    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus dipilih'), 0)
 }
 
