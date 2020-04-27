@@ -17,18 +17,24 @@
       <testCaseId>Test Cases/Delete Akun Bank/Delete Akun Bank</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>76948677-241e-4c7c-b679-687bae211e8d</id>
+         <id>478df087-bcee-42aa-b8b2-ae122d5f6238</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-3</value>
          </iterationEntity>
          <testDataId>Data Files/Delete Akun Bank/Delete Akun Bank</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>76948677-241e-4c7c-b679-687bae211e8d</testDataLinkId>
+         <testDataLinkId>478df087-bcee-42aa-b8b2-ae122d5f6238</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>NoRek</value>
          <variableId>2d31fd83-aa37-4014-831b-7b2602a87c81</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>478df087-bcee-42aa-b8b2-ae122d5f6238</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>3375ec44-fe21-4cb6-b997-13cbd4f0c236</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

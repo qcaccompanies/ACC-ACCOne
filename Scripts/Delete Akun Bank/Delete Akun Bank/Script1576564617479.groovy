@@ -15,27 +15,46 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:/Users/Marvin/Documents/GitHub/ACC-Seamless-ACCOne/acc.one (1).apk', false)
+Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
+    false)
 
-Mobile.tap(findTestObject('Back Button(Tambah Akun Bank)/Akun_Btn'), 0)
+Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Back Button(Tambah Akun Bank)/LihatAkunBankBTN'), 0)
+Mobile.tapAtPosition(651, 1235)
 
-Mobile.setText(findTestObject('Delete Akun Bank/SearchAkun'), NoRek, 0)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-if (Mobile.verifyElementVisible(findTestObject('Delete Akun Bank/VerifyUtamaDetail'), 0, FailureHandling.OPTIONAL)) {
+if (Mobile.verifyElementVisible(findTestObject('Logout/Masuk  Daftar'), 0, FailureHandling.OPTIONAL)) {
+    Mobile.tap(findTestObject('Logout/Masuk  Daftar'), 0)
+
+    Mobile.setText(findTestObject('Logout/email'), 'rizkariz20@gmail.com', 0)
+
+    Mobile.setText(findTestObject('Logout/password'), A123456, 0)
+
+    Mobile.tap(findTestObject('Logout/Masuk'), 0)
+
+    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.tapAtPosition(651, 1235)
+}
+
+Mobile.tap(findTestObject('Delete Akun Bank/v2btnLihatAkunBank'), 0)
+
+Mobile.setText(findTestObject('Delete Akun Bank/v2FieldText'), NoRek, 0)
+
+if (Mobile.verifyElementVisible(findTestObject('Delete Akun Bank/v2TextUtama'), 0, FailureHandling.OPTIONAL)) {
     Mobile.pressBack()
-
-    Mobile.tap(findTestObject('Back Button(Tambah Akun Bank)/LihatAkunBankBTN'), 0)
 } else {
-    Mobile.tap(findTestObject('Delete Akun Bank/BarAkunBank'), 0)
+    Mobile.tap(findTestObject('Delete Akun Bank/tapObject', [('text') : NoRek]), 0)
 
-    Mobile.tap(findTestObject('Delete Akun Bank/BtnHapusAkunBank'), 0)
+    Mobile.tap(findTestObject('Delete Akun Bank/v2btnHapusAkun'), 0)
 
-    Mobile.tap(findTestObject('Delete Akun Bank/YaBtn'), 0)
+    if (condition == 'passed') {
+        Mobile.tap(findTestObject('Delete Akun Bank/v2btnYa'), 0)
 
-    Mobile.pressBack()
-
-    Mobile.tap(findTestObject('Back Button(Tambah Akun Bank)/LihatAkunBankBTN'), 0)
+        Mobile.verifyElementVisible(findTestObject('Delete Akun Bank/v2Akun bank berhasil di hapus.'), 0)
+    } else {
+        Mobile.tap(findTestObject('Delete Akun Bank/v2btnTidak'), 0)
+    }
 }
 

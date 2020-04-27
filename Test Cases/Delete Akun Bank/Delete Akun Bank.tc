@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>NoRek</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3375ec44-fe21-4cb6-b997-13cbd4f0c236</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
 </TestCaseEntity>
