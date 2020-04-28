@@ -11,66 +11,66 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>14799108-a4e8-4b24-b818-33f0cbf4212a</testSuiteGuid>
    <testCaseLink>
-      <guid>fe5b16a1-a3ce-4440-a3ea-b64e108ca014</guid>
+      <guid>afdedbd3-3663-4798-aca8-06a6cd9f40c0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TambahAkunBank/Tambah Akun Bank</testCaseId>
+      <testCaseId>Test Cases/TambahAkunBank/Tambah Akun Bank V2</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</id>
+         <id>46cc067f-958a-448c-ab99-d5517f3ae5dc</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>2</value>
+            <value>5-8</value>
          </iterationEntity>
-         <testDataId>Data Files/TambahAkunBank/TambahAkunBank</testDataId>
+         <testDataId>Data Files/TambahAkunBank/TambahAkunBankV2</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</testDataLinkId>
+         <testDataLinkId>46cc067f-958a-448c-ab99-d5517f3ae5dc</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>NamaBank</value>
-         <variableId>491e1304-c88b-4556-835d-f6f55e3a9620</variableId>
+         <value>namaBank</value>
+         <variableId>a871add8-834a-4c6f-8d6e-6d29ba9f90ad</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</testDataLinkId>
+         <testDataLinkId>46cc067f-958a-448c-ab99-d5517f3ae5dc</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Cabang</value>
-         <variableId>0872c804-0938-4dfe-bb4b-0a74ff573189</variableId>
+         <value>cabang</value>
+         <variableId>fb9a38c2-2bb9-47e9-b335-e49496a6ed26</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</testDataLinkId>
+         <testDataLinkId>46cc067f-958a-448c-ab99-d5517f3ae5dc</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>PemilikRek</value>
-         <variableId>5a40939f-d877-457e-9000-c70a2920fe2b</variableId>
+         <value>namaPemilikRek</value>
+         <variableId>a72e16dc-a600-4538-bef1-20d1699cf974</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</testDataLinkId>
+         <testDataLinkId>46cc067f-958a-448c-ab99-d5517f3ae5dc</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>NoRek</value>
-         <variableId>6509c748-e3b9-4d90-adae-600915acc833</variableId>
+         <value>noRek</value>
+         <variableId>b020dbe8-2dc0-4e61-a0e6-c7a04c563d01</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</testDataLinkId>
+         <testDataLinkId>46cc067f-958a-448c-ab99-d5517f3ae5dc</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>KataSandi</value>
-         <variableId>58b1d84e-ad8c-40e5-b78d-c0d9e013878e</variableId>
+         <value>jadikanUtama</value>
+         <variableId>5156bd0e-9b66-4d4d-a0a9-c7e536c0a670</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</testDataLinkId>
+         <testDataLinkId>46cc067f-958a-448c-ab99-d5517f3ae5dc</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>OTP</value>
-         <variableId>6beb30e0-dc87-4df6-bb3a-c3538a9aff6f</variableId>
+         <variableId>38c697a1-3bd7-4e8a-8200-cb1ce2a32728</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</testDataLinkId>
+         <testDataLinkId>46cc067f-958a-448c-ab99-d5517f3ae5dc</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Result</value>
-         <variableId>f3efaca3-281c-4293-a93d-419b42ce365b</variableId>
+         <value>backButton</value>
+         <variableId>5ff076c3-7fd7-426c-b98a-302c1e81371a</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c26d71b7-ab1e-4bd5-b1a1-cc39c6c814f4</testDataLinkId>
+         <testDataLinkId>46cc067f-958a-448c-ab99-d5517f3ae5dc</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Keterangan</value>
-         <variableId>6e508aa1-1d02-48c3-977a-8f85c581f39a</variableId>
+         <value>condition</value>
+         <variableId>478ecc16-4aab-4341-849e-e5cccec3eab1</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
