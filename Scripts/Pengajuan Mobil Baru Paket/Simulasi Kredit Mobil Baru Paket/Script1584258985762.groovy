@@ -15,15 +15,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Backup\\ACC-ACCOne\\acc.one (2).apk', false)
+not_run: Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Backup\\ACC-ACCOne\\acc.one (2).apk', 
+    false)
 
-Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/cariMobilBtn'), 0)
+not_run: Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/cariMobilBtn'), 0)
 
-Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/mobilBaruBtn'), 0)
+not_run: Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/mobilBaruBtn'), 0)
 
-Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
 if (paket == 'Yes') {
     CustomKeywords.'ScrollUpDown.UpDown'(405, 1115, 405, 270)
@@ -53,15 +54,12 @@ if (paket == 'Yes') {
 
     Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/DPbtn'), 0, FailureHandling.STOP_ON_FAILURE)
 
-    if (persenDP == '25') {
-        Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/android.view.View0 - 25 (1)'), 
-            0)
+    if (persenDP == '20') {
+        Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/v220'), 0)
+    } else if (persenDP == '25') {
+        Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/v225'), 0)
     } else if (persenDP == '30') {
-        Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/android.view.View0 - 30 (1)'), 
-            0)
-    } else if (persenDP == '35') {
-        Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/android.view.View0 - 35'), 
-            0)
+        Mobile.tap(findTestObject('Pengajuan Mobil Baru Paket/v230'), 0)
     }
     
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
@@ -133,11 +131,9 @@ if (paket == 'Yes') {
         Mobile.setText(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/inputDP'), persenDP, 
             0)
 
-        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/DP Minimal 20'), 
-            0)
+        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/v2DP Minimal 20'), 0)
     } else if (condition == 'dpHarusDiisi') {
-        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/Simulasi Kredit Mobil Baru Paket/Harus diisi'), 
-            0)
+        Mobile.verifyElementVisible(findTestObject('Pengajuan Mobil Baru Paket/v2Harus diisi'), 0)
     } else {
         Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
