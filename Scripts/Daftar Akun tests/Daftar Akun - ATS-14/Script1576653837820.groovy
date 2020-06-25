@@ -38,45 +38,51 @@ Mobile.setText(findTestObject('Daftar Akun - ATS-14/Confirm Password Field'), co
 
 if (status.toString() == 'failed') {
     if (condition.toString() == 'nameEmpty') {
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Name Empty'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn Nama Lengkap Minimal 3 Karakter dan Maksimal 50 Karakter'), 
+            0)
     } else if (condition.toString() == 'nameShort') {
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Name Short'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn Nama Lengkap Minimal 3 Karakter dan Maksimal 50 Karakter'), 
+            0)
     } else if (condition.toString() == 'emailEmpty') {
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Email Empty'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn Empty Alamat Email'), 0)
     } else if (condition.toString() == 'emailInvalid') {
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Email Invalid'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn Format email belum sesuai'), 0)
     } else if (condition.toString() == 'emailExist') {
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Email Exist'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn Email sudah digunakan'), 0)
     } else if (condition.toString() == 'phoneNoEmpty') {
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Phone No Empty'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn No. Handphone Empty'), 0)
     } else if (condition.toString() == 'phoneNoShort') {
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Phone No Short'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn No. Handphone Min. 9 Digit'), 0)
     } else if (condition.toString() == 'phoneNoExist') {
         Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Daftar'), 0)
+        Mobile.tapAtPosition(517, 2017)
 
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Phone Number Exist'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn Nomor ponsel sudah digunakan'), 0)
     } else if (condition.toString() == 'passInvalid') {
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Password Invalid'), 0)
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn Format Pass belum sesuai'), 0)
     } else if (condition.toString() == 'confPassNotMatch') {
         Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Daftar'), 0)
+        Mobile.tapAtPosition(517, 2017)
 
-        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Warn Confirm Password Not Match'), 0)
+        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn Konfirmasi Kata Sandi Tidak Sama'), 0)
     }
 } else if (status.toString() == 'succeed') {
     Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Daftar'), 0)
+    Mobile.tapAtPosition(517, 2017)
 
     Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.setText(findTestObject('Daftar Akun - ATS-14/OTP Field'), otp, 0)
+    not_run: Mobile.setText(findTestObject('Daftar Akun - ATS-14/OTP Field'), otp, 0)
 
-    Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Verifikasi OTP'), 0)
+    Mobile.delay(50, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Masuk'), 0)
+    not_run: Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Verifikasi OTP'), 0)
+
+    not_run: Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Masuk'), 0)
 }
 

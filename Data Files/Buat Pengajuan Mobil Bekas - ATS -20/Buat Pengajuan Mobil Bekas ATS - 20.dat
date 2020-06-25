@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>f20d1a8e-c33b-4f61-afd2-ae75deb94958</dataFileGUID>
-   <dataSourceUrl>C:\Users\Marvin\Documents\GitHub\ACC-Seamless-ACCOne\Buat Pengajuan Mobil Bekas - ATS-20.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Hari Sapto\git\ACC-ACCOne\Buat Pengajuan Mobil Bekas - ATS-20.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

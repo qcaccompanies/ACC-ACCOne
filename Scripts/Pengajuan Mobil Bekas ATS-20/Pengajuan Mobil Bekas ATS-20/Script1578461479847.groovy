@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:/Users/Marvin/Documents/GitHub/ACC-Seamless-ACCOne/acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\Hari Sapto\\git\\ACC-ACCOne\\acc.one (1).apk', false)
 
 Mobile.tap(findTestObject('Pengajuan Mobil Bekas ATS-20/Btn_Cari_Mobil'), 0)
 
@@ -29,17 +29,25 @@ if (MerkMobil == 'Toyota') {
     Mobile.tap(findTestObject('Pengajuan Mobil Bekas ATS-20/Daihatsu_BTN'), 0, FailureHandling.STOP_ON_FAILURE)
 }
 
+Mobile.delay(4, FailureHandling.STOP_ON_FAILURE)
+
 not_run: Mobile.tap(findTestObject('Pengajuan Mobil Bekas ATS-20/Cari_Bobil'), 0, FailureHandling.STOP_ON_FAILURE)
 
 not_run: Mobile.setText(findTestObject('Pengajuan Mobil Bekas ATS-20/Cari_Bobil'), NamaMobil, 0)
 
 not_run: Mobile.tap(findTestObject('Pengajuan Mobil Bekas ATS-20/ovelay'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.scrollToText(NamaMobil, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.scrollToText(NamaMobil, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Buat Pengajuan/Select_Car', [('text') : NamaMobil]), 0)
+not_run: Mobile.tap(findTestObject('Buat Pengajuan/Select_Car', [('text') : NamaMobil]), 0)
 
-Mobile.tap(findTestObject('Pengajuan Mobil Bekas ATS-20/BTN_Saya_Tertarik'), 0)
+Mobile.tapAtPosition(250, 700)
+
+not_run: Mobile.tap(findTestObject('Pengajuan Mobil Bekas ATS-20/BTN_Saya_Tertarik'), 0)
+
+Mobile.delay(4, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.scrollToText('TDP', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pengajuan Mobil Bekas ATS-20/HitungSimulasi'), [('NamaArea') : NamaArea, ('NamaCabang') : NamaCabang
         , ('DP') : DP, ('Periode') : Periode, ('PembayaranAsuransi') : PembayaranAsuransi, ('CreditProtection') : CreditProtection
@@ -51,9 +59,7 @@ switch ('Status') {
 
         break
     case 'Fail':
-        break
-        
-        if (Detail.toString() == 'Cabang Harus Diisi') {
+        not_run: if (Detail.toString() == 'Cabang Harus Diisi') {
             Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
         }
         
@@ -64,5 +70,7 @@ switch ('Status') {
         if (Detail.toString() == 'Uang Harus 20% Dari OTR') {
             Mobile.verifyElementVisible(findTestObject('TopUP/BtnLanjut'), 0)
         }
+        
+        break
 }
 

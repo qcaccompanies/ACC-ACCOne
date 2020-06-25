@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\Hari Sapto\\git\\ACC-ACCOne\\acc.one (1).apk', false)
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+Mobile.tapAtPosition(990, 2025)
 
 Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk Daftar'), 0)
 
@@ -33,6 +33,9 @@ switch (status.toString()) {
             Mobile.verifyElementAttributeValue(findTestObject('Login - ATS-19/Btn Masuk Disabled'), 'enabled', 'false', 
                 0)
         } else if (condition.toString() == 'passwordEmpty') {
+            Mobile.verifyElementAttributeValue(findTestObject('Login - ATS-19/Btn Masuk Disabled'), 'enabled', 'false', 
+                0)
+        } else if (condition.toString() == 'usernameNpassEmpty') {
             Mobile.verifyElementAttributeValue(findTestObject('Login - ATS-19/Btn Masuk Disabled'), 'enabled', 'false', 
                 0)
         } else if (condition.toString() == 'usernameWrong') {
@@ -49,7 +52,7 @@ switch (status.toString()) {
     case 'success':
         Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Home/Icon Home'), 0)
+        Mobile.verifyElementVisible(findTestObject('Login - ATS-19/label Promo Terbaik'), 0)
 
         break
 }

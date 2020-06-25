@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>a3a97c90-19d8-44b6-8d50-9298bb7520ab</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>4-6</value>
+            <iterationType>ALL</iterationType>
+            <value>4-4</value>
          </iterationEntity>
          <testDataId>Data Files/Ubah No Telp - ATAM-15</testDataId>
       </testDataLink>

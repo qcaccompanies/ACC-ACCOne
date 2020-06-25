@@ -33,4 +33,32 @@
       <masked>false</masked>
       <name>condition2</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e66a9de5-353a-41bf-b862-880655a0ce2d</id>
+      <masked>false</masked>
+      <name>ktp</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>89ab2cb0-ce30-4482-88a5-1592863ad905</id>
+      <masked>false</masked>
+      <name>selfie</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>84e84c0d-1484-46fd-ae74-4129233a08da</id>
+      <masked>false</masked>
+      <name>npwp</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>73e226c7-3745-4ee4-8873-29b1d202e503</id>
+      <masked>false</masked>
+      <name>kk</name>
+   </variable>
 </TestCaseEntity>

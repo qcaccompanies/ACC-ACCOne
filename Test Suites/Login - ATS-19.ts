@@ -20,7 +20,7 @@
          <id>b8e9aa8c-339a-44b5-8a7d-f8ae93c72982</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>2-4</value>
+            <value>6-6</value>
          </iterationEntity>
          <testDataId>Data Files/Login - ATS-19</testDataId>
       </testDataLink>

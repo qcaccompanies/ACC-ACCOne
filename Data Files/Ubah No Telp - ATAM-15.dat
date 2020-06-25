@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>fd038298-f348-4889-8387-69b2c2474135</dataFileGUID>
-   <dataSourceUrl>C:\Users\lieto\git\ACC-Seamless-ACCOne\Ubah No Telp Data.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Hari Sapto\git\ACC-ACCOne\Ubah No Telp Data.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

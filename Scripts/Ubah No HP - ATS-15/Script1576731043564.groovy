@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\Hari Sapto\\git\\ACC-ACCOne\\acc.one (1).apk', false)
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+Mobile.tapAtPosition(990, 2025)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -46,7 +46,7 @@ switch (status.toString()) {
 
             Mobile.tapAtPosition(545, 830)
 
-            Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Empty New Phone Number'), 0)
+            Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Label No. Handphone Baru'), 0)
         } else if (condition.toString() == 'oldPhoneNoWrong') {
             Mobile.tap(findTestObject('Ubah No HP - ATS-15/Field No Telp Lama'), 0)
 
@@ -73,9 +73,15 @@ switch (status.toString()) {
     case 'success':
         Mobile.tap(findTestObject('Ubah No HP - ATS-15/Btn Konfirmasi'), 0)
 
-        Mobile.setText(findTestObject('Ubah No HP - ATS-15/Field OTP'), '261294', 0)
+        Mobile.delay(30, FailureHandling.STOP_ON_FAILURE)
+
+        not_run: Mobile.setText(findTestObject('Ubah No HP - ATS-15/Field OTP'), '261294', 0)
 
         Mobile.tap(findTestObject('Ubah No HP - ATS-15/Btn Verifikasi'), 0)
+
+        Mobile.delay(30, FailureHandling.STOP_ON_FAILURE)
+
+        Mobile.tapAtPosition(548, 2017)
 
         if (condition.toString() == 'otpWrong') {
             Mobile.verifyElementVisible(findTestObject('Ubah No HP - ATS-15/Warn OTP Wrong'), 0)

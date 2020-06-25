@@ -15,30 +15,36 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\Hari Sapto\\git\\ACC-ACCOne\\acc.one (1).apk', false)
 
-Mobile.tap(findTestObject('Daftar Akun - ATS-14/Label Daftar Akun'), 0)
+Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Daftar Akun - ATS-14/Label Daftar'), 0)
+Mobile.tapAtPosition(975, 350)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tapAtPosition(94, 1120)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 if (kontrak.toString() == 'belum') {
-    Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Belum Punya Kontrak'), 0)
+    Mobile.tapAtPosition(503, 1305)
 
     WebUI.callTestCase(findTestCase('Daftar Akun tests/Daftar Akun - ATS-14'), [('name') : name, ('email') : email, ('phoneNo') : phoneNo
             , ('radio') : radio, ('otp') : otp, ('password') : password, ('confPassword') : confPassword, ('condition') : condition
             , ('status') : status], FailureHandling.STOP_ON_FAILURE)
 } else {
-    Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Punya Kontrak'), 0)
+    Mobile.tapAtPosition(540, 1170)
 
     Mobile.setText(findTestObject('Daftar Akun - ATS-14/Field Nopol'), noPol, 0)
 
-    Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Tambah Nopol'), 0)
+    Mobile.tapAtPosition(800, 2005)
 
     if (status.toString() == 'failed') {
         if (condition.toString() == 'noPolEmpty') {
             Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Nomor Polisi Empty'), 0)
         } else if (condition.toString() == 'noPolNotFound') {
-            Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warnings/Nomor Polisi Not Found'), 0)
+            Mobile.verifyElementVisible(findTestObject('Daftar Akun - ATS-14/Warn KontrakNo Polisi tidak terdaftar'), 0)
         }
     } else if (status.toString() == 'success') {
         Mobile.tap(findTestObject('Daftar Akun - ATS-14/Btn Pick NoTelp'), 0)

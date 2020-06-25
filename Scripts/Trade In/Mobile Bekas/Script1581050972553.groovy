@@ -17,25 +17,25 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.setText(findTestObject('Trade In/Brand_Used'), BrandTrade, 0)
 
-Mobile.tap(findTestObject('Trade In/Select 2', [('text') : BrandTrade]), 0)
+Mobile.tap(findTestObject('Trade In/select brand used car'), 0)
 
 Mobile.setText(findTestObject('Trade In/Type_Used'), TypeTrade, 0)
 
-Mobile.tap(findTestObject('Trade In/Select 2', [('text') : TypeTrade]), 0)
+Mobile.tap(findTestObject('Trade In/select type used car'), 0)
 
 Mobile.tap(findTestObject('Trade In/Detail Umum'), 0)
 
 Mobile.setText(findTestObject('Trade In/Model_Used'), ModelTrade, 0)
 
-Mobile.tap(findTestObject('Trade In/Select 2', [('text') : ModelTrade]), 0)
+Mobile.tap(findTestObject('Trade In/select model used car'), 0)
 
 Mobile.setText(findTestObject('Trade In/Tahun_Used'), TahunTrade, 0)
 
-Mobile.tap(findTestObject('Trade In/Select 2', [('text') : TahunTrade]), 0)
+Mobile.tap(findTestObject('Trade In/select tahun used car'), 0)
 
 Mobile.setText(findTestObject('Trade In/Lokasi_Used'), LokasiTrade, 0)
 
-Mobile.tap(findTestObject('Trade In/Select 2', [('text') : LokasiTrade]), 0)
+Mobile.tap(findTestObject('Trade In/select lokasi used car'), 0)
 
 Mobile.tap(findTestObject('Trade In/Btn_Berikutnya'), 0)
 

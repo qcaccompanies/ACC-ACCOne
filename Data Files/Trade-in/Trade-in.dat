@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>87b6185c-6a7f-45ba-ba35-30d6b664cc6b</dataFileGUID>
-   <dataSourceUrl>C:\Users\Marvin\Documents\GitHub\ACC-Seamless-ACCOne\Trade-in.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Hari Sapto\git\ACC-ACCOne\Trade-in.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

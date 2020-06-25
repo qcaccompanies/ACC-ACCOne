@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//*[(text() = '${text}' or . = '${text}')]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

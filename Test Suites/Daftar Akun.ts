@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>9f345007-2035-443f-9b53-3b7e4c4931c7</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value>8,10</value>
+            <iterationType>RANGE</iterationType>
+            <value>12-13</value>
          </iterationEntity>
          <testDataId>Data Files/Daftar Akun - ATS-14</testDataId>
       </testDataLink>
