@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Ubah Foto Profil1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba5c6abb-f84e-4670-beb4-a85a6e8fbef0</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>af8eb27f-509a-428f-a83c-15b4fa44c40f</id>
+      <masked>false</masked>
+      <name>picture</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9083e2db-0ad6-42b6-a393-5580fb4d6415</id>
+      <masked>false</masked>
+      <name>namaFoto</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b808aa7a-a18a-40e6-be83-62e09fdfe500</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>
