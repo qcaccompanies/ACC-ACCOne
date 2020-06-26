@@ -15,24 +15,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.tap(findTestObject('Buat Pengajuan/SImulasi_Hitung_Kredit'), 0)
+Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/SImulasi_Hitung_Kredit'), 0)
 
-not_run: Mobile.tap(findTestObject('Buat Pengajuan/Area_Pengajuan_Simulasi'), 0)
+not_run: Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/Area_Pengajuan_Simulasi'), 0)
 
-Mobile.tap(findTestObject('Buat Pengajuan/Cabang_Simulasi'), 0)
+Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/Cabang_Simulasi'), 0)
 
-Mobile.setText(findTestObject('Buat Pengajuan/Cabang_Simulasi'), NamaCabang, 0)
+Mobile.setText(findTestObject('Buat Pengajuan Mobil Baru/Lama/Cabang_Simulasi'), NamaCabang, 0)
 
-Mobile.tap(findTestObject('Buat Pengajuan/Area_Cabang', [('text') : NamaCabang]), 0)
+Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/Area_Cabang', [('text') : NamaCabang]), 0)
 
 if (DP == 'Persen') {
-    Mobile.setText(findTestObject('Buat Pengajuan/DP_Simulasi_Persen'), DPPersen, 0)
+    Mobile.setText(findTestObject('Buat Pengajuan Mobil Baru/Lama/DP_Simulasi_Persen'), DPPersen, 0)
 
-    if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/30Persen', [('text') : DPPersen]), 0, FailureHandling.OPTIONAL)) {
-        Mobile.tap(findTestObject('Buat Pengajuan/20', [('text') : DPPersen]), 0)
+    if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan Mobil Baru/Lama/30Persen', [('text') : DPPersen]), 0, FailureHandling.OPTIONAL)) {
+        Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/20', [('text') : DPPersen]), 0)
     }
 } else if (DP == 'Uang') {
-    Mobile.setText(findTestObject('Buat Pengajuan/Uang_DP_Simulasi'), DPNominal, 0)
+    Mobile.setText(findTestObject('Buat Pengajuan Mobil Baru/Lama/Uang_DP_Simulasi'), DPNominal, 0)
 }
 
 if (Periode == '12') {
@@ -48,32 +48,32 @@ if (Periode == '12') {
 }
 
 if (PembayaranAsuransi == 'Credit') {
-    Mobile.tap(findTestObject('Buat Pengajuan/Credit_Radio_BTN'), 0, FailureHandling.STOP_ON_FAILURE)
+    Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/Credit_Radio_BTN'), 0, FailureHandling.STOP_ON_FAILURE)
 
     Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 } else if (PembayaranAsuransi == 'Cash') {
-    Mobile.tap(findTestObject('Buat Pengajuan/Cash_Radio_BTN'), 0, FailureHandling.STOP_ON_FAILURE)
+    Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/Cash_Radio_BTN'), 0, FailureHandling.STOP_ON_FAILURE)
 }
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 if (CreditProtection == 'Yes') {
-    Mobile.checkElement(findTestObject('Buat Pengajuan/ACC_Credit_Protection_Checklist'), 0)
+    Mobile.checkElement(findTestObject('Buat Pengajuan Mobil Baru/Lama/ACC_Credit_Protection_Checklist'), 0)
 } else if (CreditProtection == 'No') {
-    Mobile.uncheckElement(findTestObject('Buat Pengajuan/ACC_Credit_Protection_Checklist'), 0)
+    Mobile.uncheckElement(findTestObject('Buat Pengajuan Mobil Baru/Lama/ACC_Credit_Protection_Checklist'), 0)
 }
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_Cabang_Harus_Diisi'), 0, FailureHandling.OPTIONAL)) {
-    Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
-} else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_DP_Harus_Diisi'), 0, FailureHandling.OPTIONAL)) {
-    not_run: Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
-} else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_DP_Min20'), 0, FailureHandling.OPTIONAL)) {
-    Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
-} else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan/Alert_Uang_Muka_20dariOTR'), 0, FailureHandling.OPTIONAL)) {
+if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan Mobil Baru/Lama/Alert_Cabang_Harus_Diisi'), 0, FailureHandling.OPTIONAL)) {
+    Mobile.verifyElementVisible(findTestObject('Buat Pengajuan Mobil Baru/Lama/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
+} else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan Mobil Baru/Lama/Alert_DP_Harus_Diisi'), 0, FailureHandling.OPTIONAL)) {
+    not_run: Mobile.verifyElementVisible(findTestObject('Buat Pengajuan Mobil Baru/Lama/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
+} else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan Mobil Baru/Lama/Alert_DP_Min20'), 0, FailureHandling.OPTIONAL)) {
+    Mobile.verifyElementVisible(findTestObject('Buat Pengajuan Mobil Baru/Lama/SimpanSimulasi'), 0, FailureHandling.STOP_ON_FAILURE)
+} else if (Mobile.verifyElementVisible(findTestObject('Buat Pengajuan Mobil Baru/Lama/Alert_Uang_Muka_20dariOTR'), 0, FailureHandling.OPTIONAL)) {
     Mobile.verifyElementVisible(null, 0, FailureHandling.STOP_ON_FAILURE)
 } else {
-    Mobile.tap(findTestObject('Buat Pengajuan/SimpanSimulasi'), 0)
+    Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/SimpanSimulasi'), 0)
 }
 

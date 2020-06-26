@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Upload_Foto_Kendaraan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f04d4965-88ed-4f17-a8d2-e1b5baa0405c</testCaseGuid>
+   <variable>
+      <defaultValue>'Galeri'</defaultValue>
+      <description></description>
+      <id>5cd3e666-1088-4b6f-a80a-28884fc5ce76</id>
+      <masked>false</masked>
+      <name>Upload</name>
+   </variable>
+   <variable>
+      <defaultValue>'lala.jpg'</defaultValue>
+      <description></description>
+      <id>9d0ef70a-0ef2-4753-b138-f30fc11722c1</id>
+      <masked>false</masked>
+      <name>Foto</name>
+   </variable>
+</TestCaseEntity>

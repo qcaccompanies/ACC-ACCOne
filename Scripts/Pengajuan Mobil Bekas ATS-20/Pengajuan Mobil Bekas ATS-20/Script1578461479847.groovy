@@ -37,7 +37,7 @@ not_run: Mobile.tap(findTestObject('Pengajuan Mobil Bekas ATS-20/ovelay'), 0, Fa
 
 Mobile.scrollToText(NamaMobil, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Buat Pengajuan/Select_Car', [('text') : NamaMobil]), 0)
+Mobile.tap(findTestObject('Buat Pengajuan Mobil Baru/Lama/Select_Car', [('text') : NamaMobil]), 0)
 
 Mobile.tap(findTestObject('Pengajuan Mobil Bekas ATS-20/BTN_Saya_Tertarik'), 0)
 

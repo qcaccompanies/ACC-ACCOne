@@ -5,4 +5,39 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ec1ef861-213b-4445-9aef-c610729b6263</testCaseGuid>
+   <variable>
+      <defaultValue>'12000000'</defaultValue>
+      <description></description>
+      <id>5342afed-308a-4cd5-826e-7eb7362ad377</id>
+      <masked>false</masked>
+      <name>Dana</name>
+   </variable>
+   <variable>
+      <defaultValue>'48'</defaultValue>
+      <description></description>
+      <id>7345b250-4dac-485d-abc6-4809ef39632b</id>
+      <masked>false</masked>
+      <name>Periode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Pendidikan'</defaultValue>
+      <description></description>
+      <id>4d455d00-099b-4aad-9c0f-262e10344168</id>
+      <masked>false</masked>
+      <name>Tujuan</name>
+   </variable>
+   <variable>
+      <defaultValue>'Jawa Tengah dan DIY'</defaultValue>
+      <description></description>
+      <id>2260e8a5-f9ff-4204-8a9f-ee1c7b042728</id>
+      <masked>false</masked>
+      <name>AreaPengajuan</name>
+   </variable>
+   <variable>
+      <defaultValue>'MAGELANG'</defaultValue>
+      <description></description>
+      <id>f9595532-2bf8-475e-bb0e-8de5a2dfcd84</id>
+      <masked>false</masked>
+      <name>CabangACC</name>
+   </variable>
 </TestCaseEntity>
