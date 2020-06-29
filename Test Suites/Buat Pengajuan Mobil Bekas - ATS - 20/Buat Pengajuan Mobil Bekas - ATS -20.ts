@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>29c88967-81d7-4ece-b37b-00421bca0d07</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>5-7</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>6</value>
          </iterationEntity>
          <testDataId>Data Files/Buat Pengajuan Mobil Bekas - ATS -20/Buat Pengajuan Mobil Bekas ATS - 20</testDataId>
       </testDataLink>

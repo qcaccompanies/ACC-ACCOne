@@ -19,8 +19,13 @@
          <combinationType>ONE</combinationType>
          <id>b8e9aa8c-339a-44b5-8a7d-f8ae93c72982</id>
          <iterationEntity>
+<<<<<<< HEAD
             <iterationType>ALL</iterationType>
             <value>6-6</value>
+=======
+            <iterationType>RANGE</iterationType>
+            <value>2-4</value>
+>>>>>>> branch 'master' of https://github.com/qcaccompanies/ACC-ACCOne.git
          </iterationEntity>
          <testDataId>Data Files/Login - ATS-19</testDataId>
       </testDataLink>

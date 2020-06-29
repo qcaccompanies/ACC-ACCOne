@@ -6,21 +6,21 @@
    <comment></comment>
    <testCaseGuid>cae3648d-a94b-421d-a6b3-c0d60b62f6b9</testCaseGuid>
    <variable>
-      <defaultValue>'DAIHATSU'</defaultValue>
+      <defaultValue>'TOYOTA'</defaultValue>
       <description></description>
       <id>86a743b9-1a1d-43ab-b741-7e170cdfdbe3</id>
       <masked>false</masked>
       <name>Brand</name>
    </variable>
    <variable>
-      <defaultValue>'AYLA'</defaultValue>
+      <defaultValue>'AGYA'</defaultValue>
       <description></description>
       <id>69fb34d5-8147-4b9d-9dfa-05b6285912b8</id>
       <masked>false</masked>
       <name>Type</name>
    </variable>
    <variable>
-      <defaultValue>'T:1.0 M A/T NEW'</defaultValue>
+      <defaultValue>'T:1.2 G A/T NEW'</defaultValue>
       <description></description>
       <id>1dac46db-c38b-451c-8b30-ffbc42f6ca96</id>
       <masked>false</masked>

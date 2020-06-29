@@ -19,7 +19,7 @@
          <combinationType>ONE</combinationType>
          <id>70c3dfd0-0180-42bb-b042-b766c0db9d86</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>ALL</iterationType>
             <value>6-8</value>
          </iterationEntity>
          <testDataId>Data Files/Buat Pengajuan/Buat Pengajuan</testDataId>

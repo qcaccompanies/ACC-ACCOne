@@ -15,110 +15,65 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\Hari Sapto\\git\\ACC-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
 
-Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tapAtPosition(990, 2025)
-
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Home/Icon Akun'), 0)
 
 Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Label Verifikasi Akun'), 0)
 
 switch (status.toString()) {
     case 'unverified':
-        not_run: WebUI.callTestCase(findTestCase('Verifikasi AKun - ATS-11 Test/Verification Status'), [:], FailureHandling.STOP_ON_FAILURE)
+        WebUI.callTestCase(findTestCase('Verifikasi AKun - ATS-11 Test/Verification Status'), [:], FailureHandling.STOP_ON_FAILURE)
 
         if (condition.toString() == 'success') {
-            Mobile.tapAtPosition(270, 1105)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload KTP'), 0)
 
-            Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Gallery Ktp'), 0)
 
-            Mobile.tapAtPosition(695, 1100)
+            Mobile.scrollToText('ktp', FailureHandling.STOP_ON_FAILURE)
 
-            Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/FOTO KTP'), 0)
 
-            Mobile.scrollToText(ktp, FailureHandling.STOP_ON_FAILURE)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload Selfie'), 0)
 
-            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/ktp.png'), 0)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Gallery Selfie'), 0)
 
-            Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+            Mobile.scrollToText('selfie', FailureHandling.STOP_ON_FAILURE)
 
-            Mobile.tapAtPosition(270, 1245)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/FOTO SELFIE'), 0)
 
-            Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload NPWP'), 0)
 
-            Mobile.tapAtPosition(695, 1100)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Gallery NPWP'), 0)
 
-            Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+            Mobile.scrollToText('npwp', FailureHandling.STOP_ON_FAILURE)
 
-            Mobile.scrollToText(selfie, FailureHandling.STOP_ON_FAILURE)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/FOTO NPWP'), 0)
 
-            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/selfie.png'), 0)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload KK'), 0)
 
-            Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Gallery KK'), 0)
 
-            Mobile.tapAtPosition(270, 1445)
+            Mobile.scrollToText('kk', FailureHandling.STOP_ON_FAILURE)
 
-            Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/FOTO KK'), 0)
 
-            Mobile.tapAtPosition(695, 1100)
-
-            Mobile.scrollToText(npwp, FailureHandling.STOP_ON_FAILURE)
-
-            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/npwp.png'), 0)
-
-            Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-            Mobile.tapAtPosition(270, 1660)
-
-            Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-            Mobile.tapAtPosition(695, 1100)
-
-            Mobile.scrollToText(kk, FailureHandling.STOP_ON_FAILURE)
-
-            Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/kk.png'), 0)
-
-            Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-            Mobile.setText(findTestObject('Verifikasi Akun - ATS-11/Nomor NIK'), nik, 0)
+            Mobile.setText(findTestObject('Verifikasi Akun - ATS-11/Field No NIK'), nik, 0)
 
             Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload Dokumen'), 0)
         } else if (condition.toString() == 'failed') {
             if (condition2.toString() == 'ktpEmpty') {
                 Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload Dokumen'), 0)
 
-                Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Warn Harus Ada Data Foto KTP'), 0)
+                Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Warn KTP Empty'), 0)
             } else if (condition2.toString() == 'nikShort') {
-                Mobile.setText(findTestObject('Verifikasi Akun - ATS-11/Nomor NIK'), nik, 0)
+                Mobile.setText(findTestObject('Verifikasi Akun - ATS-11/Field No NIK'), nik, 0)
 
-                Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Warn Field NIK Harus 16 Karakter'), 
-                    0)
+                Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Warn NIK Short'), 0)
             } else if (condition2.toString() == 'nikEmpty') {
-                Mobile.tapAtPosition(270, 1105)
+                Mobile.setText(findTestObject('Verifikasi Akun - ATS-11/Field No NIK'), nik, 0)
 
-                Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-                Mobile.tapAtPosition(695, 1100)
-
-                Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-                Mobile.scrollToText(ktp, FailureHandling.STOP_ON_FAILURE)
-
-                Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/ktp.png'), 0)
-
-                Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-                Mobile.setText(findTestObject('Verifikasi Akun - ATS-11/Nomor NIK'), nik, 0)
-
-                Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload Dokumen'), 0)
-
-                Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Warn NIK Tidak boleh kosong'), 0)
-            } else if (condition2.toString() == 'nikEmpty2') {
-                Mobile.setText(findTestObject('Verifikasi Akun - ATS-11/Nomor NIK'), nik, 0)
-
-                Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Warn NIK Tidak boleh kosong'), 0)
+                Mobile.verifyElementVisible(findTestObject('Verifikasi Akun - ATS-11/Warn NIK Empty'), 0)
             }
         }
         

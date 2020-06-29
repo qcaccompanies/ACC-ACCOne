@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\Hari Sapto\\git\\ACC-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tapAtPosition(990, 2025)
+Mobile.tap(findTestObject('Home/Icon Akun'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -38,9 +38,9 @@ Mobile.setText(findTestObject('Ubah Email - ATS-13/Field New Email'), newEmail, 
 switch (status.toString()) {
     case 'failed':
         if (condition.toString() == 'emptyOldEmail') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/label Email Lama'), 0)
+            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/Warn Old Email Empty'), 0)
         } else if (condition.toString() == 'emptyNewEmail') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/label Email Baru'), 0)
+            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/Warn New Email Empty'), 0)
         } else if (condition.toString() == 'oldEmailWrong') {
             Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/Warn Old Email Wrong'), 0)
         } else if (condition.toString() == 'newEmailShort') {
@@ -52,8 +52,6 @@ switch (status.toString()) {
         break
     case 'success':
         Mobile.tap(findTestObject('Ubah Email - ATS-13/Btn Submit'), 0)
-
-        Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
 
         Mobile.tap(findTestObject('Ubah Email - ATS-13/Btn Okay'), 0)
 }

@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>afdedbd3-3663-4798-aca8-06a6cd9f40c0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TambahAkunBank/Tambah Akun Bank V2</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -71,6 +71,63 @@
          <type>DATA_COLUMN</type>
          <value>condition</value>
          <variableId>478ecc16-4aab-4341-849e-e5cccec3eab1</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2aa95c6a-a7c3-41cc-a2d3-416d6dccee4c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TambahAkunBank/Tambah Akun Bank</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>aa0eefdf-6897-4e48-aa0e-e92ea99f516f</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/TambahAkunBank/TambahAkunBankV2</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>aa0eefdf-6897-4e48-aa0e-e92ea99f516f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NamaBank</value>
+         <variableId>491e1304-c88b-4556-835d-f6f55e3a9620</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>aa0eefdf-6897-4e48-aa0e-e92ea99f516f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Cabang</value>
+         <variableId>0872c804-0938-4dfe-bb4b-0a74ff573189</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>aa0eefdf-6897-4e48-aa0e-e92ea99f516f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PemilikRek</value>
+         <variableId>5a40939f-d877-457e-9000-c70a2920fe2b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>aa0eefdf-6897-4e48-aa0e-e92ea99f516f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NoRek</value>
+         <variableId>6509c748-e3b9-4d90-adae-600915acc833</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>aa0eefdf-6897-4e48-aa0e-e92ea99f516f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>OTP</value>
+         <variableId>6beb30e0-dc87-4df6-bb3a-c3538a9aff6f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>aa0eefdf-6897-4e48-aa0e-e92ea99f516f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Result</value>
+         <variableId>f3efaca3-281c-4293-a93d-419b42ce365b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>aa0eefdf-6897-4e48-aa0e-e92ea99f516f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Keterangan</value>
+         <variableId>6e508aa1-1d02-48c3-977a-8f85c581f39a</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

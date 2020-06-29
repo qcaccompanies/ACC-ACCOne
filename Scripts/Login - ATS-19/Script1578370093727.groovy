@@ -15,11 +15,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+<<<<<<< HEAD
 Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (dev).apk', false)
+=======
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
+>>>>>>> branch 'master' of https://github.com/qcaccompanies/ACC-ACCOne.git
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
+<<<<<<< HEAD
 Mobile.tapAtPosition(990, 2150)
+=======
+Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+>>>>>>> branch 'master' of https://github.com/qcaccompanies/ACC-ACCOne.git
 
 Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk Daftar'), 0)
 
@@ -33,9 +41,6 @@ switch (status.toString()) {
             Mobile.verifyElementAttributeValue(findTestObject('Login - ATS-19/Btn Masuk Disabled'), 'enabled', 'false', 
                 0)
         } else if (condition.toString() == 'passwordEmpty') {
-            Mobile.verifyElementAttributeValue(findTestObject('Login - ATS-19/Btn Masuk Disabled'), 'enabled', 'false', 
-                0)
-        } else if (condition.toString() == 'usernameNpassEmpty') {
             Mobile.verifyElementAttributeValue(findTestObject('Login - ATS-19/Btn Masuk Disabled'), 'enabled', 'false', 
                 0)
         } else if (condition.toString() == 'usernameDontExist') {
@@ -52,7 +57,7 @@ switch (status.toString()) {
     case 'success':
         Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Login - ATS-19/label Promo Terbaik'), 0)
+        Mobile.verifyElementVisible(findTestObject('Home/Icon Home'), 0)
 
         break
 }

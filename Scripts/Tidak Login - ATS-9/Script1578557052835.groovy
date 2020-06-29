@@ -15,33 +15,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\Hari Sapto\\git\\ACC-ACCOne\\acc.one (1).apk', false)
-
-Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
 
 Mobile.tap(findTestObject('Tidak Login - ATS-9/Btn Panah Direct Ke List'), 0)
-
-Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('Tidak Login - ATS-9/Label Lokasi Cabang'), 0)
 
 Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Back Icon'), 0)
 
-Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tapAtPosition(960, 336)
-
-Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Tidak Login - ATS-9/Label Masuk atau Daftar'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Tidak Login - ATS-9/Label Masuk acc.one'), 0)
 
 Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Back Icon'), 0)
 
-Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
-
 Mobile.tap(findTestObject('Tidak Login - ATS-9/Label Lihat Semua'), 0)
-
-Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('Tidak Login - ATS-9/Label Semua Promo'), 0)
 

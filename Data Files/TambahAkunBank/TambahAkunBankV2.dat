@@ -6,11 +6,11 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>920fdc3d-a86f-4d3e-a753-c1045fc19137</dataFileGUID>
-   <dataSourceUrl>D:\MY WORLD\KULIAH (TUGAS)\TGS SEMS. 8\INTERNSHIT\Task ACC ONE\ACC-ACCOne\TambahAkunBank.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Marvin\Documents\GitHub\ACC-Seamless-ACCOne\TambahAkunBank.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>v2</sheetName>
+   <sheetName>v1</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

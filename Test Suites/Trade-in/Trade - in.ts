@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>8b813a39-fca4-4d3f-a6e4-7226ccdeb533</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>5-6</value>
+            <iterationType>ALL</iterationType>
+            <value></value>
          </iterationEntity>
          <testDataId>Data Files/Trade-in/Trade-in</testDataId>
       </testDataLink>
