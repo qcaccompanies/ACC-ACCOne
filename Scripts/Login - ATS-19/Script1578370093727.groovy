@@ -15,19 +15,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-<<<<<<< HEAD
 Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (dev).apk', false)
-=======
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
->>>>>>> branch 'master' of https://github.com/qcaccompanies/ACC-ACCOne.git
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-<<<<<<< HEAD
 Mobile.tapAtPosition(990, 2150)
-=======
+
 Mobile.tap(findTestObject('Home/Icon Akun'), 0)
->>>>>>> branch 'master' of https://github.com/qcaccompanies/ACC-ACCOne.git
 
 Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk Daftar'), 0)
 
