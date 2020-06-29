@@ -15,16 +15,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one.apk', 
-    false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (dev).apk', false)
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/boxCariMobil'), 0)
+
 Mobile.tap(findTestObject('Cari Mobil/Baru/boxMobilBaru'), 0)
+
 Mobile.tap(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), 0)
-Mobile.setText(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), namaMobilBaru, 0)
-Mobile.tap(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), 0)
-Mobile.tapAtPosition(622, 1230)
+
+Mobile.setText(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), namaMobilBaru + '\\n', 0)
 
 if (paket == 'yes') {
     Mobile.tap(findTestObject('Cari Mobil/Baru/android.view.View0 - Paket'), 0)
@@ -33,6 +34,7 @@ if (paket == 'yes') {
 }
 
 Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : spesific]), 0)
 
 if (condition == 'passed') {

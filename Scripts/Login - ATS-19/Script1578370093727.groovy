@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\Hari Sapto\\git\\ACC-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (dev).apk', false)
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tapAtPosition(990, 2025)
+Mobile.tapAtPosition(990, 2150)
 
 Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk Daftar'), 0)
 
@@ -38,10 +38,10 @@ switch (status.toString()) {
         } else if (condition.toString() == 'usernameNpassEmpty') {
             Mobile.verifyElementAttributeValue(findTestObject('Login - ATS-19/Btn Masuk Disabled'), 'enabled', 'false', 
                 0)
-        } else if (condition.toString() == 'usernameWrong') {
+        } else if (condition.toString() == 'usernameDontExist') {
             Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk'), 0)
 
-            Mobile.verifyElementVisible(findTestObject('Login - ATS-19/Warn Username Password Salah'), 0)
+            Mobile.verifyElementVisible(findTestObject('Login - ATS-19/Warn Email  Phone Number Doesnt Exist'), 0)
         } else if (condition.toString() == 'passwordWrong') {
             Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk'), 0)
 

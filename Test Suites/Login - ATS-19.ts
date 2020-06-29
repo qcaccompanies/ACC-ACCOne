@@ -19,7 +19,7 @@
          <combinationType>ONE</combinationType>
          <id>b8e9aa8c-339a-44b5-8a7d-f8ae93c72982</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>ALL</iterationType>
             <value>6-6</value>
          </iterationEntity>
          <testDataId>Data Files/Login - ATS-19</testDataId>
