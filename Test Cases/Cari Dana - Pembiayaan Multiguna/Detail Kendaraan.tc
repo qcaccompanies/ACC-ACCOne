@@ -20,14 +20,14 @@
       <name>Type</name>
    </variable>
    <variable>
-      <defaultValue>'T:1.2 G A/T NEW'</defaultValue>
+      <defaultValue>'T:1.0 G M/T'</defaultValue>
       <description></description>
       <id>1dac46db-c38b-451c-8b30-ffbc42f6ca96</id>
       <masked>false</masked>
       <name>Model</name>
    </variable>
    <variable>
-      <defaultValue>'2018'</defaultValue>
+      <defaultValue>'2016'</defaultValue>
       <description></description>
       <id>f08aa093-97f6-4e97-af39-2837a92e570c</id>
       <masked>false</masked>
