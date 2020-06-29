@@ -18,10 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Cari Dana - Pembiayaan Multiguna/Start_Application'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Cari Dana - Pembiayaan Multiguna/Detail Kendaraan'), [('Brand') : 'TOYOTA', ('Type') : 'AGYA'
-        , ('Model') : 'T:1.2 G A/T NEW', ('Tahun') : '2018'], FailureHandling.STOP_ON_FAILURE)
+        , ('Model') : 'T:1.0 G M/T', ('Tahun') : '2016'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Cari Dana - Pembiayaan Multiguna/Simulasi Kredit'), [('Dana') : '12000000', ('Periode') : '48'
-        , ('Tujuan') : 'Pendidikan', ('AreaPengajuan') : 'Jawa Tengah dan DIY', ('CabangACC') : 'MAGELANG'], FailureHandling.STOP_ON_FAILURE)
+        , ('Tujuan') : 'Pendidikan', ('AreaPengajuan') : 'Jawa Tengah dan DIY', ('CabangACC') : 'MAGELANG JAWA TENGAH'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Cari Dana - Pembiayaan Multiguna/Upload_Foto_Kendaraan'), [('Upload') : 'Galeri', ('Foto') : 'lala.jpg'], 
     FailureHandling.STOP_ON_FAILURE)

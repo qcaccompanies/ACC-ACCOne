@@ -34,7 +34,7 @@
       <name>AreaPengajuan</name>
    </variable>
    <variable>
-      <defaultValue>'MAGELANG'</defaultValue>
+      <defaultValue>'MAGELANG JAWA TENGAH'</defaultValue>
       <description></description>
       <id>f9595532-2bf8-475e-bb0e-8de5a2dfcd84</id>
       <masked>false</masked>
