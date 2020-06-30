@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Login - ATS-19 (1)</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>0e197139-4cb8-444f-b88b-824d4f7a1ee6</testSuiteGuid>
+   <testCaseLink>
+      <guid>46d76919-dfd2-410a-914b-70177490f158</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login - ATS-19</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>57798746-ff44-4da2-9f96-840c1cd624f0</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Login Data</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aab0e5df-b7d4-466b-9da7-959cedfabbbd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8b6184b0-b2c1-43cf-b8a9-b811da4a0d71</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3373235a-0b16-4b2a-bf70-fde0006aeb65</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f422484b-f08b-4125-b855-ba5816cf8032</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

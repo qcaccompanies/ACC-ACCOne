@@ -19,8 +19,7 @@ import io.appium.java_client.android.nativekey.AndroidKey as AndroidKey
 import io.appium.java_client.android.nativekey.KeyEvent as KeyEvent
 import io.appium.java_client.android.AndroidDriver as AndroidDriver
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
-    false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (dev).apk', false)
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
@@ -33,11 +32,7 @@ Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/boxMarketplace'), 0)
 if (brand == '') {
     Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), 0)
 
-    Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), namaMobil, 0)
-
-    Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), 0)
-
-    Mobile.tapAtPosition(622, 1230)
+    Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/SearchBox'), namaMobil + '\\n', 0)
 
     Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
@@ -68,11 +63,7 @@ if (brand == '') {
     } else {
         Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
 
-        Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), namaMobil, 0)
-
-        Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
-
-        Mobile.tapAtPosition(622, 1230)
+        Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), namaMobil + '\\n', 0)
 
         Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
@@ -98,11 +89,7 @@ if (brand == '') {
     } else {
         Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
 
-        Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), namaMobil, 0)
-
-        Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), 0)
-
-        Mobile.tapAtPosition(622, 1230)
+        Mobile.setText(findTestObject('Cari Mobil/Bekas Marketplace/searchBoxToyota'), namaMobil +'\\n', 0)
 
         Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 

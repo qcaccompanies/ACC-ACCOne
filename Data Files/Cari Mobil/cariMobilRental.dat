@@ -6,11 +6,11 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>3b6289d4-e3e0-48d3-b709-2f1a87615dcd</dataFileGUID>
-   <dataSourceUrl>D:\MY WORLD\KULIAH (TUGAS)\TGS SEMS. 8\INTERNSHIT\Task ACC ONE\ACC-ACCOne\cariMobilRental.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\lieto\git\ACC-ACCOne\cariMobilRental.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName>Sheet2</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

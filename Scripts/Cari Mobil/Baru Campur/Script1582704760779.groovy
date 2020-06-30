@@ -15,23 +15,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
-    false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (dev).apk', false)
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Cari Mobil/Bekas Marketplace/boxCariMobil'), 0)
+Mobile.tap(findTestObject('Cari Mobil/Icon Cari Mobil'), 0)
 
 Mobile.tap(findTestObject('Cari Mobil/Baru/boxMobilBaru'), 0)
 
 if (brand == '') {
     Mobile.tap(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), 0)
 
-    Mobile.setText(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), namaMobil, 0)
-
-    Mobile.tap(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), 0)
-
-    Mobile.tapAtPosition(622, 1230)
+    Mobile.setText(findTestObject('Cari Mobil/Baru/boxSearchMobilBaru'), namaMobil + '\\n', 0)
 
     Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
@@ -54,11 +49,7 @@ if (brand == '') {
     } else {
         Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), 0)
 
-        Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), namaMobil, 0)
-
-        Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), 0)
-
-        Mobile.tapAtPosition(622, 1230)
+        Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxDaihatsu'), namaMobil + '\\n', 0)
 
         Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
@@ -82,11 +73,7 @@ if (brand == '') {
     } else {
         Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxToyota'), 0)
 
-        Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxToyota'), namaMobil, 0)
-
-        Mobile.tap(findTestObject('Cari Mobil/Baru/searchBoxToyota'), 0)
-
-        Mobile.tapAtPosition(622, 1230)
+        Mobile.setText(findTestObject('Cari Mobil/Baru/searchBoxToyota'), namaMobil + '\\n', 0)
 
         Mobile.scrollToText(spesific, FailureHandling.STOP_ON_FAILURE)
 
