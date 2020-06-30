@@ -23,7 +23,7 @@ Mobile.setText(findTestObject('Trade In/Type_Used'), TypeTrade, 0)
 
 Mobile.tap(findTestObject('Trade In/Select 2', [('text') : TypeTrade]), 0)
 
-Mobile.tap(findTestObject('Trade In/Detail Umum'), 0)
+Mobile.tap(findTestObject('Trade In/Detail Umum (1)'), 0)
 
 Mobile.setText(findTestObject('Trade In/Model_Used'), ModelTrade, 0)
 
