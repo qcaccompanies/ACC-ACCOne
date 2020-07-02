@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>9912c9a4-03a3-47cf-9b41-4cae9cbf915c</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>2</value>
          </iterationEntity>
          <testDataId>Data Files/Cari Mobil/cariMobilRental</testDataId>
       </testDataLink>
@@ -87,25 +87,7 @@
       <variableLink>
          <testDataLinkId>9912c9a4-03a3-47cf-9b41-4cae9cbf915c</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>warnaHitam</value>
-         <variableId>24f00777-2aee-474f-8d21-0ec7f4179d6f</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9912c9a4-03a3-47cf-9b41-4cae9cbf915c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>warnaPutih</value>
-         <variableId>fb6f565f-79c6-46db-971d-9a0516d251ff</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9912c9a4-03a3-47cf-9b41-4cae9cbf915c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>warnaSilver</value>
-         <variableId>21a79614-187a-4296-961f-f6b4bf1c9c31</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>9912c9a4-03a3-47cf-9b41-4cae9cbf915c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>warnaSemua</value>
+         <value>warna</value>
          <variableId>aba27f47-55fd-444c-ad7a-a7d2d6cc2e67</variableId>
       </variableLink>
       <variableLink>

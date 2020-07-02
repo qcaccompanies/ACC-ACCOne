@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (preprod).apk', false)
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+Mobile.tapAtPosition(990, 2150)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -50,22 +50,23 @@ Mobile.setText(findTestObject('Ubah Kata Sandi - ATS-22/Field Konfirmasi Kata Sa
 Mobile.tapAtPosition(545, 1150)
 
 if (condition.toString() == 'oldPasswordEmpty') {
-    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/Warn Kata Sandi Lama Empty'), 0)
+    Mobile.verifyElementAttributeValue(findTestObject('Ubah Kata Sandi - ATS-22/Btn Konfirmasi Disabled'), 'enabled', 'false', 
+        0)
 } else if (condition.toString() == 'newPasswordEmpty') {
-    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/Warn Kata Sandi Baru Empty'), 0)
+    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/New Warn New Password Empty'), 0)
 } else if (condition.toString() == 'confPasswordEmpty') {
-    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/Warn Konfirmasi Kata Sandi Baru Empty'), 0)
+    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/New Warn Confirm Password Empty'), 0)
 } else if (condition.toString() == 'oldPasswordWrong') {
-    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/Warn Kata Sandi Lama Wrong'), 0)
+    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/New Warn Old Password Not Match'), 0)
 } else if (condition.toString() == 'newPasswordWrong') {
-    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/Warn Kata Sandi Baru Tidak Sesuai Format'), 0)
+    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/New Warn Format Wrong'), 0)
 } else if (condition.toString() == 'confPasswordNotMatch') {
-    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/Warn Konfirmasi Kata Sandi Tidak Sesuai'), 0)
-} else if (condition.toString() == 'newPasswordShort') {
-    Mobile.tap(findTestObject('Ubah Kata Sandi - ATS-22/Btn Konfirmasi'), 0)
-
-    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/Warn Kata Sandi Baru Short'), 0)
+    Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/New Warn Confirm New Password Not Match'), 0)
 } else {
+    Mobile.tap(findTestObject('Ubah Kata Sandi - ATS-22/Field Konfirmasi Kata Sandi Baru'), 0)
+
+    Mobile.tapAtPosition(545, 1150)
+
     Mobile.tap(findTestObject('Ubah Kata Sandi - ATS-22/Btn Konfirmasi'), 0)
 
     Mobile.verifyElementVisible(findTestObject('Ubah Kata Sandi - ATS-22/Change Password Success Notification'), 0)

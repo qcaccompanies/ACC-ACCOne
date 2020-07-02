@@ -78,30 +78,9 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>24f00777-2aee-474f-8d21-0ec7f4179d6f</id>
-      <masked>false</masked>
-      <name>warnaHitam</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>fb6f565f-79c6-46db-971d-9a0516d251ff</id>
-      <masked>false</masked>
-      <name>warnaPutih</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>21a79614-187a-4296-961f-f6b4bf1c9c31</id>
-      <masked>false</masked>
-      <name>warnaSilver</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>aba27f47-55fd-444c-ad7a-a7d2d6cc2e67</id>
       <masked>false</masked>
-      <name>warnaSemua</name>
+      <name>warna</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>

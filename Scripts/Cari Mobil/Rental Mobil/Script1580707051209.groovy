@@ -15,8 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
-    false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (preprod).apk', false)
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
@@ -24,308 +23,93 @@ Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/boxCariMobil'), 0)
 
 Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/boxRentalMobil'), 0)
 
-if (newOrUsed == 'used') {
+if (newOrUsed.toString() == 'used') {
     Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnUsedCar'), 0)
 }
 
-Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/b3'), 0)
+Mobile.setText(findTestObject('Cari Mobil/Mobil Rental/Dropdown Brand'), brand, 0)
 
-Mobile.hideKeyboard()
+Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Opsi Toyota', [('text') : brand]), 0)
 
-Mobile.scrollToText(brand)
+Mobile.setText(findTestObject('Cari Mobil/Mobil Rental/Dropdown Type'), typeMobil, 0)
 
-Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : brand]), 0)
+Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Opsi All New Avanza', [('text') : typeMobil]), 0)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.swipe(400, 1600, 400, 600)
 
-Mobile.hideKeyboard()
+Mobile.setText(findTestObject('Cari Mobil/Mobil Rental/Dropdown Model'), model, 0)
 
-Mobile.scrollToText(typeMobil)
+Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Opsi 1.3 VELOZ AT', [('text') : model]), 0)
 
-if (newOrUsed == 'used') {
-    Mobile.tapAtPosition(350, 766)
-} else {
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : typeMobil]), 0)
+Mobile.setText(findTestObject('Cari Mobil/Mobil Rental/Dropdown Tahun'), tahun, 0)
+
+Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Opsi Tahun 2019', [('text') : tahun]), 0)
+
+Mobile.setText(findTestObject('Cari Mobil/Mobil Rental/Dropdown Area Pengajuan'), areaPengajuan, 0)
+
+Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Opsi Area Pengajuan', [('text') : areaPengajuan]), 0)
+
+Mobile.swipe(40, 1080, 40, 500)
+
+Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Dropdown Cabang ACC'), 0)
+
+Mobile.setText(findTestObject('Cari Mobil/Mobil Rental/Dropdown Cabang ACC'), cabangACC + '\\n', 0)
+
+Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Opsi Bandung 3 Cibiru Jawa Barat', [('text') : cabangACC]), 0)
+
+if (tujuan.toString() == 'Usaha') {
+    Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Btn Usaha'), 0)
+
+    Mobile.setText(findTestObject('Cari Mobil/Mobil Rental/Dropdown Bidang Usaha'), bidangUsaha, 0)
+
+    Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Opsi Bidang Usaha', [('text') : bidangUsaha]), 0)
 }
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.hideKeyboard()
-
-if (condition == 'passed') {
-    Mobile.scrollToText(model)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : model]), 0)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.scrollToText(tahun)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : tahun]), 0)
-
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    CustomKeywords.'ScrollUpDown.UpDown'(480, 1050, 480, 230)
-
-    Mobile.tapAtPosition(297, 428)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.scrollToText(cabangACC)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : cabangACC]), 0)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    if (tujuan == 'Usaha') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnTujuanUsaha'), 0)
-    }
-    
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/bidUsaha2'), 0)
-
-    if (bidangUsaha == 'Pertanian') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnPertanian'), 0)
-    } else if (bidangUsaha == 'Finance') {
-        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-        Mobile.tapAtPosition(293, 600)
-    }
-    
-    if (typeCustomer != 'Personal') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/android.widget.Button0 - Company'), 0)
-    }
-    
-    if (warnaSemua == 'Yes') {
-        Mobile.tapAtPosition(89, 904)
-
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/semuaaa'), 0)
-    } else {
-        if (warnaHitam == 'Yes') {
-            not_run: Mobile.tapAtPosition(170, 907)
-
-            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/hitammmm'), 0)
-        }
-        
-        if (warnaPutih == 'Yes') {
-            not_run: Mobile.tapAtPosition(243, 907)
-
-            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/putihhhh'), 0)
-        }
-        
-        if (warnaSilver == 'Yes') {
-            not_run: Mobile.tapAtPosition(309, 907)
-
-            Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/silverrrr'), 0)
-        }
-    }
-    
-    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-    switch (periodeLeasing) {
-        case '12':
-            CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Rental Mobil/line1'), 0, FailureHandling.STOP_ON_FAILURE)
-
-            break
-        case '24':
-            CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Rental Mobil/line1'), 0.25, FailureHandling.STOP_ON_FAILURE)
-
-            break
-        case '36':
-            CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Rental Mobil/line1'), 0.5, FailureHandling.STOP_ON_FAILURE)
-
-            break
-        case '48':
-            CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Rental Mobil/line1'), 0.75, FailureHandling.STOP_ON_FAILURE)
-
-            break
-        case '60':
-            CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Rental Mobil/line1'), 1, FailureHandling.STOP_ON_FAILURE)
-
-            break
-    }
-    
-    Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnAjukan'), 0)
-
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/Notif Pengajuan Biaya berhasil dilakukan'), 0)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnOkay'), 0)
-} else if (condition == 'bidangUsahaIsEmptyUsaha') {
-    Mobile.scrollToText(model)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : model]), 0)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.scrollToText(tahun)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : tahun]), 0)
-
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    CustomKeywords.'ScrollUpDown.UpDown'(480, 1050, 480, 230)
-
-    Mobile.tapAtPosition(297, 428)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.scrollToText(cabangACC)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : cabangACC]), 0)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    if (tujuan == 'Usaha') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnTujuanUsaha'), 0)
-    }
-    
-    Mobile.hideKeyboard()
-
-    if (typeCustomer != 'Personal') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/android.widget.Button0 - Company'), 0)
-    }
-    
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus Diiisi'), 0)
-} else if (condition == 'bidangUsahaDanVariabelLainIsEmptyUsaha') {
-    Mobile.scrollToText(model)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : model]), 0)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.scrollToText(tahun)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : tahun]), 0)
-
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    CustomKeywords.'ScrollUpDown.UpDown'(480, 1050, 480, 230)
-
-    Mobile.tapAtPosition(297, 428)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.tapAtPosition(680, 390)
-
-    if (tujuan == 'Usaha') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnTujuanUsaha'), 0)
-    }
-    
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/bidUsaha2'), 0)
-
-    Mobile.hideKeyboard()
-
-    if (typeCustomer != 'Personal') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/android.widget.Button0 - Company'), 0)
-    }
-    
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus dipilih'), 0)
-
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus Diiisi'), 0)
-} else if (condition == 'variabelLainIsEmptyUsaha') {
-    Mobile.scrollToText(model)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : model]), 0)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.scrollToText(tahun)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : tahun]), 0)
-
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    CustomKeywords.'ScrollUpDown.UpDown'(480, 1050, 480, 230)
-
-    Mobile.tapAtPosition(297, 428)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.tapAtPosition(680, 390)
-
-    if (tujuan == 'Usaha') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnTujuanUsaha'), 0)
-    }
-    
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/bidUsaha2'), 0)
-
-    if (bidangUsaha == 'Pertanian') {
-        Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/btnPertanian'), 0)
-    } else if (bidangUsaha == 'Finance') {
-        Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-        Mobile.tapAtPosition(293, 600)
-    }
-    
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus dipilih'), 0)
-} else {
-    Mobile.scrollToText(model)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : model]), 0)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.scrollToText(tahun)
-
-    Mobile.tap(findTestObject('Cari Mobil/Rental Mobil/tapObject', [('text') : tahun]), 0)
-
-    Mobile.hideKeyboard()
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    CustomKeywords.'ScrollUpDown.UpDown'(480, 1050, 480, 230)
-
-    Mobile.tapAtPosition(297, 428)
-
-    Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-    Mobile.hideKeyboard()
-
-    Mobile.tapAtPosition(680, 390)
-
-    Mobile.verifyElementVisible(findTestObject('Cari Mobil/Rental Mobil/v2Harus dipilih'), 0)
+if (typeCustomer.toString() == 'Company') {
+    Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Btn Company'), 0)
 }
+
+switch (warna) {
+    case 'Merah':
+        Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Warna Merah'), 0)
+
+        break
+    case 'Hitam':
+        Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Warna Hitam'), 0)
+
+        break
+    default:
+        break
+}
+
+switch (periodeLeasing.toString()) {
+    case '12':
+        CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Mobil Rental/Slider Periode Leasing'), 0, FailureHandling.STOP_ON_FAILURE)
+
+        break
+    case '24':
+        CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Mobil Rental/Slider Periode Leasing'), 25, 
+            FailureHandling.STOP_ON_FAILURE)
+
+        break
+    case '36':
+        CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Mobil Rental/Slider Periode Leasing'), 50, 
+            FailureHandling.STOP_ON_FAILURE)
+
+        break
+    case '48':
+        CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Mobil Rental/Slider Periode Leasing'), 75, 
+            FailureHandling.STOP_ON_FAILURE)
+
+        break
+    case '60':
+        CustomKeywords.'mobile.mobileSlide.Slide'(findTestObject('Cari Mobil/Mobil Rental/Slider Periode Leasing'), 100, 
+            FailureHandling.STOP_ON_FAILURE)
+
+        break
+}
+
+Mobile.tap(findTestObject('Cari Mobil/Mobil Rental/Btn Ajukan Enabled'), 0)
+
+Mobile.closeApplication()
 

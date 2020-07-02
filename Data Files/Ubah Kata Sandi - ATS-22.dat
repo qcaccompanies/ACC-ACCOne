@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>aceecabc-16ee-4ab5-8385-960845230344</dataFileGUID>
-   <dataSourceUrl>C:\Users\lieto\git\ACC-Seamless-ACCOne\Ubah Kata - Sandi - ATS-22.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\lieto\git\ACC-ACCOne\Ubah Kata - Sandi - ATS-22.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

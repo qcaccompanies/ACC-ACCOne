@@ -20,7 +20,7 @@
          <id>df2cf480-ff81-4e7a-8806-b1510b3f79e7</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>8</value>
+            <value>7</value>
          </iterationEntity>
          <testDataId>Data Files/Ubah Kata Sandi - ATS-22</testDataId>
       </testDataLink>

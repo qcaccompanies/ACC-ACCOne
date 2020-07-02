@@ -15,11 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (preprod).apk', false)
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+Mobile.tapAtPosition(990, 2150)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -33,24 +33,31 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('Ubah Email - ATS-13/Field Old Email'), oldEmail, 0)
 
+Mobile.tapAtPosition(520, 800)
+
 Mobile.setText(findTestObject('Ubah Email - ATS-13/Field New Email'), newEmail, 0)
+
+Mobile.tapAtPosition(520, 800)
 
 switch (status.toString()) {
     case 'failed':
-        if (condition.toString() == 'emptyOldEmail') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/Warn Old Email Empty'), 0)
-        } else if (condition.toString() == 'emptyNewEmail') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/Warn New Email Empty'), 0)
-        } else if (condition.toString() == 'oldEmailWrong') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/Warn Old Email Wrong'), 0)
+        if (condition.toString() == 'oldEmailWrong') {
+            Mobile.verifyElementAttributeValue(findTestObject('Ubah Email - ATS-13/Btn Submit Disabled'), 'enabled', 'false', 
+                0)
         } else if (condition.toString() == 'newEmailShort') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/Warn New Email Format Short'), 0)
+            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/New Warn Email Short'), 0)
         } else if (condition.toString() == 'newEmailWrong') {
-            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/Warn New Email Format Wrong'), 0)
+            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/New Warn Email Invalid'), 0)
+        } else if (condition.toString() == 'newEmailSpace') {
+            Mobile.verifyElementVisible(findTestObject('Ubah Email - ATS-13/New Warn Email Cant Contain Space'), 0)
         }
         
         break
     case 'success':
+        Mobile.tap(findTestObject('Ubah Email - ATS-13/Field New Email'), 0)
+
+        Mobile.tapAtPosition(520, 800)
+
         Mobile.tap(findTestObject('Ubah Email - ATS-13/Btn Submit'), 0)
 
         Mobile.tap(findTestObject('Ubah Email - ATS-13/Btn Okay'), 0)
