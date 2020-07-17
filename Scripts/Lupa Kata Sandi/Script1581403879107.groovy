@@ -15,18 +15,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
-    false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (preprod).apk', false)
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.tapAtPosition(443, 229)
+Mobile.tapAtPosition(990, 2150)
 
-Mobile.tapAtPosition(500, 250)
+Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk Daftar'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Lupa Kata Sandi/btnLupaKataSandi'), 0)
+Mobile.tap(findTestObject('Ubah Kata Sandi - ATS-22/Label Lupa Kata Sandi'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -44,9 +43,9 @@ if (condition == 'emailSalah') {
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
     if (kirimOTPke == 'email') {
-        Mobile.tap(findTestObject('Lupa Kata Sandi/kirimKeEmail'), 0)
+        Mobile.tap(findTestObject('Lupa Kata Sandi/Label Kirim Ke Email'), 0)
     } else {
-        Mobile.tap(findTestObject('Lupa Kata Sandi/kirimSMS'), 0)
+        Mobile.tap(findTestObject('Lupa Kata Sandi/Label Kirim Ke Nomor Telepon'), 0)
     }
     
     if (Mobile.verifyElementVisible(findTestObject('Lupa Kata Sandi/checkBoxCaptcha'), 0, FailureHandling.OPTIONAL)) {

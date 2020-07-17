@@ -68,7 +68,7 @@
       <guid>27e5b9b8-7992-463a-871b-89e68c20aca0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Akun Saya/Akun Saya - Pengaturan</testCaseId>
+      <testCaseId>Test Cases/Akun Saya/Akun Saya - Pusat Bantuan</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>8029e06c-f0e2-4aea-b801-d2cbcbc7fd59</id>
@@ -76,19 +76,19 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/Akun Saya Data/Akun Saya - Pengaturan</testDataId>
+         <testDataId>Data Files/Akun Saya Data/Akun Saya - Pusat Bantuan</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>8029e06c-f0e2-4aea-b801-d2cbcbc7fd59</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>search</value>
-         <variableId>f0d79d86-dd7f-497f-9972-48e5133aa232</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>54b1af6f-94c9-4299-af5f-53764570d110</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>8029e06c-f0e2-4aea-b801-d2cbcbc7fd59</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>condition</value>
-         <variableId>fd3d746f-3093-4bac-875a-3613093b35d0</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>319d1f7c-1b0b-45d7-bdec-4684c2fb0686</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

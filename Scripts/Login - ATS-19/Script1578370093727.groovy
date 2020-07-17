@@ -15,13 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (dev).apk', false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (preprod).apk', false)
 
 Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tapAtPosition(990, 2150)
-
-Mobile.tap(findTestObject('Home/Icon Akun'), 0)
 
 Mobile.tap(findTestObject('Login - ATS-19/Btn Masuk Daftar'), 0)
 

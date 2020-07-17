@@ -15,44 +15,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
-    false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (testing).apk', false)
 
 WebUI.delay(20)
 
-Mobile.tapAtPosition(651, 1235)
+Mobile.tapAtPosition(990, 2150)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-if (Mobile.verifyElementVisible(findTestObject('Logout/Masuk  Daftar'), 0, FailureHandling.OPTIONAL)) {
-    Mobile.tap(findTestObject('Logout/Masuk  Daftar'), 0)
-
-    Mobile.setText(findTestObject('Logout/email'), email, 0)
-
-    Mobile.setText(findTestObject('Logout/password'), password, 0)
-
-    Mobile.tap(findTestObject('Logout/Masuk'), 0)
-
-    Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
-} else {
-    Mobile.pressBack()
-}
-
-Mobile.tap(findTestObject('Ubah Foto Profil/txtMyAccount'), 0)
+Mobile.tap(findTestObject('Akun/Label Lihat Profil'), 0)
 
 WebUI.delay(5)
 
 if (picture == 'galeri') {
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnEditPhoto'), 0)
+    Mobile.tap(findTestObject('Ubah Foto Profil/icon edit 3'), 0)
 
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnGalerry'), 0)
+    Mobile.tap(findTestObject('Ubah Foto Profil/Icon Gallery'), 0)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.scrollToText(namaFoto, FailureHandling.STOP_ON_FAILURE)
+    not_run: Mobile.scrollToText(namaFoto, FailureHandling.STOP_ON_FAILURE)
 
     if (condition == 'passed') {
-        Mobile.tap(findTestObject('Ubah Foto Profil/Select Photo', [('text') : namaFoto]), 0)
+        Mobile.tap(findTestObject('Ubah Foto Profil/Nama Gambar'), 0)
 
         Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Foto Profile Berhasil Diganti'), 0)
     } else if (condition == 'failed') {
@@ -93,4 +78,6 @@ if (picture == 'galeri') {
         Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Foto Profile Berhasil Diganti'), 0)
     }
 }
+
+Mobile.closeApplication()
 

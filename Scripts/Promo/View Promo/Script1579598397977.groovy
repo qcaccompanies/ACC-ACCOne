@@ -28,7 +28,7 @@ Mobile.tap(findTestObject('Promo/BackButton'), 0)
 
 WebUI.delay(5)
 
-Mobile.tap(findTestObject('Promo/LihatSemua'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
 WebUI.delay(5)
 

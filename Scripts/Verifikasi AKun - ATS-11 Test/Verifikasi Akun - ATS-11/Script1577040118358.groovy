@@ -15,15 +15,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-Seamless-ACCOne\\acc.one (1).apk', false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (testing).apk', false)
 
-Mobile.tap(findTestObject('Home/Icon Akun'), 0)
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tapAtPosition(990, 2150)
 
 Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Label Verifikasi Akun'), 0)
 
 switch (status.toString()) {
     case 'unverified':
-        WebUI.callTestCase(findTestCase('Verifikasi AKun - ATS-11 Test/Verification Status'), [:], FailureHandling.STOP_ON_FAILURE)
+        not_run: WebUI.callTestCase(findTestCase('Verifikasi AKun - ATS-11 Test/Verification Status'), [:], FailureHandling.STOP_ON_FAILURE)
 
         if (condition.toString() == 'success') {
             Mobile.tap(findTestObject('Verifikasi Akun - ATS-11/Btn Upload KTP'), 0)

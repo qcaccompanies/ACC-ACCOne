@@ -14,13 +14,13 @@
       <guid>0fe7e36d-856f-4e8c-994d-0027406d04de</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Cari Mobil/Rental Mobil</testCaseId>
+      <testCaseId>Test Cases/Cari Mobil/Cari Mobil Rental/Rental Mobil</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>9912c9a4-03a3-47cf-9b41-4cae9cbf915c</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>2</value>
+            <value>3,4</value>
          </iterationEntity>
          <testDataId>Data Files/Cari Mobil/cariMobilRental</testDataId>
       </testDataLink>
@@ -101,6 +101,12 @@
          <type>DATA_COLUMN</type>
          <value>condition</value>
          <variableId>a1355589-bdf8-4e23-ad8b-c29a5bceab24</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9912c9a4-03a3-47cf-9b41-4cae9cbf915c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
+         <variableId>ebe19954-00b3-436b-831d-4f268eb32427</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

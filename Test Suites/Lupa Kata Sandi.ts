@@ -19,7 +19,7 @@
          <combinationType>ONE</combinationType>
          <id>c49b8403-29e9-4a42-89ee-4ec4e86eb0e8</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
+            <iterationType>ALL</iterationType>
             <value>9-10</value>
          </iterationEntity>
          <testDataId>Data Files/Lupa Kata Sandi</testDataId>

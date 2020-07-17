@@ -20,7 +20,7 @@
          <id>c042510b-3040-4113-928a-790566b62d1b</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>2</value>
+            <value>3</value>
          </iterationEntity>
          <testDataId>Data Files/SearchPromo</testDataId>
       </testDataLink>

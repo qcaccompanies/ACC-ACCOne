@@ -33,4 +33,11 @@
       <masked>false</masked>
       <name>status</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5145cb05-ba4f-49a1-9e7c-45c46e790834</id>
+      <masked>false</masked>
+      <name>otp</name>
+   </variable>
 </TestCaseEntity>

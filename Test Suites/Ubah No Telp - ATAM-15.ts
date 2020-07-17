@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>a3a97c90-19d8-44b6-8d50-9298bb7520ab</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>4-6</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>7,8</value>
          </iterationEntity>
          <testDataId>Data Files/Ubah No Telp - ATAM-15</testDataId>
       </testDataLink>
@@ -47,6 +47,12 @@
          <type>DATA_COLUMN</type>
          <value>status</value>
          <variableId>2f3859de-3fbc-48ab-91d3-901ed3a4f8a3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a3a97c90-19d8-44b6-8d50-9298bb7520ab</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>otp</value>
+         <variableId>5145cb05-ba4f-49a1-9e7c-45c46e790834</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

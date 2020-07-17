@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>1b7c3a43-31fe-429e-9346-ee3edb7fd82c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Akun Saya/Akun Saya - Kritik dan Saran</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -46,7 +46,7 @@
          <combinationType>ONE</combinationType>
          <id>d3133a81-c3e3-442d-b179-0d7aa9e18059</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
+            <iterationType>ALL</iterationType>
             <value>2</value>
          </iterationEntity>
          <testDataId>Data Files/Akun Saya Data/Akun Saya - Laporkan Bug</testDataId>
@@ -67,8 +67,29 @@
    <testCaseLink>
       <guid>27e5b9b8-7992-463a-871b-89e68c20aca0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Akun Saya/Akun Saya - Pengaturan</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Akun Saya/Akun Saya - Pusat Bantuan</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>f58491eb-4c04-4f31-8bea-8733d18d95e3</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Akun Saya Data/Akun Saya - Pusat Bantuan</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>f58491eb-4c04-4f31-8bea-8733d18d95e3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>search</value>
+         <variableId>54b1af6f-94c9-4299-af5f-53764570d110</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f58491eb-4c04-4f31-8bea-8733d18d95e3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>condition</value>
+         <variableId>319d1f7c-1b0b-45d7-bdec-4684c2fb0686</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>3946850f-7b4f-4afa-9812-96e0d8a757dd</guid>

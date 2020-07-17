@@ -48,29 +48,5 @@
          <value>condition2</value>
          <variableId>92ab0333-7b48-4f16-a558-c6ea93609979</variableId>
       </variableLink>
-      <variableLink>
-         <testDataLinkId>35f42d2c-2dc7-4c09-b91a-b6a006bac612</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>ktp</value>
-         <variableId>e66a9de5-353a-41bf-b862-880655a0ce2d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>35f42d2c-2dc7-4c09-b91a-b6a006bac612</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>selfie</value>
-         <variableId>89ab2cb0-ce30-4482-88a5-1592863ad905</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>35f42d2c-2dc7-4c09-b91a-b6a006bac612</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>npwp</value>
-         <variableId>84e84c0d-1484-46fd-ae74-4129233a08da</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>35f42d2c-2dc7-4c09-b91a-b6a006bac612</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>kk</value>
-         <variableId>73e226c7-3745-4ee4-8873-29b1d202e503</variableId>
-      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

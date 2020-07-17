@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Akun Saya - Pusat Bantuan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a8cf6e6c-7d1f-419b-9caa-c46748854073</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>54b1af6f-94c9-4299-af5f-53764570d110</id>
+      <masked>false</masked>
+      <name>search</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>319d1f7c-1b0b-45d7-bdec-4684c2fb0686</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+</TestCaseEntity>

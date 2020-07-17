@@ -15,12 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.startApplication('D:\\MY WORLD\\KULIAH (TUGAS)\\TGS SEMS. 8\\INTERNSHIT\\Task ACC ONE\\ACC-ACCOne\\acc.one (2).apk', 
-    false)
+Mobile.startApplication('C:\\Users\\lieto\\git\\ACC-ACCOne\\acc.one (preprod).apk', false)
 
 Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tapAtPosition(651, 1235)
+Mobile.tapAtPosition(990, 2150)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -59,4 +58,6 @@ if (condition.toString() == 'emptyField') {
 
     Mobile.tap(findTestObject('Akun Saya - Kritik dan Saran/btnYeay'), 0)
 }
+
+Mobile.closeApplication()
 

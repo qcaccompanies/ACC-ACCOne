@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>d1f0403f-aadd-4528-9a0f-d73160e3d154</dataFileGUID>
-   <dataSourceUrl>C:\Users\Hari Sapto\git\ACC-ACCOne\Verifikasi Akun - ATS-11.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\lieto\git\ACC-ACCOne\Verifikasi Akun - ATS-11.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
