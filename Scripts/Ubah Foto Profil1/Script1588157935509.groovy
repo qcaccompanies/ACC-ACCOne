@@ -26,7 +26,7 @@ WebUI.delay(5)
 if (picture == 'galeri') {
     Mobile.tap(findTestObject('Ubah Foto Profil/btnEditPhoto'), 0)
 
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnGalerry'), 0)
+    Mobile.tap(findTestObject('null'), 0)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -44,7 +44,7 @@ if (picture == 'galeri') {
 } else {
     Mobile.tap(findTestObject('Ubah Foto Profil/btnEditPhoto'), 0)
 
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnOptionCamera'), 0)
+    Mobile.tap(findTestObject('null'), 0)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 

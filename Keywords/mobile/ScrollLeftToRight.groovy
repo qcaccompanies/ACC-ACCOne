@@ -34,6 +34,6 @@ public class ScrollLeftToRight {
 		endX = device_Width * 0.70
 
 		Mobile.swipe(endX, startY, startX, endY)
-//		Mobile.swipe(startX, startY, endX, endY)
+		//		Mobile.swipe(startX, startY, endX, endY)
 	}
 }

@@ -28,7 +28,7 @@ Mobile.tap(findTestObject('Akun/Label Lihat Profil'), 0)
 WebUI.delay(5)
 
 if (picture == 'galeri') {
-    Mobile.tap(findTestObject('Ubah Foto Profil/icon edit 3'), 0)
+    Mobile.tapAtPosition(500, 430)
 
     Mobile.tap(findTestObject('Ubah Foto Profil/Icon Gallery'), 0)
 
@@ -37,7 +37,7 @@ if (picture == 'galeri') {
     not_run: Mobile.scrollToText(namaFoto, FailureHandling.STOP_ON_FAILURE)
 
     if (condition == 'passed') {
-        Mobile.tap(findTestObject('Ubah Foto Profil/Nama Gambar'), 0)
+        Mobile.tap(findTestObject('Ubah Foto Profil/content desc'), 0)
 
         Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Foto Profile Berhasil Diganti'), 0)
     } else if (condition == 'failed') {
@@ -46,24 +46,26 @@ if (picture == 'galeri') {
         Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Upload Gambar Gagal'), 0)
     }
 } else {
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnEditPhoto'), 0)
+    Mobile.tapAtPosition(500, 430)
 
-    Mobile.tap(findTestObject('Ubah Foto Profil/btnOptionCamera'), 0)
+    Mobile.tap(findTestObject('Ubah Foto Profil/Icon Camera'), 0)
 
     Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.tapAtPosition(380, 1166)
+    Mobile.tap(findTestObject('Ubah Foto Profil/Btn Take Picture'), 0)
+
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
     if (condition == 'passedRetake') {
-        Mobile.tap(findTestObject('Ubah Foto Profil/btnRetake'), 0)
+        Mobile.tap(findTestObject('Ubah Foto Profil/Btn Retry'), 0)
 
         Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.tapAtPosition(380, 1166)
+        Mobile.tap(findTestObject('Ubah Foto Profil/Btn Take Picture'), 0)
     }
     
     if (condition == 'failed') {
-        Mobile.tap(findTestObject('Ubah Foto Profil/btnRetake'), 0)
+        Mobile.tap(findTestObject('Ubah Foto Profil/Btn Retry'), 0)
 
         Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -73,7 +75,7 @@ if (picture == 'galeri') {
     } else {
         Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-        Mobile.tap(findTestObject('Ubah Foto Profil/btnDone'), 0)
+        Mobile.tap(findTestObject('Ubah Foto Profil/Btn OK'), 0)
 
         Mobile.verifyElementVisible(findTestObject('Ubah Foto Profil/Foto Profile Berhasil Diganti'), 0)
     }

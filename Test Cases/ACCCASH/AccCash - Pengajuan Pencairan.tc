@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AccCash - Pengajuan Pencairan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d105d5af-f9d6-4027-96d7-71f7de229efe</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fe007c69-bf3e-454d-907a-894709bf6ca5</id>
+      <masked>false</masked>
+      <name>nominalPencairanValid</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d3a5f391-cf67-4c88-b394-289f0951e679</id>
+      <masked>false</masked>
+      <name>nominalPencairanInvalid</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4769c246-cf9d-4114-9828-03cbc3561989</id>
+      <masked>false</masked>
+      <name>periodePembiayaan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d8ed63f6-7f5d-44f3-b9b8-869eefdc7f56</id>
+      <masked>false</masked>
+      <name>statusPencairan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3e1470d8-986f-4751-b105-41dabe72a61b</id>
+      <masked>false</masked>
+      <name>condition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2eae0f22-0e53-45f4-95ae-85dc95d856e1</id>
+      <masked>false</masked>
+      <name>opsiTujuanPenggunaanDana</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f10dc60e-6e8c-4de8-81e1-5f02f84e1ad0</id>
+      <masked>false</masked>
+      <name>penyediaBarangJasa</name>
+   </variable>
+</TestCaseEntity>

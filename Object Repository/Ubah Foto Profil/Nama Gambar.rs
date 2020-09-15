@@ -7,13 +7,14 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.LinearLayout' and contains(@content-desc, 'gambar1.jpg, 147 kB, Jul 14')]</value>
+         <value>//*[contains(@content-desc, 'gambar1
+')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -31,7 +32,8 @@
       <matchCondition>contains</matchCondition>
       <name>content-desc</name>
       <type>Main</type>
-      <value>gambar1.jpg, 147 kB, Jul 14</value>
+      <value>gambar1
+</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
